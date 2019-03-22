@@ -1,6 +1,6 @@
 ---
-title: 'Freigeben von Visual Studio Live Share-schnellstartanleitung: | Microsoft-Dokumentation'
-description: Eine gekürzte Exemplarische Vorgehensweise für das Freigeben Ihres ersten Projekts mithilfe einer zusammenarbeitssitzung für Visual Studio Live Share.
+title: Schnellstart zu „Freigeben“ – Visual Studio Live Share | Microsoft-Dokumentation
+description: Eine verkürzte Vorgehensweise zum Freigeben Ihres ersten Projekts in einer Visual Studio Live Share-Zusammenarbeitssitzung.
 ms.custom: ''
 ms.date: 03/22/2018
 ms.reviewer: ''
@@ -15,7 +15,7 @@ ms.workload:
 - liveshare
 ms.openlocfilehash: 3596b25dc0d08962d7813f52549dbe6fef4f00a0
 ms.sourcegitcommit: 4f733c9053848f26da03d47050bcb734f6c98b31
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 03/02/2019
 ms.locfileid: "57255846"
@@ -26,22 +26,22 @@ All rights reserved.
 Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
 -->
 
-# <a name="quickstart-share-your-first-project"></a>Schnellstart: Freigeben Sie Ihres ersten Projekts
+# <a name="quickstart-share-your-first-project"></a>Schnellstart: Freigeben Ihres ersten Projekts
 
 > **Hinweis: Visual Studio Live Share ist derzeit als Vorschauversion verfügbar. Benutzeroberfläche und Features sind nicht endgültig.**
 
 Willkommen bei Visual Studio Live Share! Live Share ermöglicht Ihnen gemeinsames Bearbeiten und Debuggen mit anderen in Echtzeit – unabhängig von Ihren verwendeten Programmiersprachen oder erstellten App-Typen. Sie können Ihr aktuelles Projekt sofort und sicher freigeben und anschließend nach Bedarf Debugsitzungen, Terminalinstanzen, Localhost-Web-Apps, Sprachanrufe und vieles mehr freigeben!
 
-Sind Sie bereit?  Zusammenarbeit im Team muss also schnell und natürlicher, wird es schwieriger nicht dafür! Aus diesem Grund vereinfacht Visual Studio Live Share zu den ersten Schritten, damit Sie problemlos Freigeben Ihrer Arbeit und Ideen beginnen können.
+Sind Sie bereit?  Die Zusammenarbeit im Team sollte so schnell und natürlich sein, dass es schwieriger wird, nicht so zu arbeiten! Deshalb erleichtert Visual Studio Live Share die ersten Schritte, damit Sie problemlos damit beginnen können, Ihre Arbeit und Ideen freizugeben.
 
 > [!TIP]
-> Wussten Sie schon, dass Sie *Ihrer eigenen Zusammenarbeitssitzung beitreten* können? Auf diese Weise können Sie Live Share selber ausprobieren oder aber eine Instanz von Visual Studio oder VS Code starten und eine Remoteverbindung damit herstellen! Sie können sogar in beiden Instanzen die gleiche Identität verwenden. Probieren Sie es aus!
+> Wussten Sie schon, dass Sie *Ihrer eigenen Zusammenarbeitssitzung beitreten* können? Auf diese Weise können Sie Live Share selber ausprobieren oder aber eine Instanz von Visual Studio oder VS Code starten und eine Remoteverbindung damit herstellen! Sie können sogar dieselbe Identität in beiden Instanzen verwenden. Probieren Sie es aus!
 
-Befolgen Sie die folgenden Schritte aus, um freizugeben.
+Führen Sie einfach die folgenden Schritte aus, um mit der Freigabe zu beginnen.
 
-## <a name="1-install-the-extension"></a>1. Installieren der Erweiterung
+## <a name="1-install-the-extension"></a>1. Die Erweiterung installieren
 
-Die Installation der Erweiterung ist einfach. Halten Sie die folgenden Schritte aus:
+Die Installation der Erweiterung ist einfach. Führen Sie folgende Schritte aus:
 
 <table style="width: 100%; border:none;">
 <tr>
@@ -80,7 +80,7 @@ Durch das Herunterladen und die Nutzung von Visual Studio Live Share stimmen Sie
 
 ## <a name="2-sign-in"></a>2. Anmelden
 
-Nach der Installation der Erweiterung Live Share sowie Neustarten und Warten von Abhängigkeiten, um die Installation (VS Code) abzuschließen, sollten Sie zur Anmeldung bei anderen Teilnehmer, die Informationen abrufen können. Klicken Sie einfach auf den Status "Live Share" (VS Code) Element / "Anmelden" die Schaltfläche (VS), um zu beginnen.
+Nachdem Sie die Live Share-Erweiterung installiert, neu gestartet und gewartet haben, bis die Installation von Abhängigkeiten beendet ist (VS Code), möchten Sie sich nun anmelden, damit andere Teilnehmer wissen, wer Sie sind. Klicken Sie zuerst einfach auf das Statusleistenelement „Live Share“ (VS Code) / Schaltfläche „Anmelden“ (VS).
 
 <table style="border: none;">
 <tr style="border: none;">
@@ -93,27 +93,27 @@ Nach der Installation der Erweiterung Live Share sowie Neustarten und Warten von
 </tr>
 </table>
 
-In **VS Code**, Ihr Browser wird gestartet, während eine Benachrichtigung, starten Sie aufgefordert werden, melden Sie sich bei angezeigt wird. Schließen Sie des Anmeldevorgangs in Ihrem Browser ab, und dann schließen Sie einfach den Browser, wenn fertig.
+In **VS Code** wird Ihr Browser gestartet, während Sie eine eingeblendete Benachrichtigung zur Anmeldung auffordert. Schließen Sie den Anmeldevorgang in Ihrem Browser ab. Wenn Sie fertig sind, schließen Sie einfach den Browser.
 
-![Toast-Benachrichtigung, die für die Anmeldung mit einem Webbrowser aufgefordert](../media/vscode-sign-in-toast.png)
+![Popupbenachrichtigung mit der Aufforderung, sich über einen Webbrowser anzumelden](../media/vscode-sign-in-toast.png)
 
-> **Linux-Benutzer:** Sie möglicherweise aufgefordert, einen Benutzercode eingeben, wenn Sie eine ältere Version von Live Share verwenden (v0.3.295 oder niedriger). Aktualisieren Sie auf die neueste Version der Erweiterung, oder klicken Sie auf der "nicht schreiben?" Verknüpfen Sie nach dem anmelden, um den Code anzuzeigen. Finden Sie unter [hier, um Informationen](../use/vscode.md#sign-in-using-a-user-code).
+> **Linux-Benutzer:** Wenn Sie eine ältere Version von Live Share (v0.3.295 oder darunter) verwenden, werden Sie möglicherweise aufgefordert, einen Benutzercode einzugeben. Aktualisieren Sie auf die neueste Version der Erweiterung, oder klicken Sie nach Ihrer Anmeldung auf den Link „Gibt es Probleme?“, um den Code anzuzeigen. Lesen Sie [hier die Details dazu](../use/vscode.md#sign-in-using-a-user-code).
 
-In **Visual Studio**, verwendet Sie automatisch Live Share Ihr [personalisierungskonto](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio). Daher können Sie einfach melden Sie sich wie gewohnt. Wenn Sie eine andere Anmeldung als Ihr personalisierungskonto Visual Studio verwenden lieber, jedoch gehen Sie zu **Tools &gt; Optionen &gt; Live Share &gt; Benutzerkonto** , und wählen Sie andere Anmeldeinformationen.
+In **Visual Studio** verwendet Live Share automatisch Ihr [Personalisierungskonto](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio). Deshalb können Sie sich einfach wie gewohnt anmelden. Wenn Sie aber lieber eine andere Anmeldung als Ihr Visual Studio-Personalisierungskonto verwenden möchten, wechseln Sie zu **Tools &gt; Optionen &gt; Live Share &gt; Benutzerkonto**, und wählen Sie andere Anmeldeinformationen aus.
 
-Finden Sie unter [Problembehandlung](../troubleshooting.md#sign-in) Wenn weiterhin Probleme auftritt.
+Sollten weiterhin Probleme auftreten, lesen Sie [Problembehandlung](../troubleshooting.md#sign-in).
 
-## <a name="3-open-a-folder-project-or-solution"></a>3. Öffnen Sie einen Ordner, Projekt oder Projektmappe
+## <a name="3-open-a-folder-project-or-solution"></a>3. Einen Ordner, ein Projekt oder eine Projektmappe öffnen
 
-Verwenden Sie Ihren normalen Workflow um zu öffnen, einen Ordner, Projekt oder Projektmappe, die Sie in Visual Studio oder Visual Studio Code freigeben möchten.
+Verwenden Sie Ihren normalen Workflow zum Öffnen eines Ordners, eines Projekts oder einer Projektmappe, den/das/die Sie in Visual Studio oder Visual Studio Code freigeben möchten.
 
-### <a name="4-optional-update-hidden-or-excluded-files"></a>4. [Optional] Update ausgeblendet oder ausgeschlossenen Dateien
+### <a name="4-optional-update-hidden-or-excluded-files"></a>4. [Optional] Update ausgeblendet oder ausgeschlossene Dateien
 
-Standardmäßig werden Live Share **blendet** Dateien/Ordner, die in der gitignore-Dateien in die freigegebenen Ordner daran, Gäste. **Ausblenden von** eine Datei verhindert, dass es in der Dateistruktur des Gasts angezeigt werden. **Ausschließen von** wendet eine strengere Regel, die verhindert, dass Live Share öffnen, für den Gast in solchen Situationen Gehe zu Definition oder wenn Sie die Datei beim Debuggen oder gefolgt wird. "" schrittweise an eine Datei. Wenn Sie möchten die ausblenden/verschiedene Dateien ausschließen einer **. vsls.json** Datei kann dem Projekt mit diesen Einstellungen hinzugefügt werden. Finden Sie unter [steuern den Zugriff auf Dateien und Sichtbarkeit](../reference/security.md#controlling-file-access-and-visibility) Details.
+In Live Share werden Dateien/Ordner, auf die in GITIGNORE-Dateien in Ihren freigegebenen Ordnern verwiesen wird, vor Gästen standardmäßig **ausgeblendet**. Durch **Ausblenden** einer Datei wird verhindert, dass sie in der Dateistruktur des Gasts angezeigt wird. Durch **Ausschließen** einer Datei wird eine striktere Regel angewendet. Sie verhindert, dass Live Share die Datei für den Gast öffnet – in Situationen wie „Gehe zu Definition“ oder wenn Sie während des Debuggens oder beim „gefolgt werden“ die Datei schrittweise ausführen. Wenn Sie unterschiedliche Dateien ausblenden/ausschließen möchten, kann eine **.vsls.json**-Datei Ihrem Projekt mit diesen Einstellungen hinzugefügt werden. Die Details dazu finden Sie unter [Steuern von Dateizugriff und Sichtbarkeit](../reference/security.md#controlling-file-access-and-visibility).
 
-## <a name="5-start-a-collaboration-session"></a>5. Starten Sie eine zusammenarbeitssitzung
+## <a name="5-start-a-collaboration-session"></a>5. Eine Zusammenarbeitssitzung starten
 
-Als Nächstes klicken Sie einfach auf "Live Share" in Ihr Tool, und ein Link zur freigabeeinladung wird automatisch in die Zwischenablage kopiert.
+Klicken Sie als Nächstes in Ihrem Tool einfach auf „Live Share“. Dann wird ein Einladungslink automatisch in Ihre Zwischenablage kopiert.
 
 <table style="border: none;">
 <tr style="border: none;">
@@ -127,13 +127,13 @@ Als Nächstes klicken Sie einfach auf "Live Share" in Ihr Tool, und ein Link zur
 </table>
 
 > [!NOTE]
-> Möglicherweise von Ihrem desktop-Firewall-Software werden Sie aufgefordert, ob der Live-Freigabe-Agent einen Port erstmalig öffnen, die Sie freigeben. Ist völlig optional, jedoch ermöglicht eine sichere "direct-Modus" akzeptieren diese zur Verbesserung der Leistung, wenn die Person, die mit dem Sie arbeiten im selben Netzwerk befindet, wie Sie sind. Finden Sie unter [Ändern des Verbindungsmodus](../reference/connectivity.md#changing-the-connection-mode) Details.
+> Möglicherweise werden Sie von der Firewallsoftware Ihres Desktops gefragt, ob Sie zulassen möchten, dass der Live Share-Agent bei Ihrer ersten Freigabe einen Port öffnet. Dies zuzulassen, ist Ihnen völlig freigestellt, ermöglicht aber einen gesicherten „direkten Modus“ zur Leistungsverbesserung, wenn sich die Person, mit der Sie zusammenarbeiten, in demselben Netzwerk wie Sie befindet. Details dazu finden Sie unter [Ändern des Verbindungsmodus](../reference/connectivity.md#changing-the-connection-mode).
 
-## <a name="6-optional-enable-read-only-mode"></a>6. [Optional] aktivieren nur-Lese Modus
+## <a name="6-optional-enable-read-only-mode"></a>6. [Optional] Den schreibgeschützten Modus aktivieren
 
-Sobald Sie Ihre zusammenarbeitssitzung starten, können Sie die Sitzung, um zu verhindern, dass Gäste Bearbeitungen an den freigegebenen Code schreibgeschützt sein festlegen.
+Sobald Sie Ihre Zusammenarbeitssitzung gestartet haben, können Sie sie als schreibgeschützt festlegen und so verhindern, dass Gäste Änderungen am freigegebenen Code vornehmen.
 
-Nach der Freigabe erhalten Sie eine Benachrichtigung, dass der Link zur freigabeeinladung in die Zwischenablage kopiert wurde. Sie können dann die Option aus, um die Sitzung schreibgeschützt machen auswählen.
+Nach der Freigabe erhalten Sie eine Benachrichtigung mit der Information, dass der Einladungslink in Ihre Zwischenablage kopiert wurde. Dann können Sie die Option auswählen, dass die Sitzung schreibgeschützt werden soll.
 
 <table style="border: none;">
 <tr style="border: none;">
@@ -146,21 +146,21 @@ Nach der Freigabe erhalten Sie eine Benachrichtigung, dass der Link zur freigabe
 </tr>
 </table>
 
-In **VS Code**, Sie können auch eine nur-Lese Sitzung starten, von der Registerkarte "Live Share Viewlet".
+Außerdem können Sie in **VS Code** eine schreibgeschützte Sitzung über die Viewlet-Registerkarte „Live Share“ starten.
 
-![Toast-Benachrichtigung, die für die Anmeldung mit einem Webbrowser aufgefordert](../media/vscode-read-only-viewlet.png)
+![Popupbenachrichtigung mit der Aufforderung, sich über einen Webbrowser anzumelden](../media/vscode-read-only-viewlet.png)
 
-### <a name="7-send-someone-the-invite-link"></a>7. Senden Sie an andere Benutzer den Link zur freigabeeinladung
+### <a name="7-send-someone-the-invite-link"></a>7. Anderen Personen den Einladungslink senden
 
-Senden den Link per E-mail, Slack, Skype usw., die Sie einladen möchten. Öffnen den Link in einem Browser, können sie der zusammenarbeitssitzung verknüpfen, die Freigabe wird der Inhalt der Ordner, Projekt oder Projektmappe, die Sie geöffnet. Beachten Sie, das mit der Ebene der Live-Freigabe zugreifen können Sitzungen für Gäste, bieten **sollten nur Freigabe für Personen, die Sie als vertrauenswürdig einstufen** und stellen Sie sich über die folgen, was Sie freigegeben haben.
+Senden Sie den Link per E-Mail, Slack, Skype usw. an die Personen, die Sie einladen möchten. Wenn die Empfänger den Link in einem Browser öffnen, können sie der Zusammenarbeitssitzung beitreten. Dort sind die Inhalte des Ordners, des Projekts oder der Projektmappe freigegeben, den/das/die Sie geöffnet haben. Bitte beachten Sie: Angesichts der Zugriffsebene, die Live Share-Sitzungen Gästen bereitstellen können, **sollten Sie Inhalte nur für vertrauenswürdige Personen freigeben** und die Folgen Ihrer Freigabe durchdenken.
 
-> **Security Tip:** Möchten Sie die Auswirkungen auf die Sicherheit einiger Live Share-Funktionen zu verstehen? Sehen Sie sich die [Sicherheit](../reference/security.md) Artikel.
+> **Sicherheitstipp:** Möchten Sie die Sicherheitsauswirkungen einiger Live Share-Features verstehen? Dann lesen Sie den Artikel [Sicherheit](../reference/security.md).
 
-Wenn der Gast, Sie eingeladen Fragen haben, hat die [Schnellstart: Verknüpfen Sie Ihre erste Sitzung](join.md) Artikel enthält einige weitere Informationen zum Einrichten und Ausführen als Gast.
+Wenn der von Ihnen eingeladene Gast Fragen hat, enthält der Artikel [Schnellstart: Beitreten zu Ihrer ersten Sitzung](join.md) einige weitere Informationen zum Einrichten und Ausführen als Gast.
 
-## <a name="8-optional-approve-the-guest"></a>8. [Optional] Genehmigen der Gast
+## <a name="8-optional-approve-the-guest"></a>8. [Optional] Den Gast genehmigen
 
-Standardmäßig Gäste automatisch Ihre zusammenarbeitssitzung verknüpfen, und Sie werden benachrichtigt, wenn sie bereit sind, mit Ihnen zusammenarbeiten.
+Standardmäßig treten Gäste Ihrer Zusammenarbeitssitzung automatisch bei, und Sie werden benachrichtigt, wenn sie zur Zusammenarbeit mit Ihnen bereit sind.
 
 <table style="border: none;">
 <tr style="border: none;">
@@ -173,31 +173,31 @@ Standardmäßig Gäste automatisch Ihre zusammenarbeitssitzung verknüpfen, und 
 </tr>
 </table>
 
-Sie können sich entscheiden, dass eine explizite "Genehmigung" für alle Benutzer stattdessen verknüpfen müssen. Wenn Sie diese Einstellung aktiviert haben, werden Sie von eine Benachrichtigung aufgefordert, das Gastbetriebssystem zu genehmigen, wenn sie versuchen, die die Sitzung beitreten.
+Sie können auswählen, dass bei jeder beitretenden Person eine explizite „Genehmigung“ angefordert wird. Sollten Sie diese Einstellung aktiviert haben, werden Sie mit einer Benachrichtigung aufgefordert, den Gast zu genehmigen, wenn er Ihrer Sitzung beizutreten versucht.
 
-Finden Sie unter [eine Gast-Genehmigung](../reference/security.md#requiring-guest-approval) ausführliche Informationen zu diesem Feature zu aktivieren.
+Details dazu, wie dieses Feature aktiviert wird, finden Sie unter [Anfordern einer Gastgenehmigung](../reference/security.md#requiring-guest-approval).
 
 ## <a name="9-collaborate"></a>9. Arbeiten Sie zusammen!
 
-Das ist alles! Hier sind einige Dinge zu testen, sobald ein Gastbetriebssystem, die Sie hinzugefügt wurde:
+Das ist alles! Hier sind ein paar Dinge zum Ausprobieren, sobald ein Gast Ihrer Sitzung beigetreten ist:
 
-1. Bewegen Sie sich unabhängig voneinander in verschiedenen Dateien im Projekt, und nehmen Sie einige Änderungen vor
-1. Führen Sie den Gast und beobachten Sie, wie sie einen Bildlauf durchführen, bearbeiten und navigieren Sie zu anderen Dateien
-1. Starten Sie mit ihnen gemeinsam Debugsitzung
-1. Freigeben von einem Server können Sie beispielsweise eine Web-app auf ihrem Computer ausgeführt wird überprüft
-1. Teilen Sie einen Terminal, und führen Sie einige Befehle
+1. Wechseln Sie unabhängig voneinander zu verschiedenen Dateien im Projekt, und nehmen Sie einige Änderungen daran vor.
+1. Folgen Sie dem Gast, und beobachten Sie, wie er scrollt, Änderungen vornimmt und zu verschiedenen Dateien navigiert.
+1. Starten Sie eine gemeinsame Debugsitzung mit ihm.
+1. Geben Sie einen Server frei, damit Sie etwas überprüfen können, z.B. eine Web-App, die auf dem Computer des Gasts ausgeführt wird.
+1. Geben Sie ein Terminal frei, und führen Sie einige Befehle aus.
 
-Sehen Sie sich die [Visual Studio Code](../use/vscode.md) und [Visual Studio](../use/vs.md) Extension-Dokumentation Informationen dazu, wie Sie diese Aktionen und vieles mehr.
+Informationen, wie diese Aktionen ausgeführt werden, und vieles mehr finden Sie in der Erweiterungsdokumentation zu [Visual Studio Code](../use/vscode.md) und [Visual Studio](../use/vs.md).
 
 Gibt es Probleme? Lesen Sie [Troubleshooting](../troubleshooting.md) oder [Feedback geben](../support.md).
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Sehen Sie sich folgenden Artikel Weitere Informationen.
+Wenn Sie weitere Informationen benötigen, sehen Sie sich diese zusätzlichen Artikel an.
 
-- [Schnellstart: Verknüpfen Sie Ihre erste zusammenarbeitssitzung](join.md)
-- [Gewusst wie: Zusammenarbeiten Sie mithilfe von Visual Studio Code](../use/vscode.md)
-- [Gewusst wie: Zusammenarbeiten mithilfe von Visual Studio](../use/vs.md)
+- [Schnellstart: Beitreten zu Ihrer ersten Zusammenarbeitssitzung](join.md)
+- [Vorgehensweise: Zusammenarbeiten mithilfe von Visual Studio Code](../use/vscode.md)
+- [Vorgehensweise: Zusammenarbeiten mithilfe von Visual Studio](../use/vs.md)
 
 Referenz
 
