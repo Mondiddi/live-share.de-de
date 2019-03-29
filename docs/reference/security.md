@@ -5,20 +5,18 @@ ms.custom: ''
 ms.date: 12/17/2018
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- liveshare
 ms.topic: reference
 author: chuxel
 ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 0bc97691ca7733f694190e86140b930e68657ade
-ms.sourcegitcommit: 4f733c9053848f26da03d47050bcb734f6c98b31
+ms.openlocfilehash: 754a740118ef9e6de2463fb3bb0537af350409aa
+ms.sourcegitcommit: 100fce9b9bbcd7e6f68d40659bd2760e9537de37
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57255950"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58640197"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -223,7 +221,7 @@ Weitere Informationen: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscod
 
 Beim gemeinsamen Debuggen kann es sehr hilfreich sein, Zugriff auf verschiedene Teile der Anwendung zu erhalten, die den Gästen vom Gastgeber für die Debugsitzung „serviert“ werden. Sie möchten möglicherweise Zugriff auf die app in einem Browser, auf eine lokale Datenbank zugreifen oder einen REST-Endpunkt in den Tools erreicht. Live Share können Sie "Share a Server" der genau denselben Port der Gastcomputer einen anderen lokalen Port auf dem Computer des Hosts zugeordnet ist. Als Gast, können Sie dann eine Interaktion mit der Anwendung genau so, als ob es lokal auf Ihrem Computer ausgeführt wurde (z. B. Host und Gast können sowohl Zugriff auf eine Web-app unter http://localhost:3000).
 
-Als Host und Sie sollten jedoch **werden mit den Ports, die Sie freigeben sehr selektiven** mit Gäste und nur-Anwendung stattdessen Systemports ports. Für Gäste freigegebener Anschlüsse verhält sich genau so, wie sie würden, wenn der Server-Dienst auf ihrem eigenen Computer ausgeführt wurde. Dies ist sehr nützlich, aber wenn, dass Sie der falsche Port freigegeben ist kann auch riskant sein. Aus diesem Grund ist Live Share keine Annahmen über Was soll, oder sollte nicht freigegeben werden, ohne eine Konfigurationseinstellung und dem Host, der eine Aktion.
+Als Host und Sie sollten jedoch **werden mit den Ports, die Sie freigeben sehr selektiven** mit Gäste und nur-Anwendung stattdessen Systemports ports. Für Gäste verhalten sich freigegebene Ports so, als würde der Server oder Dienst auf dem lokalen Gastcomputer ausgeführt werden. Dies ist zwar sehr nützlich, kann aber auch riskant sein, wenn der falsche Port freigegeben wird. Aus diesem Grund ist Live Share keine Annahmen über Was soll, oder sollte nicht freigegeben werden, ohne eine Konfigurationseinstellung und dem Host, der eine Aktion.
 
 In Visual Studio die **web Anwendungsport** angegeben in ASP.NET-Projekten ist **automatisch während des Debuggens nur freigegebene** um Gastzugriff für die Web-app zu ermöglichen, bei der Ausführung. Allerdings können Sie diese Automatisierung deaktivieren, indem Sie die Einstellung Tools > Optionen > Live Share > "Freigabe Web-app Debuggen" auf "False", falls gewünscht.
 
@@ -237,9 +235,9 @@ Erfahren Sie mehr über das Konfigurieren dieser Funktion: [![VS Code](../media/
 
 ## <a name="sharing-a-terminal"></a>Freigeben von einem terminal
 
-Die moderne Entwicklung nutzt oft eine Vielzahl von Befehlszeilentools. Glücklicherweise ermöglicht Live Share es Ihnen als Gastgeber, für Gäste optional „ein Terminal freizugeben“. Freigegebene Terminal kann nur-Lese oder vollständig Zusammenarbeit sein, damit sowohl Sie als auch die Gäste können, führen Sie Befehle aus, und die Ergebnisse anzuzeigen. Als Host fungiert können Sie um weitere Mitwirkende entweder nur die Ausgabe anzuzeigen oder um eine beliebige Anzahl von der Befehlszeile verwenden Tools zum Ausführen von Builds, Tests oder sogar selektieren Sie umgebungsspezifische-Probleme zu ermöglichen.
+Die moderne Entwicklung nutzt oft eine Vielzahl von Befehlszeilentools. Glücklicherweise ermöglicht Live Share es Ihnen als Gastgeber, für Gäste optional „ein Terminal freizugeben“. Das freigegebene Terminal kann schreibgeschützt oder vollständig für die Zusammenarbeit eingerichtet sein, damit Sie und Ihre Gäste Befehle ausführen und die Ergebnisse anzeigen können. Als Host fungiert können Sie um weitere Mitwirkende entweder nur die Ausgabe anzuzeigen oder um eine beliebige Anzahl von der Befehlszeile verwenden Tools zum Ausführen von Builds, Tests oder sogar selektieren Sie umgebungsspezifische-Probleme zu ermöglichen.
 
-Nur Hosts können beginnen, freigegebener Terminals, um zu verhindern, dass Gäste aus einen Startvorgang und Aktionen, die Sie nicht erwartet oder überwacht werden. Wenn Sie ein freigegebenes Terminal als Host starten, können Sie angeben, ob er sollte schreibgeschützt sein oder Lese-/Schreibzugriff. Wenn Terminal Lese-/Schreibzugriff ist, kann jeder Geben Sie im Terminal auch der Host, der sodass sie mühelos eingreifen, wenn der Gast zu maßgeblich zu verbessern, die Ihnen nicht gefallen. Merken Sie sich, Sie sollten jedoch **gewähren Sie Lese-/Schreibzugriff nur für Gäste, wenn Sie wissen sie tatsächlich benötigen** und bleiben Sie mit nur-Lese Terminals für Szenarien, in dem Sie einfach den Gast die Ausgabe von Befehlen finden Sie unter ausführen.
+Nur Hosts können beginnen, freigegebener Terminals, um zu verhindern, dass Gäste aus einen Startvorgang und Aktionen, die Sie nicht erwartet oder überwacht werden. Wenn Sie ein freigegebenes Terminal als Host starten, können Sie angeben, ob er sollte schreibgeschützt sein oder Lese-/Schreibzugriff. Im zweiten Fall kann jede Person einschließlich des Gastgebers Befehle im Terminal eingeben. Dadurch können unerwünschte Gastaktionen leicht unterbunden werden. **Die Lese- und Schreibberechtigungen sollten Sie aus Sicherheitsgründen ausschließlich Gästen bereitstellen, die darauf angewiesen sind**. Terminals mit Leseberechtigungen sollten Sie in Szenarios einsetzen, in denen Gäste nur die Ausgabe der von Ihnen ausgeführten Befehle sehen dürfen.
 
 In Visual Studio werden Terminals standardmäßig nicht freigegeben. In VS Code Terminals werden automatisch freigegeben **schreibgeschützte** standardmäßig. Allerdings können Sie diese deaktivieren, indem Sie "Settings.JSON" Folgendes hinzufügen:
 
@@ -266,8 +264,8 @@ Dies müsste nur einmal für jede Person, die Live Share ausgeführt werden. Fin
 
 ## <a name="see-also"></a>Siehe auch
 
-* [Gewusst wie: Zusammenarbeiten Sie mithilfe von Visual Studio Code](../use/vscode.md)
-* [Gewusst wie: Zusammenarbeiten mithilfe von Visual Studio](../use/vs.md)
+* [Vorgehensweise: Zusammenarbeiten mithilfe von Visual Studio Code](../use/vscode.md)
+* [Vorgehensweise: Zusammenarbeiten mithilfe von Visual Studio](../use/vs.md)
 * [Anforderungen an die Konnektivität für Live Share](connectivity.md)
 
 Gibt es Probleme? Lesen Sie [Troubleshooting](../troubleshooting.md) oder [Feedback geben](../support.md).

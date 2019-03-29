@@ -5,20 +5,18 @@ ms.custom: ''
 ms.date: 03/22/2018
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- liveshare
 ms.topic: troubleshooting
 author: chuxel
 ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 8d20ec73d9cadfefced65c04b1ef18f6e844167d
-ms.sourcegitcommit: 4f733c9053848f26da03d47050bcb734f6c98b31
+ms.openlocfilehash: 5fc611714d148a9ba1d5a6848e0399af753d1a37
+ms.sourcegitcommit: 100fce9b9bbcd7e6f68d40659bd2760e9537de37
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57255877"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58640210"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -28,7 +26,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # <a name="troubleshooting-visual-studio-live-share"></a>Problembehandlung bei Visual Studio-Livefreigabe
 
-Dieser Artikel behandelt die Problembehandlung Tipps, problemumgehungen und Antworten auf häufige Probleme und Fragen. Sie sollten auch einen Blick auf die [– häufig gestellte Fragen](faq.md).
+Dieser Artikel behandelt die Problembehandlung Tipps, problemumgehungen und Antworten auf häufige Probleme und Fragen. Sie sollten auch einen Blick auf die [– häufig gestellte Fragen](faq.md). 
 
 ## <a name="installation--tool-requirements"></a>Installation / Anforderungen-tool
 
@@ -66,8 +64,8 @@ Die folgenden Tipps für die Anmeldung bei Problemen eine Problembehandlung durc
 |------|----------------|------------|
 | Alle | <strong>Freigeben/Zusammenführung:</strong> Sie erhalten ein Timeout oder Fehler nicht, eine Verbindung herstellen können. | Finden Sie unter [Behandlung von Konnektivitätsproblemen](#connectivity). |
 | VS Code | <strong>Join:</strong> Sie wurden <strong>keine Aufforderung zur Eingabe / Starten von Visual Studio Code</strong> nach dem Öffnen der Seite "Verknüpfung" in einem Browser. |  Tipps: <ul><li>Achten Sie darauf haben Sie <i>VS Code mindestens einmal gestartet und die Installation in der Statusleiste der Abschluss gewartet.</i></li><li>Wenn dies nicht funktioniert, führen Sie die "Live-Freigabe: Setup für Startfeld"-Befehl.</li><li>**Linux-Benutzer**: Wenn Sie aufgefordert, Ihr Administratorkennwort ("sudo") geben beim Ausführen des obigen Befehls, ist dies erwünscht.</li><li>Schließlich finden Sie unter [manuell verknüpfen](reference/manual-join.md) dieses Problem zu umgehen.</li></ul> Wenn dieses Problem auftritt, wir würden uns freuen, Woran könnte das sein, also bitte [Fehler protokollieren](https://aka.ms/vsls-new-issue). |
-| VS | <strong>Join:</strong> Sie wurden <strong>keine Aufforderung zur Eingabe / starten Sie Visual Studio möglich</strong>  nach dem Öffnen der Seite "Verknüpfung" in einem Browser. |  Finden Sie unter [Manuelles Verknüpfen von](reference/manual-join.md).<br /><br /> Wir freuen uns auch, Ihre Protokolle so sehen Sie [Fehler protokollieren](https://aka.ms/vsls-problem) mithilfe von Visual Studio "Bericht ein Problem..." -Funktion. |
-| Alle | <strong>Join:</strong> Lieber <strong>fügen Sie der Join-Verknüpfung direkt in Visual Studio / Visual Studio Code</strong> anstatt auf den Weblink. | Finden Sie unter [Manuelles Verknüpfen von](reference/manual-join.md). |
+| VS | <strong>Join:</strong> Sie wurden <strong>keine Aufforderung zur Eingabe / starten Sie Visual Studio möglich</strong>  nach dem Öffnen der Seite "Verknüpfung" in einem Browser. |  Unter [Manuelles Beitreten](reference/manual-join.md) finden Sie weitere Informationen.<br /><br /> Wir freuen uns auch, Ihre Protokolle so sehen Sie [Fehler protokollieren](https://aka.ms/vsls-problem) mithilfe von Visual Studio "Bericht ein Problem..." -Funktion. |
+| Alle | <strong>Join:</strong> Lieber <strong>fügen Sie der Join-Verknüpfung direkt in Visual Studio / Visual Studio Code</strong> anstatt auf den Weblink. | Unter [Manuelles Beitreten](reference/manual-join.md) finden Sie weitere Informationen. |
 | Alle | <strong>Join:</strong> Sie sehen eine Meldung angezeigt wird, "**der Besitzer des Arbeitsbereichs offline zu sein scheint**," bei der Verknüpfung mit dem Browser. | Mögliche problemumgehungen:<br /><ul><li>Versuchen Sie es [manuell verknüpfen](reference/manual-join.md). Wir haben gesehen, dass Probleme mit regionsübergreifenden (z. B. Osten und Westen USA) Joins aufgrund von Problemen, die nicht auf manuelle Joins auswirken.</li><li>Live-Freigabe kann kann nicht direkt an den Host weitergeleitet werden soll, bei der Ausführung im Modus für die Verbindung von "Auto" sein. Versuchen Sie es [Relay Modus](reference/connectivity.md).</li></ul>Finden Sie unter [Behandlung von Konnektivitätsproblemen](#connectivity) weitere Möglichkeiten |
 | VS Code | <strong>Join:</strong> Sie verknüpft, über den Browser <strong>vor der Anmeldung</strong>, wurden nicht zur Anmeldung aufgefordert</strong>, und die Verknüpfung nicht abgeschlossen wurde. |  Dies ist eine [bekannter Fehler](https://github.com/MicrosoftDocs/live-share/issues/167). Klicken Sie auf der Anmeldeseite Statuselement für die Anmeldung, und klicken Sie dann erneut beitreten. |
 
@@ -84,7 +82,7 @@ Wie in der [Konnektivitätsanforderungen Live Share](reference/connectivity.md) 
 | Alle | Sie sind <strong>kann nicht zum Anmelden bei Visual Studio Live Share</strong> | Sie können nicht auf das Internet zugreifen oder Zugriff auf *. liveshare.vsengsaas.visualstudio.com auf Port 80/443 durch Ihre Firewall oder blockiert wird. Geben Sie https://insiders.liveshare.vsengsaas.visualstudio.com in einem Browser und stellen Sie sicher, gelangen Sie auf der Visual Studio Live Share-Homepage. |
 | Alle | Sie befinden sich im <strong>Auto-Modus</strong> (Standardeinstellung), melden Sie sich, aber sehen, können eine <strong>Timeout-oder Verbindungsfehlers</strong> entweder freigeben oder verknüpfen. | Entweder sowohl direkte als auch relay-Modi konnte eine Verbindung herstellen, oder es ist ein Fehler im Auto-Modus. Wenn Sie nach dem verbinden können [wechseln, um direkte oder Relay-Modus](reference/connectivity.md#changing-the-connection-mode), [auslösen ein Fehlers](https://aka.ms/vsls-problem). |
 | Alle | Sie befinden sich im <strong>Direktmodus</strong>, melden Sie sich, aber sehen, können eine <strong>Timeout-oder Verbindungsfehlers</strong> entweder freigeben oder verknüpfen. | Der Gast und Host können nicht direkt miteinander verbinden. Versuchen Sie es [Modus "automatisch" oder "Relay"](reference/connectivity.md#changing-the-connection-mode) um festzustellen, ob das Problem weiterhin besteht. Sie müssen möglicherweise [manuell über die persönliche Firewall zulassen Live Share](reference/connectivity.md#manually-adding-a-firewall-entry) oder verwenden Sie einfach die Relay-Modus. |
-| Alle | Sie befinden sich im <strong>Relay Modus</strong>, angemeldet sind, aber benachrichtigt werden sollen eine <strong>Timeout-oder Verbindungsfehlers</strong> entweder freigeben oder verknüpfen. | Der Zugriff auf *. *.Servicebus.Windows.NET auf Port 80/443 blockiert wird, die von Ihrer persönlichen und Unternehmensdaten Firewall blockiert wird. Versuchen Sie es [Direktmodus](reference/connectivity.md#changing-the-connection-mode). |
+| Alle | Sie befinden sich im <strong>Relay Modus</strong>, angemeldet sind, aber benachrichtigt werden sollen eine <strong>Timeout-oder Verbindungsfehlers</strong> entweder freigeben oder verknüpfen. | Der Zugriff auf *.Servicebus.Windows.NET auf Port 80/443 blockiert wird, die von Ihrer persönlichen und Unternehmensdaten Firewall blockiert wird. Versuchen Sie es [Direktmodus](reference/connectivity.md#changing-the-connection-mode). |
 
 Finden Sie unter den [Konnektivitätsanforderungen Live Share](reference/connectivity.md) Artikel Weitere Informationen zu Anforderungen an die Konnektivität.
 
@@ -102,8 +100,8 @@ Gewusst wie
 
 Referenz
 
-- [Alle große Fehler, Features und Einschränkungen](https://aka.ms/vsls-issues)
-- [Alle Anfragen zu Features und Einschränkungen](https://aka.ms/vsls-feature-requests)
+- [Schwerwiegende Fehler, Featurevorschläge und Einschränkungen](https://aka.ms/vsls-issues)
+- [Featurevorschläge und Einschränkungen](https://aka.ms/vsls-feature-requests)
 - [Anforderungen an die Konnektivität für Live Share](reference/connectivity.md)
 - [Details zur Linux-Installation](reference/linux.md)
 - [Sprach- und Plattformunterstützung](reference/platform-support.md)

@@ -5,20 +5,18 @@ ms.custom: ''
 ms.date: 04/25/2018
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- liveshare
 ms.topic: reference
 author: lostintangent
 ms.author: joncart
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 5a9787643643c22ca7302528dc794480d09df902
-ms.sourcegitcommit: 4f733c9053848f26da03d47050bcb734f6c98b31
+ms.openlocfilehash: 57be1ffd58be1a752974d58407adecd0d51fe9f0
+ms.sourcegitcommit: 100fce9b9bbcd7e6f68d40659bd2760e9537de37
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57256030"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58640236"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -152,7 +150,7 @@ This will require some form of API/SDK, which extensions can use to determine if
 - [Sprach- und Plattformunterstützung](platform-support.md)
 - [Anforderungen an die Konnektivität für Live Share](connectivity.md)
 - [Sicherheitsfeatures von Live Share](security.md)
-- [Alle große Fehler, Features und Einschränkungen](https://aka.ms/vsls-issues)
-- [Alle Anfragen zu Features und Einschränkungen](https://aka.ms/vsls-feature-requests)
+- [Schwerwiegende Fehler, Featurevorschläge und Einschränkungen](https://aka.ms/vsls-issues)
+- [Featurevorschläge und Einschränkungen](https://aka.ms/vsls-feature-requests)
 
 Gibt es Probleme? Lesen Sie [Troubleshooting](../troubleshooting.md) oder [Feedback geben](../support.md).

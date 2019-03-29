@@ -5,20 +5,18 @@ ms.custom: ''
 ms.date: 10/6/2018
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- liveshare
 ms.topic: reference
 author: chuxel
 ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 013eb234e5acca02a39e90f0697a146039bb2a89
-ms.sourcegitcommit: 4f733c9053848f26da03d47050bcb734f6c98b31
+ms.openlocfilehash: 9ac16b0e598fb07446c2b682397684b7e2e4709a
+ms.sourcegitcommit: 100fce9b9bbcd7e6f68d40659bd2760e9537de37
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57255926"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58640132"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -28,17 +26,17 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # <a name="linux-installation-details"></a>Details zur Installation von Linux
 
-Linux kann ist eine stark variieren und mit der schieren Anzahl von desktop-Umgebungen und Verteilungen schwierig zu arbeiten. Wenn Sie an die unterstützten Versionen von halte **Ubuntu Desktop** (16.04 und höher), **CentOS 7**, oder **Fedora Arbeitsstation** (27 und höher) und nur **offizielle Distributionen von Visual Studio Code**, finden Sie den Prozess einfach. Jedoch den Fall, dass Sie eine nicht standardmäßige Konfiguration oder ein downstream-Verteilung verwenden, können oder nicht einige Unterbrechungen auftreten können. Dieses Dokument enthält einige Informationen zu Anforderungen und einige Details zur Problembehandlung, mit denen Sie einzurichten und ausführen, auch wenn Sie Konfiguration nur Community unterstützt. Beachten Sie, die Live Share nur unterstützt **64-Bit-Linux**.
+Linux ist eine sehr variable Umgebung, deren Einrichtung durch die Vielzahl an Desktopumgebungen und Distributionen sich schwierig gestalten kann. Wenn Sie an die unterstützten Versionen von halte **Ubuntu Desktop** (16.04 und höher), **CentOS 7**, oder **Fedora Arbeitsstation** (27 und höher) und nur **offizielle Distributionen von Visual Studio Code**, finden Sie den Prozess einfach. Falls Sie jedoch eine vom Standard abweichende Konfiguration oder eine Downstreamdistribution verwenden, können eventuell Probleme auftreten. Dieses Dokument enthält einige Informationen zu Anforderungen und einige Details zur Problembehandlung, mit denen Sie einzurichten und ausführen, auch wenn Sie Konfiguration nur Community unterstützt. Beachten Sie, die Live Share nur unterstützt **64-Bit-Linux**.
 
-## <a name="install-linux-prerequisites"></a>Installieren des Linux-Voraussetzungen
+## <a name="install-linux-prerequisites"></a>Installation der erforderlichen Komponenten für Linux
 
-Einige Linux-Distributionen fehlen Bibliotheken, die Live Share benötigt. Live Share versucht standardmäßig, erkennen und Linux-Voraussetzungen für die Sie installieren. Sie sehen eine Toast-Benachrichtigung, wenn es sich bei Live Share ein Problem auftritt, die aus fehlenden Bibliotheken stellen Ihnen die Berechtigung, diese zu installieren stammen können.
+Einige Distributionen von Linux enthalten nicht alle Bibliotheken, die für Live Share erforderlich sind. Standardmäßig erkennt und installiert Live Share die erforderlichen Komponenten für Linux. Wenn Live Share ein Problem ermittelt, das aus fehlenden Bibliotheken resultiert, wird eine Popupbenachrichtigung angezeigt, die Sie auffordert, Live Share die Berechtigung zum Installieren der Bibliotheken zu erteilen.
 
 ![Popup mit Benachrichtigung, dass die Linux-Voraussetzungen nicht erfüllt sind](../media/vscode-linux-prereq-missing.png)
 
-Wenn Sie auf "Installieren" klicken, wird ein terminal-Fenster angezeigt, in dem Ihr Betriebssystem werden Sie aufgefordert, geben Ihren Administrator / root-Kennwort ("sudo"), um den Vorgang fortzusetzen. Vorausgesetzt, dass das Skript erfolgreich abgeschlossen wurde, sollte erneut laden Visual Studio Code, wenn Sie dazu aufgefordert startklar sein! Sie sollten außerdem sehen Sie sich **[Tipps, die von der Verteilung von](#tips-by-distribution)** für andere Tipps und problemumgehungen, sofern vorhanden.
+Wenn Sie auf "Installieren" klicken, wird ein terminal-Fenster angezeigt, in dem Ihr Betriebssystem werden Sie aufgefordert, geben Ihren Administrator / root-Kennwort ("sudo"), um den Vorgang fortzusetzen. Vorausgesetzt, dass das Skript erfolgreich abgeschlossen wurde, sollte erneut laden Visual Studio Code, wenn Sie dazu aufgefordert startklar sein! Weitere Tipps und Problemumgehungen finden Sie im Abschnitt **[tips by distribution (Tipps nach Distribution)](#tips-by-distribution)**.
 
-Wenn Sie sehen eine Meldung an, das Skript nicht Ihre Distribution unterstützt, finden Sie unter **[Tipps für die Community unterstützt Verteilungen](#tips-for-unsupported-distros)** Informationen die Community hat für uns freigegeben.
+Wenn eine Meldung angezeigt wird, dass das Skript Ihre Distribution nicht unterstützt, finden Sie von der Community zusammengestellte Informationen unter **[tips for community supported distributions (Tipps zu von der Community unterstützten Distributionen)](#tips-for-unsupported-distros)**.
 
 Wenn Sie **bevorzugen Sie nicht möchten, dass Visual Studio Code, führen Sie den Befehl für Sie**, Sie können auch entscheiden, um die neueste Version dieses Skripts zu einem beliebigen Zeitpunkt manuell erneut ausführen, indem mit dem folgenden Befehl in einem Terminalfenster:
 
@@ -147,13 +145,13 @@ Als eine **problemumgehung**, können Sie Folgendes in die product.json hinzufü
 
 Finden Sie unter [oben](#tips-for-community-supported-distros) Weitere Details zur gibt an, ob die Verteilung, die Sie verwenden bekanntermaßen funktioniert.
 
-## <a name="linux-browser-integration"></a>Linux-Browser-integration
+## <a name="linux-browser-integration"></a>Browserintegration unter Linux
 
-Freigeben von Visual Studio Live in der Regel **erfordert keine zusätzliche Installationsschritte** Browserintegration unter Linux zu aktivieren.
+In der Regel sind für die Browserintegration unter Linux **keine zusätzlichen Installationsschritte** in Visual Studio Live Share erforderlich.
 
 Zu diesem Zweck fügt automatisch Live Share in eine desktop-Datei `~/.local/share/applications` und das erforderliche Startprogramm selbst in `~/.local/share/vsliveshare` Wenn die Erweiterung zunächst initialisiert. Wenn dies erfolgreich ist, ist keine Aktion Ihrerseits erforderlich.
 
-In einigen Fällen Verteilungen entweder diesen Speicherort zu unterstützen oder nicht erfordern Änderungen mit ihren einfachen installiert arbeiten soll. In diesen Fällen Live Share greift auf zurück `/usr/local/share` stattdessen. Daher **Sie werden benachrichtigt, dass Ihr Administratorkennwort ("sudo") erforderlich ist** um die Installation abzuschließen. Ein terminal-Fenster wird angezeigt, in dem das Browser-Startprogramm installiert wird angezeigt. Geben Sie einfach nach Aufforderung Ihr Kennwort ein, und drücken Sie die EINGABETASTE nach Abschluss der Installation, um die terminal-Fenster zu schließen.
+In einigen Fällen Verteilungen entweder diesen Speicherort zu unterstützen oder nicht erfordern Änderungen mit ihren einfachen installiert arbeiten soll. In diesen Fällen Live Share greift auf zurück `/usr/local/share` stattdessen. Daher **Sie werden benachrichtigt, dass Ihr Administratorkennwort ("sudo") erforderlich ist** um die Installation abzuschließen. Daraufhin wird ein Terminalfenster angezeigt, das den Installationspfad für das Startprogramm des Browsers enthält. Geben Sie Ihr Kennwort ein, wenn Sie dazu aufgefordert werden, und drücken Sie nach Abschluss der Installation die EINGABETASTE, um das Terminalfenster zu schließen.
 
 Wenn Sie den Befehl selbst stattdessen ausführen möchten, können Sie klicken, "Kopieren" die terminalbefehl aus stattdessen in die Zwischenablage kopiert wird.
 
@@ -161,7 +159,7 @@ Schließlich, wenn Sie diesen Schritt überspringen, vollständig sich entscheid
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Gewusst wie: Zusammenarbeiten Sie mithilfe von Visual Studio Code](../use/vscode.md)
+- [Vorgehensweise: Zusammenarbeiten mithilfe von Visual Studio Code](../use/vscode.md)
 - [Anforderungen an die Konnektivität für Live Share](connectivity.md)
 - [Sicherheitsfeatures von Live Share](security.md)
 
