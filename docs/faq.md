@@ -11,12 +11,12 @@ ms.author: joncart
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: a97ca693a0a60125c5376e444c9fba1ee7442d67
-ms.sourcegitcommit: 100fce9b9bbcd7e6f68d40659bd2760e9537de37
+ms.openlocfilehash: 1b68dc90f4bac5e21c04c555ab2d8fc7f59aad55
+ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58640158"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58853598"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -27,15 +27,16 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 # <a name="frequently-asked-questions"></a>Häufig gestellte Fragen (FAQs)
 
 ## <a name="what-is-live-share"></a>Was ist Live Share?
-Live Share kann Entwickler eine Codebasis und seines Kontexts freigeben, damit Sie sofortige, bidirektional und Zusammenarbeit direkt aus Ihren vorhandenen Tools (Visual Studio 2017 oder Visual Studio Code erhalten). Mit Live-Freigabe Ihre Kollegin zu lesen, navigieren, bearbeiten und Debuggen des Projekts, die Sie für sie sowohl nahtlos und sicher freigegeben haben.
+Live Share ermöglicht Ihnen gemeinsames Bearbeiten und Debuggen mit anderen in Echtzeit – unabhängig von Ihren verwendeten Programmiersprachen oder erstellten App-Typen. Sie können sofort (und sicher) des aktuellen Projekts, und klicken Sie dann nach Bedarf, freigeben, Debugsitzungen, Terminaldienste-Instanzen, "localhost"-Web-apps und mehr! Entwickler, die Ihre Sitzungen verknüpfen erhalten Sie alle von ihrem Editor-Kontext aus Ihrer Umgebung (z. B. Language Services, Debuggen), um sicherzustellen, dass sie mit der Zusammenarbeit produktiv sofort, ohne alle Repositorys klonen, oder installieren Sie alle SDKs beginnen können.
 
 ## <a name="what-are-the-tooling-requirements-for-using-live-share"></a>Was sind die Tools-Anforderungen für die Verwendung von Live Share?
 Die [Kernfunktionen](#what-are-the-core-capabilities-of-live-share) von Live Share werden in der folgenden Tools vollständig unterstützt:
 
-* [Visual Studio 2017 (15.6+)](https://visualstudio.microsoft.com/vs/)
+* [Visual Studio 2019](https://visualstudio.microsoft.com/vs/)
+* [Visual Studio 2017 (15.6+)](https://visualstudio.microsoft.com/vs/older-downloads/)
 * [Visual Studio Code](https://code.visualstudio.com/)
 
-Während der Vorschauphase Live Share wird schnell durchlaufen werden, um auf Feedback der Benutzer zu reagieren, Features in Visual Studio nutzen ist möglicherweise erforderlich, und Visual Studio-Code, die nur in ihre jeweiligen Vorschau/Insider-Versionen verfügbar sein. Es wird angegeben, welche featureanforderungen aktuellere Versionen von Visual Studio oder Visual Studio Code in der Dokumentation. Lokale Rückgängig/Wiederholen-Unterstützung erfordert z. B. Visual Studio 2017 15.7 und höher.
+Wir durchlaufen Sie schnell zum Reagieren auf Feedback von Benutzern. Dies erfordert, die Funktionen in Visual Studio nutzen, und Visual Studio-Code, die nur in ihre jeweiligen Vorschau/Insider-Versionen verfügbar sein. Es wird angegeben, welche featureanforderungen aktuellere Versionen von Visual Studio oder Visual Studio Code in der Dokumentation. Lokale Rückgängig/Wiederholen-Unterstützung erfordert z. B. Visual Studio 2017 15.7 und höher.
 
 ## <a name="what-are-the-core-capabilities-of-live-share"></a>Was sind die Kernfunktionen von Live Share?
 Live Share ermöglicht Ihnen, zu Teilen Ihrer Codebasis mit den Mitgliedern Ihres Teams über eine sichere Verbindung. Klicken Sie mit Live-Freigabe können Sie mehrere Dateien in einem Arbeitsbereich gemeinsam bearbeiten, und weitere vor allem Ihrer Anwendung mit Ihren Teamkollegen Debuggen. Während der Bearbeitung zusammen Ihre Änderungen werden sofort Ihre Teamkollegen sichtbar. Während des Debuggens zusammen werden Sie derselben Debuggingsitzung Ihrer Anwendung frei. Dies bedeutet, dass Sie und Ihre Teamkollegen können die Ausführung des Programms mit Haltepunkten und Schritten steuern, aber Sie können unabhängig voneinander untersuchen, Variablen, Überwachungselemente, lokale Variablen und REPLs (z. B. das Direktfenster in Visual Studio).
@@ -52,7 +53,7 @@ Livefreigabe die einzige Voraussetzung ist, dass die Person, die Freigabe und ih
 Alle Eingaben von Tastatur und Maus Livefreigabe nicht übertragen werden. Es kommuniziert nur die Daten für jede Aktivität Zusammenarbeit mit Ihren Teamkollegen Computern erforderlich sind. Z. B. Wenn Sie Ihrem Arbeitsbereich freigeben, wird die Ordnerstruktur gemeinsam genutzt. Wenn Sie gemeinsam eine Datei bearbeiten, dass der Inhalt Datei freigegeben werden. Wenn Sie gemeinsam Debuggen, Debugging-Aktionen (z. B. stepping) und Status (z. B. "Aufrufliste" und "lokal") freigegeben.
 
 ## <a name="when-will-live-share-be-released"></a>Wann wird Live Share veröffentlicht?
-Live-Freigabe ist jetzt in der öffentlichen Vorschau verfügbar! Wir beabsichtigen, die eng zusammenarbeiten, Entwickler testen die Vorschau-Bits, um Feedback sammeln und sicherzustellen, dass es möglich, vor dem Öffnen des Diensts breiter am besten bereitstellen kann.
+Livefreigabe ist jetzt allgemein verfügbar! Sie können [erste Schritte mit Live Share](https://aka.ms/vsls-start) noch heute.
 
 ## <a name="how-much-will-it-cost"></a>Wie viel kostet es?
 Wir sind an substanziellen free-Tarif für Visual Studio Live Share fortlaufend Verwendung zu übergeben. Wir werden die Einführung von kostenpflichtigen Tarifen mit erweiterten Features auswerten werden, wie wir die Anforderungen von der Community besser verstehen.
@@ -82,21 +83,25 @@ Während dies für viele Szenarien wünschenswert sein, möchten Entwickler häu
 
 Live-Freigabe geht einen Schritt weiter und ermöglicht es Ihnen, eine Debugsitzung zu teilen.  Dadurch besonders nützlich in anderen, mit denen Sie die Probleme zu ermitteln, der nur auf dem Computer auftreten können, ohne ihre entwicklungsworkflows ändern oder zum Ändern des Anwendungsentwurfs müssen eintragen.
 
-## <a name="which-languages-and-platforms-will-be-supported-in-the-preview"></a>Welche Sprachen und Plattformen werden in der Vorschauversion unterstützt?
-Allerdings ist unser Ziel zur Unterstützung der bunten Vielfalt an Sprachen und Plattformen, um sicherzustellen, dass wir umfassende Zusammenarbeit, unabhängig vom entwickelte Anwendung aktivieren können. Finden Sie unter den [Sprach- und plattformunterstützung](reference/platform-support.md) finden Sie Details dazu, was heute funktioniert. Dies ist nur der Anfang, und wir erwarten, dass zur Verbesserung dieses Bild verschieben, die aufgrund des Feedbacks weiterleiten.
+## <a name="which-languages-and-platforms-will-be-supported"></a>Welche Sprachen und Plattformen werden unterstützt?
+Unser Ziel ist zur Unterstützung der bunten Vielfalt an Sprachen und Plattformen, um sicherzustellen, dass wir umfassende Zusammenarbeit, unabhängig vom entwickelte Anwendung aktivieren können. Finden Sie unter den [Sprach- und plattformunterstützung](reference/platform-support.md) finden Sie Details dazu, was heute funktioniert.
 
 ## <a name="how-many-developers-can-join-a-collaboration-session"></a>Wie viele Entwickler können eine zusammenarbeitssitzung beitreten?
-Wir unterstützen derzeit fünf gleichzeitige-Gäste zusätzlich zu den Entwickler, die ("hosting") gemeinsam nutzen, wird ihr Projekt. Aus diesem Grund kann eine zusammenarbeitssitzung insgesamt sechs Entwickler zu jedem Zeitpunkt enthalten. Dies ist ein Bereich, Sie nach Feedback suchen, wenn Sie einen Anwendungsfall verfügen, die eine Anhebung des Limits erforderlich, dass Sie [Teilen Sie uns](https://github.com/MicrosoftDocs/live-share/issues/229)!
+Wir unterstützen derzeit 30 gleichzeitige-Gäste zusätzlich zu den Entwickler, die ("hosting") gemeinsam nutzen, wird ihr Projekt. Aktivieren wir standardmäßig bis zu 5 Gästen in einer Sitzung ein. 
+
+So aktivieren Sie die erhöhte Gast Grenzwert: 
+- **Visual Studio Code:** Add "liveshare.increasedGuestLimit":"true" to settings.json.
+- **VS:** Legen Sie Extras > Optionen > Live Share > höhere Gast-Grenzwert auf "True"
 
 ## <a name="what-is-the-roadmap"></a>Wie sieht die Roadmap?
 Sie können den Satz von bekannten Problemen und Roadmap für die Elemente anzeigen [hier](https://aka.ms/vsls-issues). Wenn Sie alle Probleme, anstatt nur Feature-Anforderungen finden Sie unter möchten, finden Sie unter [hier](https://aka.ms/vsls-feature-requests). Wir empfehlen Ihnen, vorhandene Elemente abstimmen, Datei anfordern neuer Features und melden Sie sich die Fehlerberichte, um uns helfen, Form, die Richtung des Produkts für die Zukunft.
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Sprach- und Plattformunterstützung](platform-support.md)
+- [Sprach-und plattformunterstützung](platform-support.md)
 - [Anforderungen an die Konnektivität für Live Share](reference/connectivity.md)
 - [Sicherheitsfeatures von Live Share](reference/security.md)
-- [Schwerwiegende Fehler, Featurevorschläge und Einschränkungen](https://aka.ms/vsls-issues)
-- [Featurevorschläge und Einschränkungen](https://aka.ms/vsls-feature-requests)
+- [Alle große Fehler, Features und Einschränkungen](https://aka.ms/vsls-issues)
+- [Alle Anfragen zu Features und Einschränkungen](https://aka.ms/vsls-feature-requests)
 
 Gibt es Probleme? Lesen Sie [Troubleshooting](troubleshooting.md) oder [Feedback geben](support.md).

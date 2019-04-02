@@ -11,12 +11,12 @@ ms.author: joncart
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: d4dc3f2a6dfd8e0951a944cf4f487cedc49e4370
-ms.sourcegitcommit: 100fce9b9bbcd7e6f68d40659bd2760e9537de37
+ms.openlocfilehash: 1b6ecafc933c6521f6c21ec0dcd38c25e889a0e2
+ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58640145"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58853572"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -26,7 +26,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # <a name="common-use-cases"></a>Gängige Anwendungsfälle
 
-Das primäre Ziel von Visual Studio Live Share ist, damit Entwickler leichter, miteinander zusammenarbeiten, ohne alle Meinung dazu, wann und wie es geht (z. B. welche Tool für die Kommunikation zu verwenden, die "richtige" Software-Methode oder die SCM-Workflow). Auf diese Weise können Ihre Tools Interaktionen, die auftreten unterstützen **auf natürliche Weise**, und als **häufig*je nach Bedarf, aber auf eine Weise, **den empfohlenen*wie Sie bereits arbeiten möchten.
+Das primäre Ziel von Visual Studio Live Share ist, damit Entwickler leichter, miteinander zusammenarbeiten, ohne alle Meinung dazu, wann und wie es geht (z. B. welche Tool für die Kommunikation zu verwenden, die "richtige" Software-Methode oder die SCM-Workflow). Auf diese Weise können Ihre Tools Interaktionen, die auftreten unterstützen **auf natürliche Weise**, und als **häufig** je nach Bedarf, aber auf eine Weise, **den empfohlenen** wie Sie bereits arbeiten möchten.
 
 Dieses Dokument-Highlights einige Anwendungsfälle, dass Visual Studio Live Share für die bereits verwendet wird, und es wird beschrieben, wie gut wir unterstützen derzeit diese verwendet wird und wie es ist geplant, diese weiter (basierend auf Feedback!) zu optimieren. Wenn Sie Live Share für etwas, das bereits im folgenden erläutert ist nicht verwenden, oder wenn Sie können wir besser erwägen auf einen bestimmten Anwendungsfall, Sie unterstützen [Teilen Sie uns](https://github.com/MicrosoftDocs/live-share/issues/new).
 
@@ -71,21 +71,23 @@ Eine der am häufigsten Szenarien für Visual Studio Live Share "paarprogrammier
 
 Livefreigabe wurde entworfen, um agnostisch für alle oben genannten Probleme, und stattdessen paarprogrammierung unterstützen, die völlig "opportunistische" und für Ihre Situation automatisch werden sollen. Dies bedeutet, dass im Gegensatz zu zwei Entwickler, die gemeinsame Nutzung einer Tastatur und Bildschirm Live Share ermöglicht eine Form der paarprogrammierung, die Entwickler arbeiten, auf eine gemeinsame Ziel verfolgen, ohne ihre einzelnen Autonomie oder Umgebung Einstellungen ermöglicht. Sie können unabhängig voneinander arbeiten oder zusammen, sodass jeder Teilnehmer, schalten Sie ihre eigenen Überlegungen, die Zusammenarbeit.
 
-Weiter unterstützen paarprogrammierung, und jede "Gast" zu häufig benötigten Aktionen ausführen können, haben wir Arbeit geplant stetig des Kontexts und der Funktionen, die in einer Live Share-Sitzung gemeinsam verwendet werden: Aufgaben ([#40](https://github.com/MicrosoftDocs/live-share/issues/40)), Erstellen der Ausgabe ([#48](https://github.com/MicrosoftDocs/live-share/issues/48)), Gast-driven Debuggen ([#32](https://github.com/MicrosoftDocs/live-share/issues/32)), und vieles mehr. Lassen Sie uns wissen Sie, welche dieser Funktionen für Sie wichtig sind!
-
 Um diesen Anwendungsfall noch weiter nach unten zu unterbrechen, stellen die folgenden Elemente Formen der paarprogrammierung, dass wir mithilfe von Live-Freigabe für Personen beobachtet habe dar:
 
 ### <a name="mob-programming"></a>Mob-Programmierung
 
 [Mob Programmierung](https://en.wikipedia.org/wiki/Mob_programming) (oder swarm-Programmierung) ist im Wesentlichen Paar programmieren, jedoch mit mehr als zwei Personen. Daher gelten alle die Vorteile von Live Share für paarprogrammierung ebenso wie gut ein. Darüber hinaus werden einige Teams "swarming" im Gegensatz zu Vollzeit auf einen Bedarf (z. B. das Team um erstfall rallying).
 
-Live Share unterstützt derzeit bis zu fünf Gäste innerhalb einer Sitzung, die möglicherweise nicht die Teamgröße Ihres aufzunehmen. Dies ist jedoch etwas wir planen, zu erhöhen (für verschiedene Anwendungsfälle) und auf Feedback suchen ([Stimme 👍 hier](https://github.com/MicrosoftDocs/live-share/issues/229))
+Live Share unterstützt derzeit bis zu 30 Gäste innerhalb einer Sitzung.
+> [!TIP]
+> So aktivieren Sie 30 Gästen in einer Sitzung
+> - **Visual Studio Code:** "Settings.JSON", "liveshare.increasedGuestLimit":"true" hinzugefügt
+> - **VS:** Legen Sie Extras > Optionen > Live Share > höhere Gast-Grenzwert auf "True" 
 
 ### <a name="coding-competitions--hack-a-thons"></a>Codieren Wettbewerbe / Hack-A-Thons
 
 Schreiben von Code Wettbewerbe und Hack-a-Thons sind effektiv kurzfristige, einzelnen Aufgabe Variationen des Mob-Programmierung. Die Mitglieder des Teams und ihrer aktuellen Rolle sind auch potenziell dynamisch. Da in diesem Fall in der Regel auch ZEITEMPFINDLICH ist die Möglichkeit für die Zusammenarbeit in Echtzeit, ohne dass müssen, verwenden ein völlig neues Tool, und die Möglichkeit, die zusammenarbeiten, ohne auf einem einzelnen Bildschirm oder eine Tastatur, beschränkt wird eine Möglichkeit Log in aufsteigender aufgenommen werden kann Geschwindigkeit.
 
-Da die Teilnehmer in dieser Umgebung möglicherweise nicht immer vollständig "vertrauenswürdig", wir haben Anforderungen zu erfahren entfernen (und blockieren) eines Gasts in einer Sitzung zu jedem Zeitpunkt wird besteht, die wir zum Aktivieren der voraussichtlich ([#398](https://github.com/MicrosoftDocs/live-share/issues/398)), und unterstützt Das Ziel für die Bereitstellung von "Hosts" mit vollständiger Kontrolle über ihre Umgebung.
+Da die Teilnehmer in dieser Umgebung möglicherweise nicht immer vollständig "vertrauenswürdig", können Sie entfernen (ein Gasts in einer Sitzung zu einem beliebigen Zeitpunkt und blockieren). Dies bietet vollständige Kontrolle über ihre Umgebung "Hosts".
 
 ### <a name="school-group-projects"></a>School-Ressourcengruppenprojekten
 
@@ -117,14 +119,14 @@ Wenn Dozenten etwas sagen wollen, können sie die Live-Freigabe verwenden, ihr P
 
 Hilfestellung bei der Classroom-Einstellungen können Live Share Freigabe im schreibgeschützten Modus. Dozenten können nur-Lese Modus verwenden, damit diese für Schüler/Studenten ihre Projekte freigeben, ohne sich Gedanken unnötige oder versehentliche Änderungen vorgenommen werden können.
 
-Darüber hinaus verfügt Live Share experimentelle Unterstützung für bis zu 30 Gäste, die in einer zusammenarbeitssitzung verknüpfen zu aktivieren. Auf diese Weise können Dozenten haben ihre gesamte Klasse in einer Sitzung beitreten, und zeigen Code gemeinsam haben.
+Darüber hinaus verfügt Live Share-Support, um bis zu 30 Gäste, die in einer zusammenarbeitssitzung verknüpfen zu aktivieren. Auf diese Weise können Dozenten haben ihre gesamte Klasse in einer Sitzung beitreten, und zeigen Code gemeinsam haben.
 
-Um diese experimentelle Funktion zu aktivieren:
+Um dieses Feature zu aktivieren:
 
-- **Visual Studio Code:** "Liveshare.features":"experimental" und "Settings.JSON" hinzugefügt.
-- **VS:** Legen Sie Extras > Optionen > Live Share > "Experimentell" Funktionen
+- **Visual Studio Code:** Add "liveshare.increasedGuestLimit":"true" to settings.json.
+- **VS:** Legen Sie Extras > Optionen > Live Share > höhere Gast-Grenzwert auf "True"
 
-Um dieses Szenario vollständig Live Share optimieren, müssen wir weiter steigern, die aktuelle Grenze für den Gast ([#229](https://github.com/MicrosoftDocs/live-share/issues/229)), und vereinfachen Sie die Möglichkeit, dass Sitzungen initiiert werden ([#422](https://github.com/MicrosoftDocs/live-share/issues/422)).
+Um dieses Szenario vollständig Live Share optimieren, müssen wir die Möglichkeit zu vereinfachen, dass Sitzungen initiiert werden ([#422](https://github.com/MicrosoftDocs/live-share/issues/422)).
 
 ## <a name="code-reviews"></a>Codereviews
 
@@ -144,10 +146,10 @@ Darüber hinaus ist die realen Entwicklung mehr als nur Code schreiben. Da Live 
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Sprach- und Plattformunterstützung](platform-support.md)
+- [Sprach-und plattformunterstützung](platform-support.md)
 - [Anforderungen an die Konnektivität für Live Share](connectivity.md)
 - [Sicherheitsfeatures von Live Share](security.md)
-- [Schwerwiegende Fehler, Featurevorschläge und Einschränkungen](https://aka.ms/vsls-issues)
-- [Featurevorschläge und Einschränkungen](https://aka.ms/vsls-feature-requests)
+- [Alle große Fehler, Features und Einschränkungen](https://aka.ms/vsls-issues)
+- [Alle Anfragen zu Features und Einschränkungen](https://aka.ms/vsls-feature-requests)
 
 Gibt es Probleme? Lesen Sie [Troubleshooting](../troubleshooting.md) oder [Feedback geben](../support.md).
