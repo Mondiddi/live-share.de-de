@@ -5,20 +5,18 @@ ms.custom: ''
 ms.date: 04/27/2018
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- liveshare
 ms.topic: conceptual
 author: chuxel
 ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 9285fef38fea9bb164892775521ed2a28fe9ef1b
-ms.sourcegitcommit: 4f733c9053848f26da03d47050bcb734f6c98b31
+ms.openlocfilehash: ed96ba572a58b8d3bfda7b634f1052a1b4e73051
+ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57255965"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58853637"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -44,12 +42,12 @@ Bevor Sie beginnen, müssen Sie eine Version von Visual Studio Code installiert 
 - **Windows:** 7, 8.1 oder 10
 
 - **macOS:** Nur Sierra (10.12) und höher.
-    - _El Capitan (10.11) und niedriger werden derzeit aufgrund der Anforderungen von [.NET Core 2.0](https://go.microsoft.com/fwlink/?linkid=872315) nicht unterstützt._
+    - _El Capitan (10.11) und niedriger werden derzeit aufgrund der [Anforderungen von .NET Core 2.0](https://go.microsoft.com/fwlink/?linkid=872315) nicht unterstützt._
 
 - **Linux**: 64-Bit-Version von Ubuntu Desktop 16.04 und höher, Fedora Workstation 27 und höher, CentOS 7
 
     - Für Live Share sind einige [Linux-Voraussetzungen](#linux-install-steps) erforderlich, zu deren Installation Sie möglicherweise aufgefordert werden.
-    - _Aufgrund der Anforderungen von [.NET Core 2.0](https://go.microsoft.com/fwlink/?linkid=872314) werden 32-Bit-Versionen von Linux nicht unterstützt._
+    - _Aufgrund der [Anforderungen von .NET Core 2.0](https://go.microsoft.com/fwlink/?linkid=872314) werden 32-Bit-Versionen von Linux nicht unterstützt._
     - Zudem wird ARM derzeit nicht unterstützt.
     - Weitere Informationen zur Verwendung von Downstreams und anderen Distributionen finden Sie im Artikel [Linux install details (Details zur Linux-Installation)](../reference/linux.md).
 
@@ -67,7 +65,7 @@ Danach ist das Herunterladen und Installieren der Visual Studio Live Share-Erwei
 
 Durch das Herunterladen und die Nutzung von Visual Studio Live Share stimmen Sie den [Lizenzbedingungen](https://aka.ms/vsls-license) und den [Datenschutzbestimmungen](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx) zu. Wenn Probleme auftreten, lesen Sie [Troubleshooting](../troubleshooting.md).
 
-[![Herunterladen](../media/download.png)](https://aka.ms/vsls-dl/vscode)
+[![DDownload](../media/download.png)](https://aka.ms/vsls-dl/vscode)
 
 ### <a name="linux-install-steps"></a>Schritte zur Linux-Installation
 
@@ -99,7 +97,7 @@ Weitere Informationen zu dieser Anforderung und zum Speicherort von Dateien durc
 
 Wenn Sie mit anderen Personen zusammenarbeiten möchten, müssen Sie sich in Visual Studio Live Share anmelden, damit diese wissen, wer Sie sind. Dies ist nur eine Sicherheitsmaßnahme. Sie willigen dadurch **nicht** ein, an Marketing- oder anderen Marktforschungsaktivitäten teilzunehmen. Sie können sich mit einem persönlichen Microsoft-Konto (z. B. @outlook.com), einem Geschäfts-, Schul- oder Unikonto von Microsoft (über AAD) oder mit einem GitHub-Konto anmelden. Die Anmeldung ist unkompliziert.
 
-**Klicken** Sie auf der Statusleiste auf „Share“ (Freigeben), oder drücken Sie **STRG+UMSCHALT+P bzw. CMD+UMSCHALT+P**, und wählen Sie den Befehl „Live Share: Sign In With Browser“ (Live Share: Mit Browser anmelden) aus.
+**Klicken** Sie auf der Statusleiste auf „Live Share“, oder drücken Sie **STRG+UMSCHALT+P bzw. CMD+UMSCHALT+P**, und wählen Sie den Befehl „Live Share: Sign In With Browser“ (Live Share: Mit Browser anmelden) aus.
 
 ![Schaltfläche zum Anmelden in Visual Studio Code](../media/vscode-sign-in-button.png)
 
@@ -160,11 +158,11 @@ Da diese Liste unter Umständen sehr lang ist, ist es häufig einfacher, ein ber
 
 Führen Sie nach dem Herunterladen und Installieren von Visual Studio Live Share die folgenden Schritte aus, um eine Zusammenarbeitssitzung zu starten und einen Kollegen einzuladen.
 
-1. **Melden Sie sich an:**
+1. **Anmelden**
 
     Nachdem Sie die Live Share-Erweiterung installiert, neu geladen und gewartet haben, bis die Installation von Abhängigkeiten beendet ist, sollten Sie sich nun anmelden, damit andere Projektmitarbeiter wissen, wer Sie sind. Weitere Informationen finden Sie unter [Anmelden](#sign-in).
 
-2. **Öffnen Sie einen Ordner:**
+2. **Öffnen eines Ordners**
 
     Öffnen Sie wie gewohnt einen Ordner, ein Projekt oder eine Projektmappe, die Sie für Gäste freigeben möchten.
 
@@ -172,9 +170,9 @@ Führen Sie nach dem Herunterladen und Installieren von Visual Studio Live Share
 
     In Live Share werden Dateien/Ordner, auf die in GITIGNORE-Dateien in Ihren freigegebenen Ordnern verwiesen wird, vor Gästen standardmäßig **ausgeblendet**. Durch **Ausblenden** einer Datei wird verhindert, dass sie in der Dateistruktur des Gasts angezeigt wird. Durch das **Ausschließen** einer Datei wird eine striktere Regel angewendet. Sie verhindert, dass Live Share die Datei für den Gast öffnet, wenn diese z.B. die Aktion „Gehe zu Definition“ durchführen, oder wenn Sie eine Datei beim Debuggen oder während Ihnen ein anderer Teilnehmer folgt schrittweise ausführen. Wenn Sie unterschiedliche Dateien ausblenden/ausschließen möchten, kann eine **VSLS.JSON**-Datei Ihrem Projekt mit diesen Einstellungen hinzugefügt werden. Die Details dazu finden Sie unter [Steuern von Dateizugriff und Sichtbarkeit](../reference/security.md#controlling-file-access-and-visibility).
 
-4. **Starten Sie eine Zusammenarbeitssitzung:**
+4. **Eine Zusammenarbeitssitzung starten**
 
-    **Klicken** Sie nun auf der Statusleiste auf „Share“ (Freigeben), oder drücken Sie **STRG+UMSCHALT+P bzw. CMD+UMSCHALT+P**, und wählen Sie den Befehl „Live Share: Start a collaboration session (Share)" (Live Share: Zusammenarbeitssitzung starten (Freigeben)) aus.
+    **Klicken** Sie nun auf der Statusleiste auf „Live Share“, oder drücken Sie **STRG+UMSCHALT+P bzw. CMD+UMSCHALT+P**, und wählen Sie den Befehl „Live Share: Start a collaboration session (Share)" (Live Share: Zusammenarbeitssitzung starten (Freigeben)) aus.
 
     ![Schaltfläche für Freigabe](../media/vscode-share-button.png)
 
@@ -183,7 +181,7 @@ Führen Sie nach dem Herunterladen und Installieren von Visual Studio Live Share
 
     Ein Einladungslink wird automatisch in die Zwischenablage kopiert. Andere Personen können mit diesem Link im Browser einer neuen Zusammenarbeitssitzung beitreten, in der Ordnerinhalte für diese Teilnehmer freigegeben werden.
 
-    Außerdem wird die Option „Share“ (Freigeben) in der Statusleiste in den entsprechenden Sitzungszustand geändert. Informationen zu [Sitzungszuständen](#session-states) finden Sie weiter unten.
+    Außerdem wird die Option „Live Share“ in der Statusleiste in den entsprechenden Sitzungszustand geändert. Informationen zu [Sitzungszuständen](#session-states) finden Sie weiter unten.
 
     Wenn Sie bereits Inhalte freigeben und den Einladungslink noch einmal abrufen müssen, können Sie auf die auf das Statusleistensymbol für den Sitzungszustand klicken und „Invite Others (Copy Link)“ (Einladen (Link kopieren)) auswählen.
 
@@ -239,7 +237,7 @@ Nach dem Herunterladen und Installieren von Visual Studio Live Share können Gä
 
 Die einfachste Möglichkeit, einer Zusammenarbeitssitzung beizutreten, besteht darin, einen Link in einem Webbrowser zu öffnen. Gehen Sie dazu folgendermaßen vor:
 
-1. **Melden Sie sich an:**
+1. **Anmelden**
 
     Nachdem Sie die Live Share-Erweiterung installiert, neu geladen und gewartet haben, bis die Installation von Abhängigkeiten beendet ist, sollten Sie sich nun anmelden, damit andere Projektmitarbeiter wissen, wer Sie sind. Weitere Informationen finden Sie unter [Anmelden](#sign-in).
 
@@ -258,11 +256,11 @@ Die einfachste Möglichkeit, einer Zusammenarbeitssitzung beizutreten, besteht d
     > [!NOTE]
     > **Starten Sie das Tool mindestens einmal**, nachdem Sie die Visual Studio Live Share-Erweiterung installiert haben, und warten Sie auf den Abschluss der Installation, bevor Sie die Seite für die Einladung öffnen oder erneut öffnen. Noch immer Probleme? Unter [Manuelles Beitreten](#join-manually) finden Sie weitere Informationen.
 
-3. **Zusammenarbeit**
+3. **Zusammenarbeiten**
 
     Das ist alles! Nach einigen Augenblicken wird die Verbindung hergestellt, und Sie können mit anderen Personen zusammenarbeiten.
 
-    Die Schaltfläche „Share“ (Freigeben) wird zudem in den Sitzungszustand geändert. Informationen zu [Sitzungszuständen](#session-states) finden Sie weiter unten.
+    Die Schaltfläche „Live Share“ wird zudem in den Sitzungszustand geändert. Informationen zu [Sitzungszuständen](#session-states) finden Sie weiter unten.
 
     Anschließend werden Sie automatisch zur Datei weitergeleitet, die der Gastgeber aktuell bearbeitet.
 
@@ -270,7 +268,7 @@ Die einfachste Möglichkeit, einer Zusammenarbeitssitzung beizutreten, besteht d
 
 Sie können einer Sitzung auch manuell, also ohne einen Webbrowser, beitreten. Dies kann in Situationen nützlich sein, in denen das Tool, das Sie verwenden möchten, bereits ausgeführt wird oder Sie ein anderes Tool als sonst üblich nutzen wollen. Auch bei Problemen mit Einladungslinks kann ein Beitritt ohne Webbrowser sinnvoll sein. Ein manueller Beitritt ist leicht mit den folgenden Schritten möglich:
 
-1. **Melden Sie sich an:**
+1. **Anmelden**
 
     Nachdem Sie die Live Share-Erweiterung installiert, neu geladen und gewartet haben, bis die Installation von Abhängigkeiten beendet ist, sollten Sie sich nun anmelden, damit andere Projektmitarbeiter wissen, wer Sie sind. Weitere Informationen finden Sie unter [Anmelden](#sign-in).
 
@@ -288,7 +286,7 @@ Sie können einer Sitzung auch manuell, also ohne einen Webbrowser, beitreten. D
 
     Das ist alles! Nach einigen Augenblicken sollte eine Verbindung mit der Zusammenarbeitssitzung hergestellt werden.
 
-    Die Schaltfläche „Share“ (Freigeben) wird zudem in den Sitzungszustand geändert. Informationen zu [Sitzungszuständen](#session-states) finden Sie weiter unten.
+    Die Schaltfläche „Live Share“ wird zudem in den Sitzungszustand geändert. Informationen zu [Sitzungszuständen](#session-states) finden Sie weiter unten.
 
     Anschließend werden Sie automatisch zur Datei weitergeleitet, die der Gastgeber aktuell bearbeitet.
 
@@ -402,7 +400,7 @@ Mit dem Feature für gemeinsames Debuggen steht in Visual Studio Live Share ein 
 
 > **Sicherheitstipp:** Da alle Teilnehmer zu Dateien navigieren und diese bearbeiten können, haben Sie als Gastgeber die Möglichkeit, mit einer VSLS.JSON-Datei den Zugriff auf Dateien innerhalb eines Projekts einzuschränken. Beachten Sie außerdem, dass Teilnehmer beim Zugriff über eine Konsole oder REPL Befehle auf Ihrem Computer ausführen können. Sie sollten also nur gemeinsam mit Personen debuggen, denen Sie vertrauen. Wenn Sie Gast sind, sollten Sie berücksichtigen, dass Ihnen aufgrund dieser Einstellungen Debugergebnisse möglicherweise nicht angezeigt werden, wenn in Dateien mit Zugriffsbeschränkungen Anweisungen schrittweise ausgeführt werden. Die Details dazu finden Sie unter [Steuern von Dateizugriff und Sichtbarkeit](../reference/security.md#controlling-file-access-and-visibility).
 
-Die Nutzung ist unkompliziert.
+Die Verwendung ist einfach:
 
 1. Stellen Sie sicher, dass beim Gastgeber und beim Gast die richtige Erweiterung für das Debuggen installiert ist. (Technisch gesehen ist es nicht immer notwendig, aber im Allgemeinen hilfreich.)
 
@@ -499,7 +497,7 @@ Als Gastgeber können Sie ein Terminal freigeben, indem Sie die benutzerdefinier
 
 ![Terminal freigeben in Visual Studio Code](../media/vscode-share-terminal-viewlet.png)<br />
 
-Nun können Sie aus dem Menü ein Terminal mit Leseberechtigungen oder mit Lese-/Schreibberechtigungen auswählen. Im letztgenannten Fall kann jede Person einschließlich des Gastgebers etwas im Terminal eingeben. Dadurch können unerwünschte Gastaktionen leicht unterbunden werden. **Die Lese- und Schreibberechtigungen sollten Sie aus Sicherheitsgründen ausschließlich Gästen bereitstellen, die darauf angewiesen sind**. Terminals mit Leseberechtigungen sollten Sie in Szenarios einsetzen, in denen Gäste nur die Ausgabe der von Ihnen ausgeführten Befehle sehen dürfen.
+Nun können Sie aus dem Menü ein Terminal mit Leseberechtigungen oder mit Lese-/Schreibberechtigungen auswählen. Im zweiten Fall kann jede Person einschließlich des Gastgebers Befehle im Terminal eingeben. Dadurch können unerwünschte Gastaktionen leicht unterbunden werden. **Die Lese- und Schreibberechtigungen sollten Sie aus Sicherheitsgründen ausschließlich Gästen bereitstellen, die darauf angewiesen sind**. Terminals mit Leseberechtigungen sollten Sie in Szenarios einsetzen, in denen Gäste nur die Ausgabe der von Ihnen ausgeführten Befehle sehen dürfen.
 
 > [!NOTE]
 > Wenn sich die Zusammenarbeitssitzung im schreibgeschützten Modus befindet, können nur Terminals, für die Leseberechtigungen vorliegen, vom Gastgeber freigegeben werden.
@@ -538,8 +536,8 @@ Aktuell treten bei Verwendung der Gastfeatures einige Probleme auf. Zusammenarbe
 
 - [Sprach- und Plattformunterstützung](../reference/platform-support.md)
 - [Unterstützung für Erweiterung](../reference/extensions.md)
-- [Schwerwiegende Fehler, Featurevorschläge und Einschränkungen](https://aka.ms/vsls-issues)
-- [Featurevorschläge und Einschränkungen](https://aka.ms/vsls-feature-requests)
+- [Schwerwiegende Fehler, Featureanforderungen und Einschränkungen](https://aka.ms/vsls-issues)
+- [Alle Featureanforderungen und Einschränkungen](https://aka.ms/vsls-feature-requests)
 - [Problembehandlung](../troubleshooting.md)
 
 ## <a name="next-steps"></a>Nächste Schritte
@@ -548,7 +546,7 @@ Wenn Sie weitere Informationen benötigen, sehen Sie sich diese zusätzlichen Ar
 
 - [Schnellstart: Freigeben Ihres ersten Projekts](../quickstart/share.md)
 - [Schnellstart: Beitreten zu Ihrer ersten Sitzung](../quickstart/share.md)
-- [Vorgehensweise: Zusammenarbeiten mithilfe von Visual Studio](vs.md)
+- [Vorgehensweise: Zusammenarbeiten in Visual Studio](vs.md)
 - [Anforderungen an die Konnektivität für Live Share](../reference/connectivity.md)
 - [Sicherheitsfeatures von Live Share](../reference/security.md)
 - [Details zur Linux-Installation](../reference/linux.md)
