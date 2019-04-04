@@ -5,20 +5,18 @@ ms.custom: ''
 ms.date: 03/22/2018
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- liveshare
 ms.topic: quickstart
 author: chuxel
 ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 3596b25dc0d08962d7813f52549dbe6fef4f00a0
-ms.sourcegitcommit: 4f733c9053848f26da03d47050bcb734f6c98b31
+ms.openlocfilehash: b25158970f325bbc55618909315a8ed09d6f50a8
+ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57255846"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58853611"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -27,8 +25,6 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 -->
 
 # <a name="quickstart-share-your-first-project"></a>Schnellstart: Freigeben Ihres ersten Projekts
-
-> **Hinweis: Visual Studio Live Share ist derzeit als Vorschauversion verfügbar. Benutzeroberfläche und Features sind nicht endgültig.**
 
 Willkommen bei Visual Studio Live Share! Live Share ermöglicht Ihnen gemeinsames Bearbeiten und Debuggen mit anderen in Echtzeit – unabhängig von Ihren verwendeten Programmiersprachen oder erstellten App-Typen. Sie können Ihr aktuelles Projekt sofort und sicher freigeben und anschließend nach Bedarf Debugsitzungen, Terminalinstanzen, Localhost-Web-Apps, Sprachanrufe und vieles mehr freigeben!
 
@@ -47,31 +43,31 @@ Die Installation der Erweiterung ist einfach. Führen Sie folgende Schritte aus:
 <tr>
     <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="../media/vs-code.svg" width="128px" alt="Visual Studio Code logo"/></td>
     <td style="border:none;">
-        <strong>Visual Studio Code (1.22.0+)</strong><br />
-        1. Installieren Sie <a href="https://code.visualstudio.com/">Visual Studio Code</a> für Windows (7, 8.1 oder 10), macOS <b>(Sierra+)</b>, 64-Bit-Linux <b> (<a href="../use/vscode.md#installation">Details</a>)</b><br />
+        <strong>Visual Studio Code (1.22.0 und höher)</strong><br />
+        1. Installieren Sie <a href="https://code.visualstudio.com/">Visual Studio Code</a> für Windows (7, 8.1 oder 10), macOS <b>(Sierra und höher)</b>, 64-Bit-Linux <b>(<a href="../use/vscode.md#installation">Details</a>)</b>.<br />
         2. Laden Sie die Visual Studio Live Share-Erweiterung aus dem Marketplace herunter, und installieren Sie sie. <br />
-        3. Laden Sie sie erneut, und warten Sie, dass die Abhängigkeiten heruntergeladen und installiert werden (siehe die Statusleiste).<br />
+        3. Laden Sie sie erneut, und warten Sie, dass die Abhängigkeiten heruntergeladen und installiert werden (beachten Sie die Statusleiste).<br />
         4. <strong>Linux</strong>: Wenn Sie aufgefordert werden, <a href="../reference/linux.md#install-linux-prerequisites">Bibliotheken zu installieren</a>, klicken Sie auf „Installieren“, geben Sie das Kennwort ein, und starten Sie abschließend VS Code erneut.<br />
         <a href="https://aka.ms/vsls-dl/vscode"><img src="../media/download.png" alt="Download button"></a>
     </td>
 </tr>
 <tr style="border:none;">
-    <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="../media/vs-ide.svg" width="128px" alt="Visual Studio logo" /></td>
-    <td style="border:none;">
-        <strong>Visual Studio 2017 15.6 oder höher</strong><br />
-        1. Installieren Sie die neueste Version von <a href="https://visualstudio.microsoft.com/vs/">Visual Studio 2017</a> (15.6+) unter Windows (7, 8.1 oder 10).<br/>
+    <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="../media/vs-ide-2019.svg" width="128px" alt="Visual Studio 2019 logo" /></td>
+    <td  style="border:none;">
+        <strong>Visual Studio 2019 </strong><br />
+        1. Installieren Sie <a href="https://visualstudio.microsoft.com/downloads/">Visual Studio 2019</a>.<br/>
         2. Installieren Sie eine <a href="../reference/platform-support.md">unterstützte Workload</a>. (z.B. ASP.NET, .NET Core, C++ und/oder Node.js)<br />
-        3. Laden Sie die Visual Studio Live Share-Erweiterung aus dem Marketplace herunter, und installieren Sie sie. <br />
-        <a href="https://aka.ms/vsls-dl/vs"><img style="padding: 0; spacing: 0;" src="../media/download.png" alt="Download button"></a><br />
+        3. Visual Studio Live Share wird mit diesen Workloads standardmäßig installiert. <br />
     </td>
 </tr>
 <tr style="border:none;">
-    <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="../media/vs-ide-preview.svg" width="128px" alt="Visual Studio Preview logo" /></td>
+    <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="../media/vs-ide-2017.svg" width="128px" alt="Visual Studio 2017 logo" /></td>
     <td  style="border:none;">
-        <strong>Visual Studio 2019</strong><br />
-        1. Installieren Sie die neueste Vorschauversion von <a href="https://aka.ms/vs-preview">Visual Studio 2019</a>.<br/>
+        <strong>Visual Studio 2017 15.6 oder höher</strong><br />
+        1. Installieren Sie die neueste Version von <a href="https://visualstudio.microsoft.com/vs/older-downloads/">Visual Studio 2017</a> (15.6 oder höher) unter Windows (7, 8.1 oder 10).<br/>
         2. Installieren Sie eine <a href="../reference/platform-support.md">unterstützte Workload</a>. (z.B. ASP.NET, .NET Core, C++ und/oder Node.js)<br />
-        3. Visual Studio Live Share wird mit diesen Workloads standardmäßig installiert. <br />
+        3. Laden Sie die Visual Studio Live Share-Erweiterung aus dem Marketplace herunter, und installieren Sie sie. <br />
+        <a href="https://aka.ms/vsls-dl/vs"><img style="padding: 0; spacing: 0;" src="../media/download.png" alt="Download button" ></a><br />
     </td>
 </tr>
 </table>
@@ -197,7 +193,7 @@ Wenn Sie weitere Informationen benötigen, sehen Sie sich diese zusätzlichen Ar
 
 - [Schnellstart: Beitreten zu Ihrer ersten Zusammenarbeitssitzung](join.md)
 - [Vorgehensweise: Zusammenarbeiten mithilfe von Visual Studio Code](../use/vscode.md)
-- [Vorgehensweise: Zusammenarbeiten mithilfe von Visual Studio](../use/vs.md)
+- [Vorgehensweise: Zusammenarbeiten in Visual Studio](../use/vs.md)
 
 Referenz
 
