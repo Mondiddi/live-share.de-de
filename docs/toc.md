@@ -33,9 +33,10 @@
 ## [Unterstützung für Erweiterung](reference/extensions.md)
 ## [Gängige Anwendungsfälle](reference/use-cases.md)
 ## [Details zur Linux-Installation](reference/linux.md)
-## [Anmerkungen zu dieser Version](https://aka.ms/vsls-releases)
+## [Insider](reference/insiders.md)
+## [Versionshinweise](https://aka.ms/vsls-releases)
 # Ressourcen
 ## [Problembehandlung](troubleshooting.md)
-## [Feedback geben](support.md)
+## [Feedback bereitstellen](support.md)
 ## [FAQ](faq.md)
 ## [Benutzerprofil](user-profile.md)
