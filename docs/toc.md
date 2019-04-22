@@ -34,9 +34,9 @@
 ## [Gängige Anwendungsfälle](reference/use-cases.md)
 ## [Details zur Linux-Installation](reference/linux.md)
 ## [Insider](reference/insiders.md)
-## [Versionshinweise](https://aka.ms/vsls-releases)
+## [Anmerkungen zu dieser Version](https://aka.ms/vsls-releases)
 # Ressourcen
 ## [Problembehandlung](troubleshooting.md)
-## [Feedback bereitstellen](support.md)
+## [Feedback geben](support.md)
 ## [FAQ](faq.md)
 ## [Benutzerprofil](user-profile.md)

@@ -15,7 +15,7 @@ ms.openlocfilehash: 1b6ecafc933c6521f6c21ec0dcd38c25e889a0e2
 ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58853572"
 ---
 <!--
@@ -146,10 +146,10 @@ Darüber hinaus ist die realen Entwicklung mehr als nur Code schreiben. Da Live 
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Sprach-und plattformunterstützung](platform-support.md)
+- [Sprach- und Plattformunterstützung](platform-support.md)
 - [Anforderungen an die Konnektivität für Live Share](connectivity.md)
 - [Sicherheitsfeatures von Live Share](security.md)
-- [Alle große Fehler, Features und Einschränkungen](https://aka.ms/vsls-issues)
-- [Alle Anfragen zu Features und Einschränkungen](https://aka.ms/vsls-feature-requests)
+- [Schwerwiegende Fehler, Featurevorschläge und Einschränkungen](https://aka.ms/vsls-issues)
+- [Featurevorschläge und Einschränkungen](https://aka.ms/vsls-feature-requests)
 
 Gibt es Probleme? Lesen Sie [Troubleshooting](../troubleshooting.md) oder [Feedback geben](../support.md).

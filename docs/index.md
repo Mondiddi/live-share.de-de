@@ -15,7 +15,7 @@ ms.openlocfilehash: 5f67086e9040a477e082cbd3ef27a1789c6406c5
 ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58853585"
 ---
 <!--
@@ -49,10 +49,10 @@ Danach ist das Herunterladen und Installieren der Visual Studio Live Share-Erwei
 <tr>
     <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="media/vs-code.svg" width="128px" alt="Visual Studio Code logo"/></td>
     <td style="border:none;">
-        <strong>Visual Studio Code (1.22.0 und höher)</strong><br />
-        1. Installieren Sie <a href="https://code.visualstudio.com/">Visual Studio Code</a> für Windows (7, 8.1 oder 10), macOS <b>(Sierra und höher)</b>, 64-Bit-Linux <b>(<a href="use/vscode.md#installation">Details</a>)</b>.<br />
+        <strong>Visual Studio Code (1.22.0+)</strong><br />
+        1. Installieren Sie <a href="https://code.visualstudio.com/">Visual Studio Code</a> für Windows (7, 8.1 oder 10), macOS <b>(Sierra+)</b>, 64-Bit-Linux <b> (<a href="use/vscode.md#installation">Details</a>)</b><br />
         2. Laden Sie die Visual Studio Live Share-Erweiterung aus dem Marketplace herunter, und installieren Sie sie. <br />
-        3. Laden Sie sie erneut, und warten Sie, dass die Abhängigkeiten heruntergeladen und installiert werden (beachten Sie die Statusleiste).<br />
+        3. Laden Sie sie erneut, und warten Sie, dass die Abhängigkeiten heruntergeladen und installiert werden (siehe die Statusleiste).<br />
         4. <strong>Linux</strong>: Wenn Sie aufgefordert werden, <a href="reference/linux.md#install-linux-prerequisites">Bibliotheken zu installieren</a>, klicken Sie auf „Installieren“, geben Sie das Kennwort ein, und starten Sie abschließend VS Code erneut.<br />
         <a href="https://aka.ms/vsls-dl/vscode"><img src="media/download.png" alt="Download button"></a>
     </td>
@@ -60,8 +60,8 @@ Danach ist das Herunterladen und Installieren der Visual Studio Live Share-Erwei
 <tr style="border:none;">
     <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="media/vs-ide-2019.svg" width="128px" alt="Visual Studio 2019 logo" /></td>
     <td  style="border:none;">
-        <strong>Visual Studio 2019 </strong><br />
-        1. Installieren Sie <a href="https://visualstudio.microsoft.com/downloads/">Visual Studio 2019</a>.<br/>
+        <strong>Visual Studio 2019</strong><br />
+        1.Installieren Sie <a href="https://visualstudio.microsoft.com/downloads/">Visual Studio 2019</a>.<br/>
         2. Installieren Sie eine <a href="reference/platform-support.md">unterstützte Workload</a>. (z.B. ASP.NET, .NET Core, C++ und/oder Node.js)<br />
         3. Visual Studio Live Share wird mit diesen Workloads standardmäßig installiert. <br />
     </td>
@@ -70,7 +70,7 @@ Danach ist das Herunterladen und Installieren der Visual Studio Live Share-Erwei
     <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="media/vs-ide-2017.svg" width="128px" alt="Visual Studio 2017 logo" /></td>
     <td  style="border:none;">
         <strong>Visual Studio 2017 15.6 oder höher</strong><br />
-        1. Installieren Sie die neueste Version von <a href="https://visualstudio.microsoft.com/vs/older-downloads/">Visual Studio 2017</a> (15.6 oder höher) unter Windows (7, 8.1 oder 10).<br/>
+        1. Installieren Sie die neueste Version von <a href="https://visualstudio.microsoft.com/vs/older-downloads/">Visual Studio 2017</a> (15.6+) unter Windows (7, 8.1 oder 10).<br/>
         2. Installieren Sie eine <a href="reference/platform-support.md">unterstützte Workload</a>. (z.B. ASP.NET, .NET Core, C++ und/oder Node.js)<br />
         3. Laden Sie die Visual Studio Live Share-Erweiterung aus dem Marketplace herunter, und installieren Sie sie. <br />
         <a href="https://aka.ms/vsls-dl/vs"><img style="padding: 0; spacing: 0;" src="media/download.png" alt="Download button" ></a><br />
@@ -164,7 +164,7 @@ Schnellstarts
 Gewusst wie
 
 - [Zusammenarbeiten mithilfe von Visual Studio Code](use/vscode.md)
-- [Zusammenarbeiten in Visual Studio](use/vs.md)
+- [Zusammenarbeiten mithilfe von Visual Studio](use/vs.md)
 
 Referenz
 
@@ -172,6 +172,6 @@ Referenz
 - [Sicherheitsfeatures von Live Share](reference/security.md)
 - [Sprach- und Plattformunterstützung](reference/platform-support.md)
 - [Unterstützung für Erweiterung](reference/extensions.md)
-- [Versionshinweise](https://aka.ms/vsls-releases)
+- [Anmerkungen zu dieser Version](https://aka.ms/vsls-releases)
 
 Gibt es Probleme? Lesen Sie [Troubleshooting](troubleshooting.md) oder [Feedback geben](support.md).

@@ -15,7 +15,7 @@ ms.openlocfilehash: 1b68dc90f4bac5e21c04c555ab2d8fc7f59aad55
 ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58853598"
 ---
 <!--
@@ -98,10 +98,10 @@ Sie können den Satz von bekannten Problemen und Roadmap für die Elemente anzei
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Sprach-und plattformunterstützung](platform-support.md)
+- [Sprach- und Plattformunterstützung](platform-support.md)
 - [Anforderungen an die Konnektivität für Live Share](reference/connectivity.md)
 - [Sicherheitsfeatures von Live Share](reference/security.md)
-- [Alle große Fehler, Features und Einschränkungen](https://aka.ms/vsls-issues)
-- [Alle Anfragen zu Features und Einschränkungen](https://aka.ms/vsls-feature-requests)
+- [Schwerwiegende Fehler, Featurevorschläge und Einschränkungen](https://aka.ms/vsls-issues)
+- [Featurevorschläge und Einschränkungen](https://aka.ms/vsls-feature-requests)
 
 Gibt es Probleme? Lesen Sie [Troubleshooting](troubleshooting.md) oder [Feedback geben](support.md).
