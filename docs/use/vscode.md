@@ -15,7 +15,7 @@ ms.openlocfilehash: ed96ba572a58b8d3bfda7b634f1052a1b4e73051
 ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58853637"
 ---
 <!--
@@ -42,12 +42,12 @@ Bevor Sie beginnen, müssen Sie eine Version von Visual Studio Code installiert 
 - **Windows:** 7, 8.1 oder 10
 
 - **macOS:** Nur Sierra (10.12) und höher.
-    - _El Capitan (10.11) und niedriger werden derzeit aufgrund der [Anforderungen von .NET Core 2.0](https://go.microsoft.com/fwlink/?linkid=872315) nicht unterstützt._
+    - _El Capitan (10.11) und niedriger werden derzeit aufgrund der Anforderungen von [.NET Core 2.0](https://go.microsoft.com/fwlink/?linkid=872315) nicht unterstützt._
 
 - **Linux**: 64-Bit-Version von Ubuntu Desktop 16.04 und höher, Fedora Workstation 27 und höher, CentOS 7
 
     - Für Live Share sind einige [Linux-Voraussetzungen](#linux-install-steps) erforderlich, zu deren Installation Sie möglicherweise aufgefordert werden.
-    - _Aufgrund der [Anforderungen von .NET Core 2.0](https://go.microsoft.com/fwlink/?linkid=872314) werden 32-Bit-Versionen von Linux nicht unterstützt._
+    - _Aufgrund der Anforderungen von [.NET Core 2.0](https://go.microsoft.com/fwlink/?linkid=872314) werden 32-Bit-Versionen von Linux nicht unterstützt._
     - Zudem wird ARM derzeit nicht unterstützt.
     - Weitere Informationen zur Verwendung von Downstreams und anderen Distributionen finden Sie im Artikel [Linux install details (Details zur Linux-Installation)](../reference/linux.md).
 
@@ -65,7 +65,7 @@ Danach ist das Herunterladen und Installieren der Visual Studio Live Share-Erwei
 
 Durch das Herunterladen und die Nutzung von Visual Studio Live Share stimmen Sie den [Lizenzbedingungen](https://aka.ms/vsls-license) und den [Datenschutzbestimmungen](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx) zu. Wenn Probleme auftreten, lesen Sie [Troubleshooting](../troubleshooting.md).
 
-[![DDownload](../media/download.png)](https://aka.ms/vsls-dl/vscode)
+[![Herunterladen](../media/download.png)](https://aka.ms/vsls-dl/vscode)
 
 ### <a name="linux-install-steps"></a>Schritte zur Linux-Installation
 
@@ -158,11 +158,11 @@ Da diese Liste unter Umständen sehr lang ist, ist es häufig einfacher, ein ber
 
 Führen Sie nach dem Herunterladen und Installieren von Visual Studio Live Share die folgenden Schritte aus, um eine Zusammenarbeitssitzung zu starten und einen Kollegen einzuladen.
 
-1. **Anmelden**
+1. **Melden Sie sich an:**
 
     Nachdem Sie die Live Share-Erweiterung installiert, neu geladen und gewartet haben, bis die Installation von Abhängigkeiten beendet ist, sollten Sie sich nun anmelden, damit andere Projektmitarbeiter wissen, wer Sie sind. Weitere Informationen finden Sie unter [Anmelden](#sign-in).
 
-2. **Öffnen eines Ordners**
+2. **Öffnen Sie einen Ordner:**
 
     Öffnen Sie wie gewohnt einen Ordner, ein Projekt oder eine Projektmappe, die Sie für Gäste freigeben möchten.
 
@@ -170,7 +170,7 @@ Führen Sie nach dem Herunterladen und Installieren von Visual Studio Live Share
 
     In Live Share werden Dateien/Ordner, auf die in GITIGNORE-Dateien in Ihren freigegebenen Ordnern verwiesen wird, vor Gästen standardmäßig **ausgeblendet**. Durch **Ausblenden** einer Datei wird verhindert, dass sie in der Dateistruktur des Gasts angezeigt wird. Durch das **Ausschließen** einer Datei wird eine striktere Regel angewendet. Sie verhindert, dass Live Share die Datei für den Gast öffnet, wenn diese z.B. die Aktion „Gehe zu Definition“ durchführen, oder wenn Sie eine Datei beim Debuggen oder während Ihnen ein anderer Teilnehmer folgt schrittweise ausführen. Wenn Sie unterschiedliche Dateien ausblenden/ausschließen möchten, kann eine **VSLS.JSON**-Datei Ihrem Projekt mit diesen Einstellungen hinzugefügt werden. Die Details dazu finden Sie unter [Steuern von Dateizugriff und Sichtbarkeit](../reference/security.md#controlling-file-access-and-visibility).
 
-4. **Eine Zusammenarbeitssitzung starten**
+4. **Starten Sie eine Zusammenarbeitssitzung:**
 
     **Klicken** Sie nun auf der Statusleiste auf „Live Share“, oder drücken Sie **STRG+UMSCHALT+P bzw. CMD+UMSCHALT+P**, und wählen Sie den Befehl „Live Share: Start a collaboration session (Share)" (Live Share: Zusammenarbeitssitzung starten (Freigeben)) aus.
 
@@ -237,7 +237,7 @@ Nach dem Herunterladen und Installieren von Visual Studio Live Share können Gä
 
 Die einfachste Möglichkeit, einer Zusammenarbeitssitzung beizutreten, besteht darin, einen Link in einem Webbrowser zu öffnen. Gehen Sie dazu folgendermaßen vor:
 
-1. **Anmelden**
+1. **Melden Sie sich an:**
 
     Nachdem Sie die Live Share-Erweiterung installiert, neu geladen und gewartet haben, bis die Installation von Abhängigkeiten beendet ist, sollten Sie sich nun anmelden, damit andere Projektmitarbeiter wissen, wer Sie sind. Weitere Informationen finden Sie unter [Anmelden](#sign-in).
 
@@ -256,7 +256,7 @@ Die einfachste Möglichkeit, einer Zusammenarbeitssitzung beizutreten, besteht d
     > [!NOTE]
     > **Starten Sie das Tool mindestens einmal**, nachdem Sie die Visual Studio Live Share-Erweiterung installiert haben, und warten Sie auf den Abschluss der Installation, bevor Sie die Seite für die Einladung öffnen oder erneut öffnen. Noch immer Probleme? Unter [Manuelles Beitreten](#join-manually) finden Sie weitere Informationen.
 
-3. **Zusammenarbeiten**
+3. **Zusammenarbeit**
 
     Das ist alles! Nach einigen Augenblicken wird die Verbindung hergestellt, und Sie können mit anderen Personen zusammenarbeiten.
 
@@ -268,7 +268,7 @@ Die einfachste Möglichkeit, einer Zusammenarbeitssitzung beizutreten, besteht d
 
 Sie können einer Sitzung auch manuell, also ohne einen Webbrowser, beitreten. Dies kann in Situationen nützlich sein, in denen das Tool, das Sie verwenden möchten, bereits ausgeführt wird oder Sie ein anderes Tool als sonst üblich nutzen wollen. Auch bei Problemen mit Einladungslinks kann ein Beitritt ohne Webbrowser sinnvoll sein. Ein manueller Beitritt ist leicht mit den folgenden Schritten möglich:
 
-1. **Anmelden**
+1. **Melden Sie sich an:**
 
     Nachdem Sie die Live Share-Erweiterung installiert, neu geladen und gewartet haben, bis die Installation von Abhängigkeiten beendet ist, sollten Sie sich nun anmelden, damit andere Projektmitarbeiter wissen, wer Sie sind. Weitere Informationen finden Sie unter [Anmelden](#sign-in).
 
@@ -536,8 +536,8 @@ Aktuell treten bei Verwendung der Gastfeatures einige Probleme auf. Zusammenarbe
 
 - [Sprach- und Plattformunterstützung](../reference/platform-support.md)
 - [Unterstützung für Erweiterung](../reference/extensions.md)
-- [Schwerwiegende Fehler, Featureanforderungen und Einschränkungen](https://aka.ms/vsls-issues)
-- [Alle Featureanforderungen und Einschränkungen](https://aka.ms/vsls-feature-requests)
+- [Schwerwiegende Fehler, Featurevorschläge und Einschränkungen](https://aka.ms/vsls-issues)
+- [Featurevorschläge und Einschränkungen](https://aka.ms/vsls-feature-requests)
 - [Problembehandlung](../troubleshooting.md)
 
 ## <a name="next-steps"></a>Nächste Schritte
@@ -546,7 +546,7 @@ Wenn Sie weitere Informationen benötigen, sehen Sie sich diese zusätzlichen Ar
 
 - [Schnellstart: Freigeben Ihres ersten Projekts](../quickstart/share.md)
 - [Schnellstart: Beitreten zu Ihrer ersten Sitzung](../quickstart/share.md)
-- [Vorgehensweise: Zusammenarbeiten in Visual Studio](vs.md)
+- [Vorgehensweise: Zusammenarbeiten mithilfe von Visual Studio](vs.md)
 - [Anforderungen an die Konnektivität für Live Share](../reference/connectivity.md)
 - [Sicherheitsfeatures von Live Share](../reference/security.md)
 - [Details zur Linux-Installation](../reference/linux.md)

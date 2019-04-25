@@ -15,7 +15,7 @@ ms.openlocfilehash: 55eb4b0a5e819b00754d75e4682dd1aa97bbf576
 ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58853624"
 ---
 <!--
@@ -53,7 +53,7 @@ Für Visual Studio 2017:
 
 Durch das Herunterladen und die Nutzung von Visual Studio Live Share stimmen Sie den [Lizenzbedingungen](https://aka.ms/vsls-license) und den [Datenschutzbestimmungen](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx) zu. Wenn Probleme auftreten, lesen Sie [Troubleshooting](../troubleshooting.md).
 
-[![DDownload](../media/download.png)](https://aka.ms/vsls-dl/vs)
+[![Herunterladen](../media/download.png)](https://aka.ms/vsls-dl/vs)
 
 ## <a name="sign-in"></a>Anmelden
 
@@ -75,7 +75,7 @@ Falls Probleme auftreten, finden Sie in der [Problembehandlung](../troubleshooti
 
 Führen Sie nach dem Herunterladen und Installieren von Visual Studio Live Share die folgenden Schritte aus, um eine Zusammenarbeitssitzung zu starten und einen Kollegen einzuladen.
 
-1. **Anmelden**
+1. **Melden Sie sich an:**
 
     Melden Sie sich nach der Installation der Live Share-Erweiterung an, damit andere Projektmitarbeiter wissen, wer Sie sind. Standardmäßig wird in Visual Studio Ihr Personalisierungskonto verwendet. Sie können diesen Schritt also eventuell überspringen.
 
@@ -89,7 +89,7 @@ Führen Sie nach dem Herunterladen und Installieren von Visual Studio Live Share
 
     In Live Share werden Dateien und Ordner, auf die in GITIGNORE-Dateien in Ihrem Projekt verwiesen wird, standardmäßig für Gäste **ausgeblendet**. Das **Ausblenden** einer Datei verhindert, dass sie in der Dateistruktur angezeigt wird. Durch das **Ausschließen** wird eine Übertragung unterbunden, was auch für Vorgänge wie beispielsweise Debuggen gilt. Wenn Sie unterschiedliche Dateien ausblenden/ausschließen möchten, kann eine **VSLS.JSON**-Datei Ihrem Projekt mit diesen Einstellungen hinzugefügt werden. Die Details dazu finden Sie unter [Steuern von Dateizugriff und Sichtbarkeit](../reference/security.md#controlling-file-access-and-visibility).
 
-4. **Eine Zusammenarbeitssitzung starten**
+4. **Starten Sie eine Zusammenarbeitssitzung:**
 
     Klicken Sie nun einfach auf die Schaltfläche „Live Share“ oben rechts.
 
@@ -152,7 +152,7 @@ Nach dem Herunterladen und Installieren von Visual Studio Live Share können Gä
 
 Die einfachste Möglichkeit, einer Zusammenarbeitssitzung beizutreten, besteht darin, einen Link in einem Webbrowser zu öffnen. Gehen Sie dazu folgendermaßen vor:
 
-1. **Anmelden**
+1. **Melden Sie sich an:**
 
     Melden Sie sich nach der Installation der Live Share-Erweiterung an, damit andere Projektmitarbeiter wissen, wer Sie sind. Standardmäßig wird in Visual Studio Ihr Personalisierungskonto verwendet. Sie können diesen Schritt also eventuell überspringen.
 
@@ -173,7 +173,7 @@ Die einfachste Möglichkeit, einer Zusammenarbeitssitzung beizutreten, besteht d
     > [!NOTE]
     > Noch immer Probleme? Unter [Manuelles Beitreten](#join-manually) finden Sie weitere Informationen.
 
-3. **Zusammenarbeiten**
+3. **Zusammenarbeiten:**
 
     Damit haben Sie alle erforderlichen Schritte abgeschlossen. Nach einigen Augenblicken wird die Verbindung hergestellt, und Sie können mit anderen Personen zusammenarbeiten.
 
@@ -185,7 +185,7 @@ Die einfachste Möglichkeit, einer Zusammenarbeitssitzung beizutreten, besteht d
 
 Sie können einer Sitzung auch manuell, also ohne einen Webbrowser, beitreten. Dies kann in Situationen nützlich sein, in denen das Tool, das Sie verwenden möchten, bereits ausgeführt wird oder Sie ein anderes Tool als sonst üblich nutzen wollen. Auch bei Problemen mit Einladungslinks kann ein Beitritt ohne Webbrowser sinnvoll sein. Ein manueller Beitritt ist leicht mit den folgenden Schritten möglich:
 
-1. **Anmelden**
+1. **Melden Sie sich an:**
 
     Melden Sie sich nach der Installation der Live Share-Erweiterung an, damit andere Projektmitarbeiter wissen, wer Sie sind. Standardmäßig wird in Visual Studio Ihr Personalisierungskonto verwendet. Sie können diesen Schritt also eventuell überspringen.
 
@@ -201,7 +201,7 @@ Sie können einer Sitzung auch manuell, also ohne einen Webbrowser, beitreten. D
 
     Fügen Sie die Einladungs-URL ein, die Sie erhalten haben, und bestätigen Sie diese.
 
-4. **Arbeiten Sie zusammen!**
+4. **Zusammenarbeiten:**
 
     Das ist alles! Nach einigen Augenblicken sollte eine Verbindung mit der Zusammenarbeitssitzung hergestellt werden.
 
@@ -430,8 +430,8 @@ Aktuell treten bei Verwendung der Gastfeatures einige Probleme auf. Zusammenarbe
 
 - [Sprach- und Plattformunterstützung](../reference/platform-support.md)
 - [Unterstützung für Erweiterung](../reference/extensions.md)
-- [Schwerwiegende Fehler, Featureanforderungen und Einschränkungen](https://aka.ms/vsls-issues)
-- [Alle Featureanforderungen und Einschränkungen](https://aka.ms/vsls-feature-requests)
+- [Schwerwiegende Fehler, Featurevorschläge und Einschränkungen](https://aka.ms/vsls-issues)
+- [Featurevorschläge und Einschränkungen](https://aka.ms/vsls-feature-requests)
 
 ## <a name="next-steps"></a>Nächste Schritte
 
