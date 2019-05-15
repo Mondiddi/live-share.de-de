@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: b25158970f325bbc55618909315a8ed09d6f50a8
-ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
+ms.openlocfilehash: 339fb176eed78ece2117ba645a84fafe4f4247f4
+ms.sourcegitcommit: cab8df5c29f9d91e702ef514def53944ee7701ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58853611"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "64987214"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -56,7 +56,7 @@ Die Installation der Erweiterung ist einfach. Führen Sie folgende Schritte aus:
     <td  style="border:none;">
         <strong>Visual Studio 2019</strong><br />
         1.Installieren Sie <a href="https://visualstudio.microsoft.com/downloads/">Visual Studio 2019</a>.<br/>
-        2. Installieren Sie eine <a href="../reference/platform-support.md">unterstützte Workload</a>. (z.B. ASP.NET, .NET Core, C++ und/oder Node.js)<br />
+        2. Installieren Sie eine <a href="../reference/platform-support.md">unterstützte Workload</a>. (z.B. ASP.NET, .NET Core, C++, Python und/oder Node.js)<br />
         3. Visual Studio Live Share wird mit diesen Workloads standardmäßig installiert. <br />
     </td>
 </tr>
