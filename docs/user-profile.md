@@ -11,12 +11,12 @@ ms.author: joncart
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 38fb6fada1030bddac8f3437f19f0ae259f5626e
-ms.sourcegitcommit: 100fce9b9bbcd7e6f68d40659bd2760e9537de37
+ms.openlocfilehash: 1d3b4977745e33ba0ee1b599ea4257c4a49d970d
+ms.sourcegitcommit: bfa1020882095fcc7d31cd71cf1f2e601e3bea06
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58640028"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "66224693"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -28,8 +28,8 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 Wenn Sie mit Visual Studio Live Share authentifizieren, es wird ein Benutzerprofil erstellt, dadurch alle Teilnehmer können Sie mit zusammenarbeiten, um festzustellen, wer Sie sind (z. B. Ihre e-Mail-Adresse, ein Avatar). Zu jedem Zeitpunkt ist können Sie die Profilinformationen anzeigen, die Live Share in Ihrem Namen durch Navigieren zu einer der folgenden Seiten (abhängig vom verwendeten Identitätsanbieter) gespeichert ist:
 
-- [Microsoft Account / Azure Active Directory](https://insiders.liveshare.vsengsaas.visualstudio.com/auth/identity/microsoft/viewprofile)
-- [GitHub](https://insiders.liveshare.vsengsaas.visualstudio.com/auth/identity/github/viewprofile)
+- [Microsoft Account / Azure Active Directory](https://prod.liveshare.vsengsaas.visualstudio.com/auth/identity/microsoft/viewprofile)
+- [GitHub](https://prod.liveshare.vsengsaas.visualstudio.com/auth/identity/github/viewprofile)
 
 Die Seite, Sie werden aufgefordert, anmelden, um Ihre Identität überprüfen und angezeigt klicken Sie dann die unformatierte JSON-Ausgabe Ihres Benutzerprofils.
 
@@ -43,8 +43,8 @@ Wenn Visual Studio Live Share derzeit über ein Profil für die Identität, die 
 
 Wenn Sie Ihr Benutzerprofil entfernen möchten, können Sie den Link, mit der Bezeichnung klicken `Click here to get your data removed from our systems` auf die [Benutzerprofilseite](#user-profile). Alternativ können Sie besuchen die folgenden Seiten direkt (je nach den Identitätsanbieter, die, den Sie verwendet, wird):
 
-- [Microsoft Account / Azure Active Directory](https://insiders.liveshare.vsengsaas.visualstudio.com/auth/identity/microsoft/deleteme)
-- [GitHub](https://insiders.liveshare.vsengsaas.visualstudio.com/auth/identity/github/deleteme)
+- [Microsoft Account / Azure Active Directory](https://prod.liveshare.vsengsaas.visualstudio.com/auth/identity/microsoft/deleteme)
+- [GitHub](https://prod.liveshare.vsengsaas.visualstudio.com/auth/identity/github/deleteme)
 
 Anderenfalls wird Visual Studio Live Share automatisch Ihr Profil 30 Tage nach der letzten erfolgreichen Anmeldung löschen. In diesem Kontext bezieht sich ein "erfolgreichen Anmeldung bei" die folgende (abhängig von dem Tool, das Sie verwenden):
 

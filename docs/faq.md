@@ -11,12 +11,12 @@ ms.author: joncart
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 1b68dc90f4bac5e21c04c555ab2d8fc7f59aad55
-ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
+ms.openlocfilehash: 91ffc42c06e70839dbadbd2487cd02970ded3346
+ms.sourcegitcommit: bfa1020882095fcc7d31cd71cf1f2e601e3bea06
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58853598"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "66224709"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -87,11 +87,7 @@ Live-Freigabe geht einen Schritt weiter und ermöglicht es Ihnen, eine Debugsitz
 Unser Ziel ist zur Unterstützung der bunten Vielfalt an Sprachen und Plattformen, um sicherzustellen, dass wir umfassende Zusammenarbeit, unabhängig vom entwickelte Anwendung aktivieren können. Finden Sie unter den [Sprach- und plattformunterstützung](reference/platform-support.md) finden Sie Details dazu, was heute funktioniert.
 
 ## <a name="how-many-developers-can-join-a-collaboration-session"></a>Wie viele Entwickler können eine zusammenarbeitssitzung beitreten?
-Wir unterstützen derzeit 30 gleichzeitige-Gäste zusätzlich zu den Entwickler, die ("hosting") gemeinsam nutzen, wird ihr Projekt. Aktivieren wir standardmäßig bis zu 5 Gästen in einer Sitzung ein. 
-
-So aktivieren Sie die erhöhte Gast Grenzwert: 
-- **Visual Studio Code:** Add "liveshare.increasedGuestLimit":"true" to settings.json.
-- **VS:** Legen Sie Extras > Optionen > Live Share > höhere Gast-Grenzwert auf "True"
+Wir unterstützen derzeit 30 gleichzeitige-Gäste zusätzlich zu den Entwickler, die ("hosting") gemeinsam nutzen, wird ihr Projekt. 
 
 ## <a name="what-is-the-roadmap"></a>Wie sieht die Roadmap?
 Sie können den Satz von bekannten Problemen und Roadmap für die Elemente anzeigen [hier](https://aka.ms/vsls-issues). Wenn Sie alle Probleme, anstatt nur Feature-Anforderungen finden Sie unter möchten, finden Sie unter [hier](https://aka.ms/vsls-feature-requests). Wir empfehlen Ihnen, vorhandene Elemente abstimmen, Datei anfordern neuer Features und melden Sie sich die Fehlerberichte, um uns helfen, Form, die Richtung des Produkts für die Zukunft.
