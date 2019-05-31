@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: ed96ba572a58b8d3bfda7b634f1052a1b4e73051
-ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
+ms.openlocfilehash: bda0ca256af4a561724d96777e640eec1ca0f0fb
+ms.sourcegitcommit: bfa1020882095fcc7d31cd71cf1f2e601e3bea06
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58853637"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "66224722"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -77,9 +77,9 @@ Einige Distributionen von Linux enthalten nicht alle Bibliotheken, die für Live
 
 ![Popupbenachrichtigung mit der Meldung, dass erforderliche Komponenten für Linux fehlen](../media/vscode-linux-prereq-missing.png)
 
-Wenn Sie auf „Install“ (Installieren) klicken, wird ein Terminalfenster angezeigt, in dem Sie Ihr Administratorkennwort/sudo-Kennwort eingeben müssen, um die Installation fortzusetzen. Wenn diese erfolgreich ausgeführt wird, sollte die Einrichtung nach einem Neustart von Visual Studio Code abgeschlossen sein. Weitere Tipps und Problemumgehungen finden Sie im Abschnitt **[tips by distribution (Tipps nach Distribution)](../reference/linux.md#tips-by-distribution)**.
+Wenn Sie auf „Install“ (Installieren) klicken, wird ein Terminalfenster angezeigt, in dem Sie Ihr Administratorkennwort/sudo-Kennwort eingeben müssen, um die Installation fortzusetzen. Wenn diese erfolgreich ausgeführt wird, sollte die Einrichtung nach einem Neustart von Visual Studio Code abgeschlossen sein. Weitere Tipps und Problemumgehungen finden Sie im Abschnitt **[tips by distribution (Tipps nach Distribution)](../reference/linux.md#tips-by-distribution)** .
 
-Wenn eine Meldung angezeigt wird, dass das Skript Ihre Distribution nicht unterstützt, finden Sie von der Community zusammengestellte Informationen unter **[tips for community supported distributions (Tipps zu von der Community unterstützten Distributionen)](../reference/linux.md#tips-for-community-supported-distros)**.
+Wenn eine Meldung angezeigt wird, dass das Skript Ihre Distribution nicht unterstützt, finden Sie von der Community zusammengestellte Informationen unter **[tips for community supported distributions (Tipps zu von der Community unterstützten Distributionen)](../reference/linux.md#tips-for-community-supported-distros)** .
 
 Wenn Sie **nicht möchten, dass Visual Studio Code den Befehl für Sie ausführt**, können Sie die aktuelle Version dieses Skripts jederzeit mithilfe des folgenden Befehls über ein Terminalfenster manuell ausführen:
 
@@ -91,7 +91,7 @@ In der Regel sind für die Browserintegration unter Linux **keine zusätzlichen 
 
 Auf manchen Distributionen wird möglicherweise **eine Meldung angezeigt, dass Ihr Administratorkennwort/sudo-Kennwort erforderlich ist**, um die Installation abzuschließen. Daraufhin wird ein Terminalfenster angezeigt, das den Installationspfad für das Startprogramm des Browsers enthält. Geben Sie Ihr Kennwort ein, wenn Sie dazu aufgefordert werden, und drücken Sie nach Abschluss der Installation die EINGABETASTE, um das Terminalfenster zu schließen.
 
-Weitere Informationen zu dieser Anforderung und zum Speicherort von Dateien durch Live Share finden Sie **[hier](../reference/linux.md#linux-browser-integration)**. Beachten Sie jedoch, dass Sie **[Zusammenarbeitssitzungen manuell beitreten können](../use/vscode.md#join-manually)**, wenn die Browserintegration nicht funktioniert.
+Weitere Informationen zu dieser Anforderung und zum Speicherort von Dateien durch Live Share finden Sie **[hier](../reference/linux.md#linux-browser-integration)** . Beachten Sie jedoch, dass Sie **[Zusammenarbeitssitzungen manuell beitreten können](../use/vscode.md#join-manually)** , wenn die Browserintegration nicht funktioniert.
 
 ## <a name="sign-in"></a>Anmelden
 
@@ -106,6 +106,12 @@ Eine Benachrichtigung wird angezeigt, die Sie auffordert, sich mithilfe Ihres We
 ![Popupbenachrichtigung mit der Aufforderung, sich über einen Webbrowser anzumelden](../media/vscode-sign-in-toast.png)
 
 > **Linux-Benutzer:** Wenn Sie eine ältere Version von Live Share (v0.3.295 oder darunter) verwenden, werden Sie möglicherweise aufgefordert, einen Benutzercode einzugeben. Aktualisieren Sie auf die neueste Version der Erweiterung, oder klicken Sie nach Ihrer Anmeldung auf den Link „Gibt es Probleme?“, um den Code anzuzeigen. Weitere Informationen finden Sie [im Verlauf des Artikels](#sign-in-using-a-user-code).
+
+#
+
+> **Tipp für Fortgeschrittene:** Mithilfe der Einstellungen `liveshare.account` und `liveshare.accountProvider` können Sie auswählen, welches Konto für die automatische Anmeldung verwendet werden soll, falls Sie Anmeldeinformationen für mehrere Konten zwischengespeichert haben. 
+
+> Nehmen Sie beispielsweise an, dass Sie an zwei Projekten arbeiten, für die Sie sich mit unterschiedlichen Identitäten anmelden möchten. In den Arbeitsbereicheinstellungen von Visual Studio Code könnten Sie die Einstellung `liveshare.account` in jedem Projektverzeichnis auf eine andere E-Mail-Adresse festlegen, um sicherzustellen, dass die Anmeldung automatisch mit dem richtigen Konto durchgeführt wird. Die Einstellung `liveshare.accountProvider` könnte auf `"microsoft"` oder `"github"` festgelegt werden, sofern Sie dieselbe E-Mail-Adresse mit mehreren Anbietern verwenden möchten.
 
 Wenn Sie nach der Anmeldung über den Browser nicht in Visual Studio Code angemeldet sind, finden Sie eine weitere Anmeldemethode unter [Anmeldung mit einem Benutzercode](#sign-in-using-a-user-code). In der [Problembehandlung](../troubleshooting.md#sign-in) finden Sie andernfalls weitere Tipps.
 
