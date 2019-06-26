@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 339fb176eed78ece2117ba645a84fafe4f4247f4
-ms.sourcegitcommit: cab8df5c29f9d91e702ef514def53944ee7701ba
+ms.openlocfilehash: e65656c604a9dbc479a03a503fe01d7e2d938072
+ms.sourcegitcommit: c702aafb65b0fc43cb210e1bb7340cef48b57f35
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "64987214"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67322796"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -34,7 +34,9 @@ Sind Sie bereit?  Die Zusammenarbeit im Team sollte so schnell und natürlich se
 > Wussten Sie schon, dass Sie *Ihrer eigenen Zusammenarbeitssitzung beitreten* können? Auf diese Weise können Sie Live Share selber ausprobieren oder aber eine Instanz von Visual Studio oder VS Code starten und eine Remoteverbindung damit herstellen! Sie können sogar dieselbe Identität in beiden Instanzen verwenden. Probieren Sie es aus!
 
 Führen Sie einfach die folgenden Schritte aus, um mit der Freigabe zu beginnen.
-
+<!--
+Change the instructions to Install extension for VS Code and in-tool for VS?
+-->
 ## <a name="1-install-the-extension"></a>1. Die Erweiterung installieren
 
 Die Installation der Erweiterung ist einfach. Führen Sie folgende Schritte aus:
@@ -76,12 +78,15 @@ Durch das Herunterladen und die Nutzung von Visual Studio Live Share stimmen Sie
 
 ## <a name="2-sign-in"></a>2. Anmelden
 
+<!--
+Re-write the grammar here- run on sentence does not make sense. Change screen shots. There is another way of signing in as well- what if a user goes directly to the start collaboration. 
+-->
 Nachdem Sie die Live Share-Erweiterung installiert, neu gestartet und gewartet haben, bis die Installation von Abhängigkeiten beendet ist (VS Code), möchten Sie sich nun anmelden, damit andere Teilnehmer wissen, wer Sie sind. Klicken Sie zuerst einfach auf das Statusleistenelement „Live Share“ (VS Code) / Schaltfläche „Anmelden“ (VS).
 
 <table style="border: none;">
 <tr style="border: none;">
     <td width="50%" style="vertical-align: top; border: none;">
-        <img src="../media/vscode-sign-in-button.png" width="100%" alt="Visual Studio Code sign in status bar item"/>
+        <img src="../media/vscode-sign-in-button-new.png" width="100%" alt="Visual Studio Code sign in status bar item"/>
     </td>
     <td width="50%" style="vertical-align: top; border: none;">
         <img src="../media/vs-sign-in-button.png" width="100%" alt="Visual Studio sign in button"/>
@@ -109,12 +114,14 @@ In Live Share werden Dateien/Ordner, auf die in GITIGNORE-Dateien in Ihren freig
 
 ## <a name="5-start-a-collaboration-session"></a>5. Eine Zusammenarbeitssitzung starten
 
+<!--
+-->
 Klicken Sie als Nächstes in Ihrem Tool einfach auf „Live Share“. Dann wird ein Einladungslink automatisch in Ihre Zwischenablage kopiert.
 
 <table style="border: none;">
 <tr style="border: none;">
     <td width="50%" style="vertical-align: top; border: none;">
-        <img src="../media/vscode-share-button.png" width="100%" alt="Visual Studio Code share status bar item" />
+        <img src="../media/vscode-share-button-new.png" width="100%" alt="Visual Studio Code share status bar item" />
     </td>
     <td width="50%" style="vertical-align: top; border: none;">
         <img src="../media/vs-share-button.png" width="100%" alt="Visual Studio share button"/>
@@ -195,7 +202,7 @@ Wenn Sie weitere Informationen benötigen, sehen Sie sich diese zusätzlichen Ar
 - [Vorgehensweise: Zusammenarbeiten mithilfe von Visual Studio Code](../use/vscode.md)
 - [Vorgehensweise: Zusammenarbeiten mithilfe von Visual Studio](../use/vs.md)
 
-Referenz
+Verweis
 
 - [Anforderungen an die Konnektivität für Live Share](../reference/connectivity.md)
 - [Sicherheitsfeatures von Live Share](../reference/security.md)

@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: bda0ca256af4a561724d96777e640eec1ca0f0fb
-ms.sourcegitcommit: bfa1020882095fcc7d31cd71cf1f2e601e3bea06
+ms.openlocfilehash: 079662c94f22497f5d96b4a3c6e35e4f13db2fa1
+ms.sourcegitcommit: c702aafb65b0fc43cb210e1bb7340cef48b57f35
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "66224722"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67322834"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -44,7 +44,7 @@ Bevor Sie beginnen, müssen Sie eine Version von Visual Studio Code installiert 
 - **macOS:** Nur Sierra (10.12) und höher.
     - _El Capitan (10.11) und niedriger werden derzeit aufgrund der Anforderungen von [.NET Core 2.0](https://go.microsoft.com/fwlink/?linkid=872315) nicht unterstützt._
 
-- **Linux**: 64-Bit-Version von Ubuntu Desktop 16.04 und höher, Fedora Workstation 27 und höher, CentOS 7
+- **Linux:** 64-Bit-Version von Ubuntu Desktop 16.04 und höher, Fedora Workstation 27 und höher, CentOS 7
 
     - Für Live Share sind einige [Linux-Voraussetzungen](#linux-install-steps) erforderlich, zu deren Installation Sie möglicherweise aufgefordert werden.
     - _Aufgrund der Anforderungen von [.NET Core 2.0](https://go.microsoft.com/fwlink/?linkid=872314) werden 32-Bit-Versionen von Linux nicht unterstützt._
@@ -58,7 +58,7 @@ Danach ist das Herunterladen und Installieren der Visual Studio Live Share-Erwei
 3. Laden Sie Visual Studio Code neu.
 4. Warten Sie, dass die Abhängigkeiten heruntergeladen und installiert werden (achten Sie auf die Statusleiste).<br/>
     ![Installation wird fertiggestellt](../media/vscode-finishing-install.png)
-5. **Linux**: Wenn eine Benachrichtigung angezeigt wird, dass fehlende Bibliotheken installiert werden müssen:
+5. **Linux:** Wenn eine Benachrichtigung angezeigt wird, dass fehlende Bibliotheken installiert werden müssen:
     1. Klicken Sie in der Benachrichtigung auf „Install“ (Installieren).
     2. Geben Sie Ihr Administratorkennwort/sudo-Kennwort ein, wenn Sie dazu aufgefordert werden.
     3. Starten Sie Visual Studio Code im Anschluss neu.
@@ -109,8 +109,7 @@ Eine Benachrichtigung wird angezeigt, die Sie auffordert, sich mithilfe Ihres We
 
 #
 
-> **Tipp für Fortgeschrittene:** Mithilfe der Einstellungen `liveshare.account` und `liveshare.accountProvider` können Sie auswählen, welches Konto für die automatische Anmeldung verwendet werden soll, falls Sie Anmeldeinformationen für mehrere Konten zwischengespeichert haben. 
-
+> **Tipp für Fortgeschrittene:** Mithilfe der Einstellungen `liveshare.account` und `liveshare.accountProvider` können Sie auswählen, welches Konto für die automatische Anmeldung verwendet werden soll, falls Sie Anmeldeinformationen für mehrere Konten zwischengespeichert haben.
 > Nehmen Sie beispielsweise an, dass Sie an zwei Projekten arbeiten, für die Sie sich mit unterschiedlichen Identitäten anmelden möchten. In den Arbeitsbereicheinstellungen von Visual Studio Code könnten Sie die Einstellung `liveshare.account` in jedem Projektverzeichnis auf eine andere E-Mail-Adresse festlegen, um sicherzustellen, dass die Anmeldung automatisch mit dem richtigen Konto durchgeführt wird. Die Einstellung `liveshare.accountProvider` könnte auf `"microsoft"` oder `"github"` festgelegt werden, sofern Sie dieselbe E-Mail-Adresse mit mehreren Anbietern verwenden möchten.
 
 Wenn Sie nach der Anmeldung über den Browser nicht in Visual Studio Code angemeldet sind, finden Sie eine weitere Anmeldemethode unter [Anmeldung mit einem Benutzercode](#sign-in-using-a-user-code). In der [Problembehandlung](../troubleshooting.md#sign-in) finden Sie andernfalls weitere Tipps.
@@ -180,7 +179,7 @@ Führen Sie nach dem Herunterladen und Installieren von Visual Studio Live Share
 
     **Klicken** Sie nun auf der Statusleiste auf „Live Share“, oder drücken Sie **STRG+UMSCHALT+P bzw. CMD+UMSCHALT+P**, und wählen Sie den Befehl „Live Share: Start a collaboration session (Share)" (Live Share: Zusammenarbeitssitzung starten (Freigeben)) aus.
 
-    ![Schaltfläche für Freigabe](../media/vscode-share-button.png)
+    ![Schaltfläche für Freigabe](../media/vscode-share-button-new.png)
 
     > [!NOTE]
     > Möglicherweise werden Sie von der Firewallsoftware Ihres Desktops gefragt, ob Sie zulassen möchten, dass der Live Share-Agent bei Ihrer ersten Freigabe einen Port öffnet. Dies zuzulassen, ist Ihnen völlig freigestellt, ermöglicht aber einen gesicherten „direkten Modus“ zur Leistungsverbesserung, wenn sich die Person, mit der Sie zusammenarbeiten, in demselben Netzwerk wie Sie befindet. Details dazu finden Sie unter [Changing the connection mode (Ändern des Verbindungsmodus)](../reference/connectivity.md#changing-the-connection-mode).
@@ -251,7 +250,7 @@ Die einfachste Möglichkeit, einer Zusammenarbeitssitzung beizutreten, besteht d
 
     Öffnen Sie jetzt den Einladungslink in einem Browser (oder öffnen Sie ihn erneut darin).
 
-    > **Hinweis:** Wenn Sie die Live Share-Erweiterung noch nicht installiert haben, werden Ihnen Links zum Extension Marketplace angezeigt. Installieren Sie die Erweiterung, starten Sie ihr Tool neu, und wiederholen Sie den Vorgang.
+    > **Hinweis**: Wenn Sie die Live Share-Erweiterung noch nicht installiert haben, werden Ihnen Links zum Extension Marketplace angezeigt. Installieren Sie die Erweiterung, starten Sie ihr Tool neu, und wiederholen Sie den Vorgang.
 
     Sie sollten benachrichtigt werden, dass der Browser ein Live Share-fähiges Tool starten möchte. Wenn Sie zulassen, dass er Ihr ausgewähltes Tool startet, werden Sie gleich nach dem Start mit der Zusammenarbeitssitzung verbunden.
 
@@ -337,7 +336,7 @@ Bearbeiten Sie einfach **settings.json** (Datei > Einstellungen > Einstellungen)
 | Einstellung | Verhalten |
 |---------|----------|
 | ``"liveshare.nameTagVisibility":"Never"`` | Das Flag wird nur angezeigt, wenn Sie mit dem Cursor auf etwas zeigen. |
-| ``"liveshare.nameTagVisibility":"Activity"`` | Dies ist die Standardeinstellung. Das Flag wird angezeigt, wenn mit dem Cursor auf etwas gezeigt oder wenn dieser bewegt wird. Zusätzlich wird es bei Bearbeitungen oder Hervorhebungen angezeigt. |
+| ``"liveshare.nameTagVisibility":"Activity"`` | Dies ist die Standardoption. Das Flag wird angezeigt, wenn mit dem Cursor auf etwas gezeigt oder wenn dieser bewegt wird. Zusätzlich wird es bei Bearbeitungen oder Hervorhebungen angezeigt. |
 | ``"liveshare.nameTagVisibility":"Always"`` | Das Flag ist immer sichtbar. |
 
 ## <a name="following"></a>Folgen von Teilnehmern
@@ -471,7 +470,7 @@ Der freigegebene Server ist dann auf demselben Port über die lokalen Computer d
 
 > **Sicherheitstipp:** Als Gastgeber sollten Sie nur ganz bestimmte Ports für Gäste freigeben und Anwendungs- statt Systemports verwenden. Für Gäste verhalten sich freigegebene Ports so, als würde der Server oder Dienst auf dem lokalen Gastcomputer ausgeführt werden. Dies ist zwar sehr nützlich, kann aber auch riskant sein, wenn der falsche Port freigegeben wird.
 
-Aus Sicherheitsgründen stehen nur Server, deren Ports Sie festlegen, für andere Gäste zur Verfügung. Als **Gastgeber** können Sie einen Server ganz einfach hinzufügen. Gehen Sie dabei folgendermaßen vor:
+Aus Sicherheitsgründen stehen nur Server, deren Ports Sie festlegen, für andere Gäste zur Verfügung. Als **Gastgeber** können Sie einen Server ganz einfach hinzufügen. Das geht so:
 
 1. Öffnen Sie die benutzerdefinierte Live Share-Registerkarte über die Aktivitätsleiste von Visual Studio Code, oder wechseln Sie zum Live Share-Explorer, und klicken Sie auf den Eintrag „Server freigeben...“ oder auf das Symbol.
 
@@ -526,7 +525,7 @@ Nachdem Sie eine Zusammenarbeitssitzung gestartet haben oder dieser beigetreten 
 
 Folgende Zustände sind möglich:
 
-| Zustand | Statusleiste | Beschreibung |
+| Zustand | Statusleiste | BESCHREIBUNG |
 |-------|--------------------|-------------|
 | Inaktiv | ![Zustand „Inaktiv“ in Visual Studio Code](../media/vscode-status-share.png) | Es ist keine aktive Zusammenarbeitssitzung vorhanden, und keine Inhalte werden freigegeben. |
 | Gastgeber: Wird freigegeben... | ![Zustand „Wird freigegeben...“ in Visual Studio Code](../media/vscode-status-sharing.png)| Eine Zusammenarbeitssitzung wird gestartet, und Inhalte werden in Kürze freigegeben. |
@@ -538,7 +537,7 @@ Folgende Zustände sind möglich:
 
 ## <a name="guest-limitations"></a>Einschränkungen für Gäste
 
-Aktuell treten bei Verwendung der Gastfeatures einige Probleme auf. Zusammenarbeitssitzungs-Gastgeber können allerdings weiterhin alle Funktionen ihres bevorzugten Tools verwenden. Über die folgenden Links erhalten Sie weitere Informationen:
+Aktuell treten bei Verwendung der Gastfeatures einige Probleme auf. Zusammenarbeitssitzungs-Gastgeber können allerdings weiterhin alle Funktionen ihres bevorzugten Tools verwenden. Weitere Informationen finden Sie unter den folgenden Links:
 
 - [Sprach- und Plattformunterstützung](../reference/platform-support.md)
 - [Unterstützung für Erweiterung](../reference/extensions.md)

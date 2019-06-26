@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: c1f62cf12797279cc7bcb1a7ee1273667618ab46
-ms.sourcegitcommit: cab8df5c29f9d91e702ef514def53944ee7701ba
+ms.openlocfilehash: ec3c983e91f849c6e966d2e5d0ae688e98b2b3f1
+ms.sourcegitcommit: c702aafb65b0fc43cb210e1bb7340cef48b57f35
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "64987187"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67322816"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -104,7 +104,7 @@ Nachdem Sie die Live Share-Erweiterung installiert, neu gestartet und gewartet h
 <table style="border: none;">
 <tr style="border: none;">
     <td width="50%" style="vertical-align: top; border: none;">
-        <img src="../media/vscode-sign-in-button.png" width="100%" alt="Visual Studio Code sign in status bar item" />
+        <img src="../media/vscode-sign-in-button-new.png" width="100%" alt="Visual Studio Code sign in status bar item" />
     </td>
     <td width="50%" style="vertical-align: top; border: none;">
         <img src="../media/vs-sign-in-button.png" width="100%" alt="Visual Studio sign in button"/>
@@ -126,7 +126,7 @@ Sollten weiterhin Probleme auftreten, lesen Sie [Problembehandlung](../troublesh
 
 Öffnen Sie jetzt den Einladungslink in einem Browser (oder öffnen Sie ihn erneut darin).
 
-> **Hinweis:** Wenn Sie die Live Share-Erweiterung noch nicht installiert haben, werden Ihnen Links zum Extension Marketplace angezeigt. Installieren Sie die Erweiterung, starten Sie ihr Tool neu, und wiederholen Sie den Vorgang.
+> **Hinweis**: Wenn Sie die Live Share-Erweiterung noch nicht installiert haben, werden Ihnen Links zum Extension Marketplace angezeigt. Installieren Sie die Erweiterung, starten Sie ihr Tool neu, und wiederholen Sie den Vorgang.
 
 Sie sollten benachrichtigt werden, dass der Browser ein Live Share-fähiges Tool starten möchte. Wenn Sie zulassen, dass er Ihr ausgewähltes Tool startet, werden Sie gleich nach dem Start mit der Zusammenarbeitssitzung verbunden.
 
@@ -162,7 +162,7 @@ Wenn Sie weitere Informationen benötigen, sehen Sie sich diese zusätzlichen Ar
 - [Vorgehensweise: Zusammenarbeiten mithilfe von Visual Studio Code](../use/vscode.md)
 - [Vorgehensweise: Zusammenarbeiten mithilfe von Visual Studio](../use/vs.md)
 
-Referenz
+Verweis
 
 - [Anforderungen an die Konnektivität für Live Share](../reference/connectivity.md)
 - [Sicherheitsfeatures von Live Share](../reference/security.md)
