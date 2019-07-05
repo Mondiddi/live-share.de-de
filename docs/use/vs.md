@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 657b5079ba5669b6d01d732257b40444a8fa82d2
-ms.sourcegitcommit: cab8df5c29f9d91e702ef514def53944ee7701ba
+ms.openlocfilehash: eb631d2f3fecb07cb16b02d1cd02127221b0183d
+ms.sourcegitcommit: 94a6ec64e0054fe4829d554b7023a17a8c58a462
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "64987197"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67501451"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -59,15 +59,18 @@ Durch das Herunterladen und die Nutzung von Visual Studio Live Share stimmen Sie
 
 Wenn Sie mit anderen Personen zusammenarbeiten möchten, müssen Sie sich in Visual Studio Live Share anmelden, damit diese wissen, wer Sie sind. Dies ist nur eine Sicherheitsmaßnahme. Sie willigen dadurch **nicht** ein, an Marketing- oder anderen Marktforschungsaktivitäten teilzunehmen. Sie können sich mit einem persönlichen Microsoft-Konto (z. B. @outlook.com), einem Geschäfts-, Schul- oder Unikonto von Microsoft (über AAD) oder mit einem GitHub-Konto anmelden. Die Anmeldung ist unkompliziert.
 
-Standardmäßig wird in Visual Studio Ihr [Personalisierungskonto](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio) verwendet. Wenn Sie bereits angemeldet sind, können Sie diesen Schritt überspringen. Andernfalls melden Sie sich wie gewohnt an.
+Standardmäßig wird in Visual Studio Ihr [Personalisierungskonto](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio) verwendet. Wenn Sie bereits bei Visual Studio angemeldet sind, können Sie diesen Schritt überspringen. Andernfalls melden Sie sich wie gewohnt an.
 
 ![Anmeldeschaltfläche in Visual Studio](../media/vs-sign-in-button.png)
 
+
 Wenn Sie zur Anmeldung nicht Ihr [Visual Studio-Personalisierungskonto](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio) verwenden möchten, wechseln Sie zu **Extras &gt; Optionen &gt; Live Share &gt; Benutzerkonto**, um andere Anmeldeinformationen festzulegen.
 
-![Option „Extras > Optionen > Live Share“ in Visual Studio](../media/vs-tools-options.png)
+![Option „Extras > Optionen > Live Share“ in Visual Studio](../media/vs-tools-options-new.png)
 
 Wenn Sie **External Account** (Externes Konto) auswählen, können Sie ein Konto wie GitHub festlegen, das nicht durch das Personalisierungsfeature von Visual Studio unterstützt wird. Bei der ersten Nutzung des Live Share-Features wird ein Browser geöffnet, in dem Sie die Anmeldung abschließen können.
+>[!Tip]
+>Wussten Sie, dass man unter **Extras &gt; Optionen &gt; Live Share &gt; Allgemein** alle Live Share-Standardeinstellungen anzeigen kann? Passen Sie die Oberfläche für Zusammenarbeit an Ihre Anforderungen an. Sie können auch alle neuen Live Share-Features ausprobieren, indem Sie innerhalb der allgemeinen Live Share-Einstellungen **Erweitert &gt; Features &gt; Insider** auswählen.  
 
 Falls Probleme auftreten, finden Sie in der [Problembehandlung](../troubleshooting.md#sign-in) weitere Tipps.
 
@@ -77,9 +80,8 @@ Führen Sie nach dem Herunterladen und Installieren von Visual Studio Live Share
 
 1. **Melden Sie sich an:**
 
-    Melden Sie sich nach der Installation der Live Share-Erweiterung an, damit andere Projektmitarbeiter wissen, wer Sie sind. Standardmäßig wird in Visual Studio Ihr Personalisierungskonto verwendet. Sie können diesen Schritt also eventuell überspringen.
-
-    Weitere Informationen finden Sie unter [Anmelden](#sign-in).
+    Nach der Anmeldung sind Sie jetzt bereit, Ihre eigene Zusammenarbeitssitzung zu starten.
+    Sie sind nicht angemeldet? Weitere Informationen finden Sie unter [Anmelden](#sign-in).
 
 2. **Öffnen Sie eine Projektmappe, ein Projekt oder einen Ordner:**
 
@@ -91,18 +93,16 @@ Führen Sie nach dem Herunterladen und Installieren von Visual Studio Live Share
 
 4. **Starten Sie eine Zusammenarbeitssitzung:**
 
-    Klicken Sie nun einfach auf die Schaltfläche „Live Share“ oben rechts.
+    Klicken Sie jetzt einfach oben rechts auf die Schaltfläche „Live Share“, um eine Live Share-Sitzung zu starten.     Ein Link zur Zusammenarbeitssitzung wird automatisch in die Zwischenablage kopiert und kann weitergegeben werden. 
 
     ![Schaltfläche „Freigeben“ in Visual Studio](../media/vs-share-button.png)
 
+    Nachdem Sie Ihre Zusammenarbeitssitzung zum ersten Mal gestartet haben, wird Ihnen ein Live Share-Toolfenster angezeigt. Docken Sie dieses Fenster an, um sicherzustellen, dass es beim nächsten Start einer Live Share-Sitzung angezeigt wird.
+
+   ![VS Live Share-Toolfenster|72×561, 50 %](../media/vs-live-share-tool-window.png)
+
     > [!NOTE]
     > Möglicherweise werden Sie von der Firewallsoftware Ihres Desktops gefragt, ob Sie zulassen möchten, dass der Live Share-Agent bei Ihrer ersten Freigabe einen Port öffnet. Dies zuzulassen, ist Ihnen völlig freigestellt, ermöglicht aber einen gesicherten „direkten Modus“ zur Leistungsverbesserung, wenn sich die Person, mit der Sie zusammenarbeiten, in demselben Netzwerk wie Sie befindet. Details dazu finden Sie unter [Changing the connection mode (Ändern des Verbindungsmodus)](../reference/connectivity.md#changing-the-connection-mode).
-
-    Ein Einladungslink wird automatisch in die Zwischenablage kopiert. Andere Personen können mit diesem Link im Browser einer neuen Zusammenarbeitssitzung beitreten, in der Ordnerinhalte für diese Teilnehmer freigegeben werden.
-
-    Die Schaltfläche „Live Share“ wird zudem in den Sitzungszustand geändert. Informationen zu [Sitzungszuständen](#session-states) finden Sie weiter unten.
-
-    Wenn Sie bereits Inhalte freigeben und den Einladungslink noch einmal abrufen müssen, können Sie auf die Schaltfläche mit dem Sitzungszustand und anschließend auf „Link kopieren“ klicken.
 
 5. **Aktivieren Sie den schreibgeschützten Modus (optional):**
 
@@ -130,7 +130,16 @@ Führen Sie nach dem Herunterladen und Installieren von Visual Studio Live Share
 
     Unter [Invitations and join access (Konfigurieren von Einladungen und Beitritten)](../reference/security.md#invitations-and-join-access) finden Sie weitere Informationen zur Sicherheit von Einladungen.
 
-Damit haben Sie alle erforderlichen Schritte abgeschlossen.
+8. **Verwalten Ihrer Live Share-Sitzung**
+    
+    Nachdem Ihr Gast den Link zur freigegebenen Sitzung in VS Code oder Visual Studio geöffnet hat, wird er unter den Teilnehmern im Live Share-Toolfenster aufgeführt. Neben dem Namen können Sie jetzt sehen, in welcher Datei sich Ihr Gast gerade befindet.  
+    
+    ![VS Live Share-Toolfenster](../media/vs-live-share-tool-window-participant.png)
+
+    Das Live Share-Toolfenster ermöglicht Ihnen den Zugriff auf alle wichtigen Features, um Ihre Sitzung an einem Ort zu verwalten. 
+
+    > [!TIP]
+    > Wird das Live Share-Toolfenster während der Sitzungen nicht mehr angezeigt? Sie finden es jederzeit unter **Ansicht &gt; Weitere Fenster &gt; Live Share**!
 
 ### <a name="ending-the-collaboration-session"></a>Beenden der Zusammenarbeitssitzung
 
@@ -193,7 +202,7 @@ Sie können einer Sitzung auch manuell, also ohne einen Webbrowser, beitreten. D
 
 2. **Verwenden Sie den Beitrittsbefehl:**
 
-    Navigieren Sie einfach zu **Datei > Live Share-Sitzung beitreten...**.
+    Navigieren Sie einfach zu **Datei > Live Share-Sitzung beitreten...** .
 
     ![Beitrittsmenü in Visual Studio](../media/vs-join.png)
 
@@ -414,7 +423,7 @@ Nachdem Sie eine Zusammenarbeitssitzung gestartet haben oder dieser beigetreten 
 
 Folgende Zustände sind möglich:
 
-| Zustand | Schaltfläche | Beschreibung |
+| Zustand | Schaltfläche | BESCHREIBUNG |
 |-------|--------|-------------|
 | Inaktiv | ![Zustand „Inaktiv“ in Visual Studio](../media/vs-status-share.png) | Es ist keine aktive Zusammenarbeitssitzung vorhanden, und keine Inhalte werden freigegeben. |
 | Gastgeber: Wird freigegeben... | ![Zustand „Wird freigegeben...“ in Visual Studio](../media/vs-status-sharing.png) | Eine Zusammenarbeitssitzung wird gestartet, und Inhalte werden in Kürze freigegeben. |
