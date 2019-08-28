@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: eb631d2f3fecb07cb16b02d1cd02127221b0183d
-ms.sourcegitcommit: 94a6ec64e0054fe4829d554b7023a17a8c58a462
+ms.openlocfilehash: 65c48d1a95cc94bc7505c185be353e437e3c5ba1
+ms.sourcegitcommit: 6b46e300d76eda661ab34c67a3b909d5c162cd9a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67501451"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70062305"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -99,7 +99,7 @@ Führen Sie nach dem Herunterladen und Installieren von Visual Studio Live Share
 
     Nachdem Sie Ihre Zusammenarbeitssitzung zum ersten Mal gestartet haben, wird Ihnen ein Live Share-Toolfenster angezeigt. Docken Sie dieses Fenster an, um sicherzustellen, dass es beim nächsten Start einer Live Share-Sitzung angezeigt wird.
 
-   ![VS Live Share-Toolfenster|72×561, 50 %](../media/vs-live-share-tool-window.png)
+   ![VS Live Share-Toolfenster](../media/vs-live-share-tool-window.png)
 
     > [!NOTE]
     > Möglicherweise werden Sie von der Firewallsoftware Ihres Desktops gefragt, ob Sie zulassen möchten, dass der Live Share-Agent bei Ihrer ersten Freigabe einen Port öffnet. Dies zuzulassen, ist Ihnen völlig freigestellt, ermöglicht aber einen gesicherten „direkten Modus“ zur Leistungsverbesserung, wenn sich die Person, mit der Sie zusammenarbeiten, in demselben Netzwerk wie Sie befindet. Details dazu finden Sie unter [Changing the connection mode (Ändern des Verbindungsmodus)](../reference/connectivity.md#changing-the-connection-mode).
@@ -352,7 +352,7 @@ Als Gast werden Sie standardmäßig Debugsitzungen angefügt, wenn diese vom Gas
 
 | Option | Verhalten |
 |--------|----------|
-| Automatisch | Der Standardwert. Als Gast treten Sie automatisch allen freigegebenen Debugsitzungen bei, die vom Gastgeber gestartet werden. |
+| Automatische | Der Standardwert. Als Gast treten Sie automatisch allen freigegebenen Debugsitzungen bei, die vom Gastgeber gestartet werden. |
 | Prompted (Bei Aufforderung) | Als Gast werden Sie aufgefordert, einer freigegebenen Debugsitzung beizutreten, wenn diese vom Gastgeber gestartet wird. |
 | Manuell | Als Gast müssen Sie Debugsitzungen manuell beitreten. Weitere Informationen finden Sie unter [Trennen und erneutes Anfügen](#detaching-and-reattaching).|
 
