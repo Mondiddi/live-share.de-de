@@ -26,12 +26,15 @@
 ## [Gemeinsames Debuggen](use/vs.md#co-debugging)
 ## [Freigeben eines Servers](use/vs.md#share-a-server)
 ## [Freigeben eines Terminals](use/vs.md#share-a-terminal)
+# Anleitungen: Technische Interviews
+## [Technische Interviews](use/technical-interviews.md)
 # Referenz
 ## [Sicherheit](reference/security.md)
 ## [Konnektivität](reference/connectivity.md)
 ## [Sprachenunterstützung](reference/platform-support.md)
 ## [Unterstützung für Erweiterung](reference/extensions.md)
 ## [Gängige Anwendungsfälle](reference/use-cases.md)
+
 ## [Details zur Linux-Installation](reference/linux.md)
 ## [Insider](reference/insiders.md)
 ## [Anmerkungen zu dieser Version](https://aka.ms/vsls-releases)
