@@ -11,12 +11,12 @@ ms.author: fishah
 manager: JonathanCarter
 ms.workload:
 - liveshare
-ms.openlocfilehash: a3b4c9f2b469e937d958e82df28a04044abf38d3
-ms.sourcegitcommit: 50069912a317f8685976013e80738bbaa403a3fe
-ms.translationtype: HT
+ms.openlocfilehash: c1b3e71578ed3ffb306060cec3354f33423928be
+ms.sourcegitcommit: 24eb903744b837dcedff67d8179f06862bd2aa61
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72178475"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72250649"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -26,7 +26,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # <a name="contacts-in-live-share"></a>Kontakte in Live Share 
 
-Sie haben Live Share verwendet und bemerken, dass das Senden von Links über eine externe Anwendung (z. b. Chat oder e-Mail) wirklich schnell ist? Wir wissen, dass Sie, wenn wir die Zusammenarbeit fördern möchten, die geringste Menge an Reibung benötigen, damit Sie Sie schätzen können. Dies ist der Grund, warum Live Share jetzt **Kontakte** enthält, die jetzt den **Status**haben.
+Sie haben Live Share verwendet und bemerken, dass das Senden von Links über eine externe Anwendung (z. b. Chat oder e-Mail) wirklich schnell ist? Wir wissen, dass Sie, wenn wir die Zusammenarbeit fördern möchten, die geringste Menge an Reibung benötigen, damit Sie Sie schätzen können. Dies ist der Grund, warum Live Share jetzt **Kontakte** mit dem **Status** hat.
 
 >Kontakte werden automatisch für alle Versionen von **Live Share v 1.0.950** oder höher aktiviert.
 
@@ -60,12 +60,17 @@ Der Status kann direkt innerhalb des Editors festgelegt werden, sodass Sie Ihnen
 **4. Offline:**  Sie werden offline geschaltet, sobald Sie für einen längeren Zeitraum offline sind, oder wenn Sie sich für den [Freigabe Status entscheiden](##ManagingPresence) .
 
 
-## Verwalten des Kontakt<a name="ManagingPresence"> </a> Status
+## Verwalten von Kontakten und Freigabe<a name="ManagingPresence"> </a> Status
 
-Wenn Sie dieses Feature deaktivieren möchten, können Sie die Statuseinstellung einfach deaktivieren, indem Sie `offline` auswählen. Nach der Deaktivierung sind Sie weiterhin in der Lage, den Status anderer anzuzeigen und zu laden, Ihr Status wird jedoch nicht veröffentlicht, und andere Benutzer können Sie nicht direkt einladen.
+Wenn Sie dieses Feature ablehnen möchten, können Sie es auf zweierlei Weise tun.
+1. Sie können die Statuseinstellung deaktivieren, indem Sie `offline` auswählen. Nach der Deaktivierung sind Sie weiterhin in der Lage, den Status anderer anzuzeigen und zu laden, Ihr Status wird jedoch nicht veröffentlicht, und andere Benutzer können Sie nicht direkt einladen.
 Sie können offline schalten, indem Sie auf den Status Kreis klicken. Daraufhin wird das folgende Dropdown Menü angezeigt:
 
 ![dropdownstatus @ no__t-1 <em>zeigt eine Dropdown Liste der Status Präsenz</em> an
+
+2. Sie können `user settings` öffnen und zu *extensions > Visual Studio Live Share > Live Share wechseln: Anwesenheits @ no__t-0 und den Anwesenheits Dienst deaktivieren. Nach der Deaktivierung sind Sie weiterhin in der Lage, den Status anderer anzuzeigen und zu laden, Ihr Status wird jedoch nicht veröffentlicht, und andere Benutzer können Sie nicht direkt einladen.
+
+![presencesettings](../media/vscode-presence-setting.png)
 
 ## <a name="faqs"></a>FAQ 
 
