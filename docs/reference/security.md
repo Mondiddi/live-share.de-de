@@ -1,6 +1,6 @@
 ---
-title: Sicherheit – Visual Studio-Livefreigabe | Microsoft-Dokumentation
-description: Informationen zu den Sicherheitsfeatures von Visual Studio Live Share.
+title: 'Sicherheit: Visual Studio Live Share | Microsoft-Dokumentation'
+description: Informationen zu den Sicherheitsfeatures von Visual Studio Live share.
 ms.custom: ''
 ms.date: 12/17/2018
 ms.reviewer: ''
@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 754a740118ef9e6de2463fb3bb0537af350409aa
-ms.sourcegitcommit: 100fce9b9bbcd7e6f68d40659bd2760e9537de37
+ms.openlocfilehash: 2f3a2adf0be13071f22a8ea7e33800af6f9099b5
+ms.sourcegitcommit: c6ef4e5a9aec4f682718819c58efeab599e2781b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58640197"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73170103"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -26,23 +26,23 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # <a name="security-features-of-live-share"></a>Sicherheitsfeatures von Live Share
 
-Zusammenarbeitssitzungen in Visual Studio Live Share sind leistungsstarke, da sie ermöglichen eine beliebige Anzahl von Personen in einer Sitzung beitreten und gemeinsam zu bearbeiten, Debuggen und vieles mehr. Allerdings ist diese Zugriffsebene wird angegeben, Sie zweifellos die Sicherheitsfunktionen interessant, die Live Share bietet. In diesem Artikel stellen wir einige Empfehlungen und die Optionen zum Sichern Ihrer Umgebung aus, je nach Bedarf bereit.
+Zusammenarbeits Sitzungen in Visual Studio Live Share sind so leistungsfähig, dass Sie eine beliebige Anzahl von Benutzern in einer Sitzung einbinden und kollaborative Bearbeitung, Debuggen usw. durcharbeiten können. Bei dieser Zugriffsebene sind Sie jedoch zweifellos an den Sicherheitsfeatures interessiert, die Live Share bereitstellt. In diesem Artikel werden einige Empfehlungen und Optionen zum Sichern Ihrer Umgebung nach Bedarf bereitgestellt.
 
-**Wie bei jedem Tool für die Zusammenarbeit, denken Sie daran, dass Sie nur von Code, den Inhalt und die Anwendungen für Personen freigeben sollten, denen Sie vertrauen.**
+**Beachten Sie, wie bei jedem Tool für die Zusammenarbeit, dass Sie Code, Inhalte und Anwendungen nur für Personen freigeben sollten, denen Sie vertrauen.**
 
 ## <a name="connectivity"></a>Konnektivität
 
-Alle Verbindungen in Visual Studio Live Share sind SSH oder SSL verschlüsselt und authentifiziert ein zentraler Dienst, um sicherzustellen, dass nur die in der zusammenarbeitssitzung den Inhalt zugreifen können. Standardmäßig werden Live Share versucht, eine direkte Verbindung und fällt zurück auf einem Cloud-Relay, wenn eine Verbindung zwischen dem Gast und dem Host hergestellt werden kann. Beachten Sie, dass Live Share-Cloud-Relay keiner Datenverkehr, die über ihn weitergeleitet behält und nicht "" den Datenverkehr in keiner Weise snoop. Wenn Sie lieber nicht das Relay verwenden können Sie Einstellungen für immer direkt eine Verbindung ändern.
+Alle Verbindungen in Visual Studio Live Share werden per SSH oder SSL verschlüsselt und für einen zentralen Dienst authentifiziert, um sicherzustellen, dass nur die in der Zusammenarbeits Sitzung Zugriff auf den Inhalt erhalten. Standardmäßig versucht Live Share, eine direkte Verbindung herzustellen, und greift auf ein cloudrelay zurück, wenn keine Verbindung zwischen dem Gast und dem Host hergestellt werden kann. Beachten Sie, dass das cloudrelay von Live Share keinen Datenverkehr beibehält, der durch ihn weitergeleitet wird, und den Datenverkehr in keiner Weise "durchläuft. Wenn Sie jedoch lieber das Relay nicht verwenden möchten, können Sie die Einstellungen so ändern, dass Sie immer direkt eine Verbindung herstellen.
 
-Weitere Informationen zum Ändern dieses Verhalten und Anforderungen an die Live Share-Konnektivität, finden Sie unter  **[Konnektivitätsanforderungen Live Share](connectivity.md)**.
+Weitere Informationen zum Ändern dieser Verhaltensweisen und Live Share der Konnektivitätsanforderungen finden Sie unter **[Konnektivitätsanforderungen für Live Share](connectivity.md)** .
 
-## <a name="invitations-and-join-access"></a>Einladungen und Join-Zugriff
+## <a name="invitations-and-join-access"></a>Einladungen und joinzugriff
 
-Jedes Mal, Sie starten eine neue zusammenarbeitssitzung, Live Share generiert eine **neuen eindeutigen Bezeichner** , die in den Einladungslink platziert wird. Diese Links erhalten Sie eine solide, sichere Grundlage für diese laden Sie vertrauen, da der Bezeichner in der Verknüpfung "nicht-zu erraten" und _nur gültig für die Dauer einer Sitzung für die einzelnen Zusammenarbeit_.
+Jedes Mal, wenn Sie eine neue Zusammenarbeits Sitzung starten, generiert Live Share einen **neuen eindeutigen Bezeichner** , der in den Einladungslink eingefügt wird. Diese Links stellen eine solide, sichere Grundlage dar, um die vertrauenswürdigen Personen einzuladen, da der Bezeichner in der Verknüpfung "nicht ausstellbar" ist und _nur für die Dauer einer einzelnen Zusammenarbeits Sitzung gültig_ist.
 
-### <a name="removing-an-unexpected-guest"></a>Entfernen eine unerwartete Gast
+### <a name="removing-an-unexpected-guest"></a>Entfernen eines unerwarteten Gasts
 
-Als Host werden Sie automatisch benachrichtigt, wenn ein Gast der zusammenarbeitssitzung verknüpft.
+Als Host werden Sie automatisch benachrichtigt, wenn ein Gast der Zusammenarbeits Sitzung Beitritt.
 
 <table style="border: none;">
 <tr style="border: none;">
@@ -55,33 +55,33 @@ Als Host werden Sie automatisch benachrichtigt, wenn ein Gast der zusammenarbeit
 </tr>
 </table>
 
-Die Benachrichtigung erhalten Sie noch besser: die Möglichkeit, einen Gast zu entfernen, der hinzugefügt wurde, wenn aus irgendeinem Grund diese Ihnen nicht bekannt ist. (Z. B., wenn Sie versehentlich-Link Ihrer auf einem unternehmensweiten Chatsystem gesendet und ein zufälliger Mitarbeiter verknüpft.) Klicken Sie einfach auf die Schaltfläche "Entfernen" in der Benachrichtigung, die angezeigt wird, und sie aus der zusammenarbeitssitzung ausgeworfen.
+Die Benachrichtigung bietet Ihnen die Möglichkeit, einen Gast, der verknüpft ist, zu entfernen, wenn Sie ihn aus irgendeinem Grund nicht kennen. (Wenn Sie z. b. versehentlich Ihren Link in einem unternehmensweiten Chat-System gepostet haben und ein zufälliger Mitarbeiter beigetreten ist.) Klicken Sie einfach auf die Schaltfläche "entfernen" in der Benachrichtigung, die angezeigt wird und aus der Zusammenarbeits Sitzung aussteht.
 
-In **VS Code**, auch wenn Sie eine Join-Benachrichtigung geschlossen haben, haben auch die Möglichkeit, einen Teilnehmer, zu entfernen. Indem Sie die Live Share-Ansicht im Explorer oder in der benutzerdefinierten Registerkarte in der Aktivitätsleiste von VS Code öffnen, können Sie zeigen oder mit der rechten Maustaste den Teilnehmer-Namen und wählen Sie das Symbol für "Remove-Teilnehmer" oder die Option.
+In **vs Code**, auch wenn Sie eine joinbenachrichtigung verworfen haben, können Sie auch einen Teilnehmer entfernen. Wenn Sie die Live Share Ansicht im Explorer oder auf der Registerkarte Benutzer definiert in der vs Code Aktivitäts Leiste öffnen, können Sie mit dem Mauszeiger auf den Namen eines Teilnehmers klicken oder mit der rechten Maustaste darauf klicken und das Symbol bzw. die Option "Teilnehmer entfernen" auswählen.
 
-![Entfernen Sie die Teilnehmer in Visual Studio Code](../media/vscode-remove-participant.png)
+![Teilnehmer in vs Code entfernen](../media/vscode-remove-participant.png)
 
-### <a name="requiring-guest-approval"></a>Eine Gast-Genehmigung
+### <a name="requiring-guest-approval"></a>Genehmigung der Gast Genehmigung erforderlich
 
-Teilnehmer, die eine zusammenarbeitssitzung verknüpfen werden in der Regel **Live Share angemeldet** mithilfe einer Microsoft-Geschäfts- oder schulkonto (AAD), persönlichen Microsoft-Konto oder GitHub-Konto. Während "Benachrichtigung + entfernen" Standardeinstellung für angemeldeten Benutzer bietet eine gute Mix Geschwindigkeit und Steuerelement für diese Gastbetriebssysteme, Sie möchten **Dinge Sperren** ein wenig mehr, wenn Sie etwas vertrauliche durchführen.
+In der Regel werden Teilnehmer, die einer Zusammenarbeits Sitzung beitreten, bei Live Share mithilfe eines Geschäfts-, Schul-oder unikontos (AAD), eines persönlichen Microsoft-Konto oder eines GitHub-Kontos **angemeldet** . Obwohl der Standardwert "Notification + Remove" für angemeldete Benutzer eine gute Kombination aus Geschwindigkeit und Kontrolle für diese Gäste darstellt, sollten Sie die Dinge etwas genauer **Sperren** , wenn Sie einen sensiblen Vorgang ausführen.
 
-Darüber hinaus kann unter bestimmten Umständen, die alle Gäste anmelden, um eine Zusammenarbeit beizutreten erzwingen Sitzung problematisch sein. Beispiele hierfür sind, fordert den Benutzer noch nicht mit Live Share als Gast schulungsumgebung/Szenarien, verknüpfen, oder wenn Sie mit jemand zusammenarbeiten, die nicht eine der unterstützten Kontotypen ist. Aus diesen Gründen Live Share können Benutzern, die **nicht angemeldet** zusammenarbeitssitzungen als verknüpfen **schreibgeschützte** Gäste. Während der Host muss **genehmigen** diese Gäste, bevor sie in der Standardeinstellung hinzugefügt werden können, Sie möchten diese Gäste "Anonym" unterbinden, oder stattdessen immer genehmigen.
+Außerdem kann es unter bestimmten Umständen problematisch sein, dass sich alle Gäste bei der Teilnahme an einer Zusammenarbeits Sitzung anmelden. Beispiele hierfür sind das Anfordern einer neuen Live Share, um als Gast-, Classroom-/Lernszenarios oder bei der Zusammenarbeit mit Personen, die nicht über einen der unterstützten Konto Typen verfügen, teilzunehmen. Aus diesen Gründen können Live Share zulassen, dass Benutzer, die **nicht angemeldet** sind, als schreibgeschützte **Gäste an** Zusammenarbeits Sitzungen teilnehmen. Obwohl der Host diese Gäste **genehmigen** muss, bevor diese standardmäßig beitreten können, sollten Sie diese anonymen Gäste entweder nicht zulassen oder stattdessen immer genehmigen.
 
-#### <a name="requiring-guest-approval-for-signed-in-users"></a>Erfordern Gast Genehmigung für Anmeldung von Benutzer
+#### <a name="requiring-guest-approval-for-signed-in-users"></a>Anforderung der Gast Genehmigung für angemeldete Benutzer
 
-Wenn Sie möchten zu verhindern, dass Gäste Beitritt Ihrer Zusammenarbeit Sitzungen, bis Sie "Diese genehmigt haben" angemeldet, ändern Sie die folgende Einstellung:
+Wenn Sie verhindern möchten, dass angemeldete Gäste ihren Zusammenarbeits Sitzungen beitreten, bis Sie Sie genehmigt haben, ändern Sie die folgende Einstellung:
 
-* In **VS Code**, fügen Sie Folgendes "Settings.JSON" (Datei > Voreinstellungen > Einstellungen):
+* Fügen Sie in **vs Code**Folgendes zu "Settings. JSON" (Datei > Einstellungen > Einstellungen) hinzu:
 
     ```json
     "liveshare.guestApprovalRequired": true
     ```
 
-* In **Visual Studio**, legen Sie Extras > Optionen > Live Share > "Gast-Genehmigung erforderlich" auf "true".
+* Legen Sie in **Visual Studio**Extras > Optionen > Live Share > "Gast Genehmigung erforderlich" auf "true" fest.
 
-    ![Visual Studio-Einstellungen-Fenster mit dem Gast die Genehmigung festlegen hervorgehobenen](../media/vs-setting-guestapproval.png)
+    ![Visual Studio-Fenster "Einstellungen" mit hervorgehobener Gast Genehmigungs Einstellung](../media/vs-setting-guestapproval.png)
 
-Ab diesem Punkt werden Sie gefragt werden, jedem Gast zu genehmigen, die verknüpft.
+Ab diesem Zeitpunkt werden Sie aufgefordert, jeden Gast zu genehmigen, der mit verbunden ist.
 
 <table style="border: none;">
 <tr style="border: none;">
@@ -94,27 +94,27 @@ Ab diesem Punkt werden Sie gefragt werden, jedem Gast zu genehmigen, die verknü
 </tr>
 </table>
 
-Als Gast, wenn Sie eine Sitzung beitreten, in denen diese Einstellung aktiviert ist muss der Host, Sie werden benachrichtigt, in der Statusleiste oder Verknüpfen von Dialogfeld mit dem Live Share auf dem Host auf Genehmigung wartet.
+Wenn Sie als Gast eine Sitzung beitreten, bei der diese Einstellung für den Host aktiviert ist, werden Sie in der Statusleiste oder im Dialogfeld "beitreten" benachrichtigt, die Live Share auf den Host wartet, um Sie zu genehmigen.
 
-#### <a name="auto-rejecting-or-accepting-users-that-are-not-signed-in-anonymous"></a>Automatisch ablehnen oder akzeptieren Benutzer, die nicht (anonym) angemeldet sind
+#### <a name="auto-rejecting-or-accepting-users-that-are-not-signed-in-anonymous"></a>Automatisches ablehnen oder akzeptieren von Benutzern, die nicht angemeldet sind (anonym)
 
-Wie oben beschrieben, Live Share können konfiguriert **Benutzer, die nicht angemeldet sind** verknüpfen eine zusammenarbeitssitzung als **schreibgeschützte** Gäste.  Zwar sind All dies **"Anonym" Gäste müssen einen Namen eingeben** bei der Teilnahme an ein einfacher Namen nicht bietet das gleiche Maß an Sicherheit als eine echte Anmeldung. Aus diesem Grund **in der Standardeinstellung wird der Host genehmigen aufgefordert** anonymen Gast unabhängig von der "Genehmigung Gast" oben beschriebenen Einstellung.
+Wie oben beschrieben, können Live Share so konfiguriert werden, **dass Benutzer, die nicht angemeldet sind** , als Schreib **geschützte Gäste an** einer Zusammenarbeits Sitzung teilnehmen können.  Obwohl diese **"anonymen" Gäste beim beitreten einen Namen eingeben müssen** , bietet ein einfacher Name nicht denselben Grad an Sicherheit wie eine tatsächliche Anmeldung. Daher **wird der Host standardmäßig aufgefordert** , alle anonymen Gäste zu genehmigen, unabhängig von der oben beschriebenen Einstellung "Genehmigung der Gast Genehmigung anfordern".
 
-Sie können **immer abgelehnt** (anonyme Gäste deaktivieren) oder **immer annehmen** anonyme Benutzer stattdessen wie folgt:
+Sie können die anonymen Gäste **jederzeit ablehnen** (deaktivieren) oder anonyme Benutzer immer wie folgt **akzeptieren** :
 
-* In **VS Code**legen `liveshare.anonymousGuestApproval` in "Settings.JSON" (Datei > Voreinstellungen > Einstellungen) auf `accept`, `reject`, oder `prompt` (Standard) nach Bedarf.
+* Legen Sie in **vs Code**`liveshare.anonymousGuestApproval` in "Settings. JSON" (Datei > Einstellungen > Einstellungen) auf `accept`, `reject`oder `prompt` (Standardeinstellung) fest.
 
-* In **Visual Studio**, legen Sie Extras > Optionen > Live Share > "anonyme Gast-Genehmigung" zu akzeptieren, ablehnen oder die Eingabeaufforderung (Standard) als geeignet.
+* Legen Sie in **Visual Studio**Extras > Optionen > Live Share > "anonyme Gast Genehmigung" fest, um nach Bedarf zu akzeptieren, abzulehnen oder einzugeben (Standardeinstellung).
 
- **Unabhängig davon, denken Sie daran, dass Sie nur Live Share senden soll Einladung-Links zu Personen, die Sie vertrauen.**
+ **Denken Sie daran, dass Sie nur Live Share Einladungs Links an Personen senden sollten, denen Sie vertrauen.**
 
-## <a name="controlling-file-access-and-visibility"></a>Steuern den Zugriff auf Dateien und Sichtbarkeit
+## <a name="controlling-file-access-and-visibility"></a>Steuern des Datei Zugriffs und der Sichtbarkeit
 
-Als Gast erhalten Sie Live Share remote Modell schnelle Lese-/Schreibzugriff auf Dateien und Ordner, die der Host für Sie freigegeben haben, ohne den gesamten Inhalt eines Projekts zu synchronisieren. Sie können daher unabhängig navigieren und Bearbeiten von Dateien in der Struktur für die gesamte freigegebene Datei. **Allerdings diese Freiheit einige Risiken auf dem Host darstellen.** Konzept kann Entwickler entscheiden, und Quellcode, ohne Ihr Wissen ändern oder finden Sie unter vertrauliche Quellcode oder "Geheimnisse" an einer beliebigen Stelle in der Struktur freigegebene Datei gefunden. Als Host, daher sollten Sie nicht immer den Gast den Zugriff auf die gesamte eines Projekts, die Sie freigegeben haben. Glücklicherweise ist ein weiteren Vorteil dieses Modells remote an, dass Sie entscheiden können, um "Ausschließen von Dateien, die Sie nicht für andere freigeben, ohne auf Funktionalität verzichten möchten". Von Gästen können immer noch an Dinge wie Debugsitzungen erhalten, die normalerweise Zugriff auf diese Dateien erfordern bei Bedarf in so ihre eigenen teilnehmen.
+Als Gast bietet das Remote Modell von Live Share schnellen Lese-/Schreibzugriff auf Dateien und Ordner, die der Host für Sie freigegeben hat, ohne dass der gesamte Inhalt eines Projekts synchronisiert werden muss. Sie können daher unabhängig von Dateien in der gesamten freigegebenen Dateistruktur navigieren und diese bearbeiten. **Diese Freiheit stellt jedoch einige Risiken für den Host dar.** Im Konzept könnte ein Entwickler den Quellcode ohne Ihr Wissen ändern oder den vertraulichen Quellcode oder "geheime Schlüssel" an einer beliebigen Stelle in der freigegebenen Dateistruktur sehen. Folglich möchten Sie als Host möglicherweise nicht immer, dass der Gast Zugriff auf das gesamte Projekt hat, das Sie freigeben. Ein zusätzlicher Vorteil dieses Remote Modells besteht darin, dass Sie Dateien ausschließen können, die Sie nicht für andere Benutzer freigeben möchten, ohne die Funktionalität zu beeinträchtigen. Ihre Gäste können weiterhin an Dingen wie dem Debuggen von Sitzungen teilnehmen, die normalerweise den Zugriff auf diese Dateien benötigen, wenn Sie dies selbst durchführen möchten.
 
-Sie erreichen dies durch das Hinzufügen einer **. vsls.json** zu dem Ordner oder das Projekt, die Sie teilen sich die Datei. Alle Einstellungen, die Sie diese JSON-formatierte Datei hinzufügen, ändert wie Live Share-Dateien verarbeitet. Abgesehen von der Sie direkt steuern, können diese Dateien auch übergeben werden, an die quellcodeverwaltung damit jeder Benutzer beim Klonen eines Projekts werden diese Regeln durch ohne zusätzlichen Aufwand ihrerseits nutzen können.
+Hierzu können Sie eine **vsls. JSON** -Datei zum Ordner oder Projekt hinzufügen, den Sie freigeben. Alle Einstellungen, die Sie dieser JSON-formatierten Datei hinzufügen, ändern, wie Live Share Dateien verarbeitet. Diese Dateien können nicht nur direkt gesteuert werden, sondern Sie können auch in die Quell Code Verwaltung übernommen werden, damit alle Benutzer, die ein Projekt Klonen, diese Regeln ohne zusätzlichen Aufwand nutzen können.
 
-Es folgt ein Beispiel. vsls.json-Datei:
+Im folgenden finden Sie eine Beispieldatei. vsls. JSON:
 
 ```json
 {
@@ -134,25 +134,25 @@ Es folgt ein Beispiel. vsls.json-Datei:
 ```
 
 > [!NOTE]
-> Sie können auch die alle Dateien/Ordner Sie freigeben, **schreibgeschützte** beim Starten einer zusammenarbeitssitzung. Finden Sie unter [unten](#read-only-mode) Details.
+> Sie können auch alle Dateien/Ordner, die **Sie freigeben,** beim Starten einer Zusammenarbeits Sitzung als schreibgeschützt festlegen. Weitere Informationen finden Sie weiter [unten](#read-only-mode) .
 
-Betrachten Sie diese Eigenschaften wie zu ändern, welche Gäste Möglichkeiten.
+Sehen wir uns an, wie sich diese Eigenschaften ändern, welche Möglichkeiten die Gäste haben.
 
 ### <a name="properties"></a>Eigenschaften
 
-Die **ExcludeFiles** Eigenschaft können Sie eine Liste von (sehr ähnlich wie die gitignore-Dateien gefunden) Datei-globmuster angeben, die verhindert, dass Live Share bestimmte Dateien oder Ordner für Gäste öffnen. Beachten Sie, dass dies einschließlich Szenarien wie Gast ist _befolgen oder das Springen zu Ihrem bearbeiten-Speicherort, in eine Datei während des Debuggens Zusammenarbeit stepping alle Funktionen für die codenavigation wie zur Definition und vieles mehr zu wechseln._ Es ist für Dateien vorgesehen, die Sie nie unter keinen Umständen ähneln, enthält die geheimen Schlüssel, Zertifikate oder Kennwörter freigeben möchten. Da sie z. B. Sicherheit steuern. vsls.json-Dateien sind immer ausgeschlossen.
+Die **excludefiles** -Eigenschaft ermöglicht es Ihnen, eine Liste von globmuster-Datei Mustern anzugeben (sehr ähnlich wie solche. gitignore-Dateien), die verhindert, dass Live Share bestimmte Dateien oder Ordner für Gäste öffnet. Beachten Sie, dass dies Szenarien umfasst, wie z. b. einen Gast, der _auf den Bearbeitungs Speicherort folgt, und schrittweise eine Datei beim kollaborativen Debuggen, alle Code Navigations Features wie "Gehe zu Definition" und vieles mehr._ Sie ist für Dateien bestimmt, die Sie niemals freigeben möchten, wie z. b. solche, die Geheimnisse, Zertifikate oder Kenn Wörter enthalten. Da Sie z. b. die Sicherheit steuern, werden vsls. JSON-Dateien immer ausgeschlossen.
 
-Die **HideFiles** Eigenschaft entspricht, ist jedoch nicht so streng. Diese Dateien werden aus der Dateistruktur einfach ausgeblendet. Angenommen, Sie aufgetreten sind. eine dieser Dateien während des Debuggens schrittweise, ist es immer noch im Editor geöffnet. Diese Eigenschaft ist vor allem nützlich, wenn Sie keine gitignore-Datei-Setup verfügen (wie der Fall wäre, wenn Sie einen anderen Quellcodeverwaltungssystem verwenden), oder wenn Sie möchten einfach zu erweitern, was bereits vorhanden ist, überladen oder Verwirrung zu vermeiden.
+Die **hidefiles** -Eigenschaft ist ähnlich, aber nicht ganz so streng. Diese Dateien werden einfach aus der Dateistruktur ausgeblendet. Wenn Sie z. b. während des Debuggens einen Einzelschritt in eine dieser Dateien durchgeführt haben, wird Sie weiterhin im Editor geöffnet. Diese Eigenschaft ist in erster Linie nützlich, wenn Sie nicht über eine gitignore-Datei Einrichtung verfügen (wie bei Verwendung eines anderen Quell Code Verwaltungssystems), oder wenn Sie einfach nur die bereits vorhandenen Dateien erweitern möchten, um Übersichtlichkeit oder Verwirrung zu vermeiden.
 
-Die **Gitignore** Einstellung legt fest, wie der Inhalt der gitignore-Dateien in freigegebenen Ordnern von Live Share verarbeitet werden soll. Standardmäßig werden alle Globs finden Sie in der gitignore-Dateien behandelt, als ob sie in der Eigenschaft "HideFiles" angegeben wurden. Sie können jedoch ein anderes Verhalten mithilfe einer der folgenden Werte:
+Mit der **gitignore** -Einstellung wird festgelegt, wie Live Share den Inhalt von gitignore-Dateien in freigegebenen Ordnern verarbeiten soll. Standardmäßig werden alle in gitignore-Dateien gefundenen glob-Dateien so behandelt, als wären Sie in der Eigenschaft "hidefiles" angegeben. Sie können jedoch ein anderes Verhalten auswählen, indem Sie einen der folgenden Werte verwenden:
 
 | Option    | Ergebnis                                                                                                                 |
 | --------- | ---------------------------------------------------------------------------------------------------------------------- |
-| `none`    | ".gitignore" Inhalt ist sichtbar für Gäste, die in der Dateistruktur (vorausgesetzt, dass sie von einem Gast-Editor-Einstellung nicht gefiltert werden). |
-| `hide`    | **Der Standardwert.** Globs in ".gitignore" werden verarbeitet, als wären sie in der Eigenschaft "HideFiles".                   |
-| `exclude` | Globs in ".gitignore" werden verarbeitet, als wären sie in der Eigenschaft "ExcludeFiles".                                 |
+| `none`    | . gitignore-Inhalte sind für Gäste in der Dateistruktur sichtbar (vorausgesetzt, Sie werden nicht durch eine Gast-Editor-Einstellung gefiltert). |
+| `hide`    | **Der Standardwert.** Glob in. gitignore werden so verarbeitet, als ob Sie sich in der Eigenschaft "hidefiles" befinden würden.                   |
+| `exclude` | Glob in. gitignore werden so verarbeitet, als ob Sie sich in der Eigenschaft "excludefiles" befinden würden.                                 |
 
-Ein Nachteil der `exclude` Einstellung ist, dass die Inhalte der Ordner wie "node_modules" häufig in ".gitignore sind", jedoch können während des Debuggens schrittweise hilfreich sein. Live Share unterstützt daher die Möglichkeit, eine Regel mit reverse "!" in der ExcludeFiles-Eigenschaft. Beispielsweise. vsls.json-Datei würde alles in ".gitignore", mit Ausnahme von "node_modules" ausschließen:
+Ein Nachteil der `exclude` Einstellung besteht darin, dass sich der Inhalt von Ordnern wie node_modules häufig in. gitignore befindet, aber nützlich sein kann, während des Debuggens schrittweise auszuführen. Folglich unterstützt Live Share die Möglichkeit, eine Regel mithilfe von "!" in der excludefiles-Eigenschaft umzukehren. Diese. vsls. JSON-Datei würde beispielsweise alles in ". gitignore" ausschließen, mit Ausnahme von node_modules:
 
 ```json
 {
@@ -164,7 +164,7 @@ Ein Nachteil der `exclude` Einstellung ist, dass die Inhalte der Ordner wie "nod
 }
 ```
 
-Die ein- und ausschließen Regeln werden getrennt verarbeitet, wenn Sie weiterhin "node_modules", um die Übersichtlichkeit, ohne sie tatsächlich ausgeschlossen ausblenden möchten, Sie einfach die Datei wie folgt bearbeiten können:
+Die Regeln zum Ausblenden und ausschließen werden separat verarbeitet. Wenn Sie also node_modules immer noch ausblenden möchten, um die Übersichtlichkeit zu reduzieren, ohne Sie tatsächlich auszuschließen, können Sie die Datei einfach wie folgt bearbeiten:
 
 ```json
 {
@@ -179,93 +179,93 @@ Die ein- und ausschließen Regeln werden getrennt verarbeitet, wenn Sie weiterhi
 }
 ```
 
-### <a name="vslsjson-files-in-sub-folders"></a>. vsls.json-Dateien in Unterordnern
+### <a name="vslsjson-files-in-sub-folders"></a>vsls. JSON-Dateien in Unterordnern
 
-Zum Schluss wie gitignore-Datei. vsls.json-Dateien in Unterordner eingefügt werden können. Ausblenden/Exclude-Regeln werden anhand der ab dem. vsls.json-Datei in den Stammordner, die Sie freigegeben haben (sofern vorhanden), und klicken Sie dann durchlaufen an jeden Unterordner von dort führende für eine bestimmte Datei, suchen Sie nach. vsls.json-Dateien verarbeiten. Der Inhalt der. vsls.json-Dateien in Ordnern, je weiter unten in der Dateistruktur dann ergänzen (oder Außerkraftsetzung) auf höheren Ebenen bestehenden Regeln.
+Und schließlich können wie. gitignore auch vsls. JSON-Dateien in Unterordnern abgelegt werden. Regeln zum Ausblenden/ausschließen werden bestimmt, indem mit der vsls. JSON-Datei im Stamm Ordner begonnen wird, den Sie freigegeben haben (sofern vorhanden). Anschließend werden die einzelnen Unterordner von dort durchlaufen, sodass nach vsls. JSON-Dateien gesucht werden konnte. Der Inhalt der vsls. JSON-Dateien in Ordnern, die sich weiter unten in der Dateistruktur befinden, werden dann auf höheren Ebenen festgelegt (oder überschrieben).
 
-### <a name="disabling-external-file-sharing"></a>Deaktivieren die externe Dateifreigabe
+### <a name="disabling-external-file-sharing"></a>Deaktivieren der Freigabe externer Dateien
 
-In der Standardeinstellung Live-Freigabe wird auch freigeben, der Host öffnet, Dateien, die extern auf den freigegebenen Ordner sind / Lösung. Dies erleichtert Ihnen, schnell um andere zugehörigen Dateien öffnen können, ohne sich erneut freigeben.
+Standardmäßig gibt Live Share auch alle Dateien frei, die der Host öffnet, die für den freigegebenen Ordner bzw. die freigegebene Lösung extern sind. Dies vereinfacht das schnelle Öffnen anderer verwandter Dateien, ohne dass eine erneute Freigabe erforderlich ist.
 
-Wenn Sie diese Funktion deaktivieren möchten:
+Wenn Sie dieses Feature deaktivieren möchten:
 
-* In **VS Code**, fügen Sie "Settings.JSON" Folgendes:
+* Fügen Sie in **vs Code**der Datei "Settings. JSON" Folgendes hinzu:
 
     ```json
     "liveshare.shareExternalFiles": false
     ```
 
-* In **Visual Studio**, legen Sie die Tools &gt; Optionen &gt; Live Share &gt; "Freigabe externe Dateien" auf "false"
+* Legen Sie in **Visual Studio**Extras &gt; Optionen &gt; Live Share &gt; "externe Dateien freigeben" auf "false" fest.
 
-## <a name="read-only-mode"></a>Nur-Lese Modus
+## <a name="read-only-mode"></a>Schreib geschützter Modus
 
-Manchmal, wenn Sie Ihren Code als Host gemeinsam verwenden, möchten Sie nicht die Gäste Änderungen vornehmen. Sie benötigen den Gast auf einen Blick auf einige der Code, oder Sie Ihr Projekt für einer großen Anzahl von Gästen angezeigt werden, und möchten nicht, dass unnötigen oder versehentlichen Änderungen vorgenommen werden. Live-Freigabe bietet die Möglichkeit zur Freigabe von Projekten im schreibgeschützten Modus.
+Wenn Sie Ihren Code als Host freigeben, sollen die Gäste manchmal keine Änderungen vornehmen. Möglicherweise müssen Sie sich an Ihren Gast teilnehmen, um sich einen Teil Ihres Codes anzusehen, oder Sie zeigen das Projekt einer großen Anzahl von Gästen an, und Sie möchten nicht, dass unnötige oder versehentliche Änderungen vorgenommen werden. Live Share bietet die Möglichkeit, Projekte im schreibgeschützten Modus gemeinsam zu nutzen.
 
-Als Host, bei der Freigabe müssen Sie die Option zum Aktivieren von nur-Lese Modus für eine Zusammenarbeit. Bei Gast beitritt, werden, werden keine Änderungen an den Code vornehmen, obwohl Sie weiterhin des jeweils anderen Cursor angezeigt und hervorgehoben sowie navigieren Sie durch das Projekt.
+Als Host haben Sie bei der Freigabe die Möglichkeit, den schreibgeschützten Modus für eine Zusammenarbeits Sitzung zu aktivieren. Wenn ein Gast Beitritt, kann er keine Änderungen am Code vornehmen. Sie können jedoch weiterhin die Cursor und Highlights der anderen sehen und durch das Projekt navigieren.
 
-Sie können weiterhin zusammen mit Gästen im schreibgeschützten Modus debuggen. Gäste müssen nicht die Möglichkeit, schrittweise Durchlaufen des Debugvorgangs zur Verfügung, jedoch können immer noch hinzufügen oder entfernen Haltepunkte, und untersuchen Sie Variablen. Darüber hinaus können Sie immer noch Server und -Terminals (schreibgeschützt) für Gäste freigeben.
+Sie können im schreibgeschützten Modus immer noch mit Gästen zusammen Debuggen. Gäste haben nicht die Möglichkeit, den Debugprozess zu durchlaufen, können aber trotzdem Breakpoints hinzufügen oder entfernen und Variablen überprüfen. Darüber hinaus können Sie weiterhin Server und Terminals (schreibgeschützt) mit Gästen freigeben.
 
-Erfahren Sie mehr über das Starten einer zusammenarbeitssitzung nur-Lese: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#share-a-project) [![VS](../media/vs-icon-15x15.png)](../use/vs.md#share-a-project)
+Weitere Informationen zum Starten einer Sitzung für die schreibgeschützte Zusammenarbeit finden Sie unter: [![vs Code](../media/vscode-icon-15x15.png)](../how-to-guides/vscode.md#share-a-project) [![vs](../media/vs-icon-15x15.png)](../how-to-guides/vs.md#share-a-project)
 
 ## <a name="co-debugging"></a>Gemeinsames Debuggen
 
-Wenn Sie schwierige coding Probleme oder Fehler geht, kann die müssen eines zusätzlichen Paars Augen beim Debuggen sehr nützlich sein. Visual Studio Live Share ermöglicht "collaborative debugging" oder "gleichzeitig Debuggen", indem alle Gäste die Debugsitzung freigeben, wenn der Host Debuggen startet.
+Wenn Sie schwierige Codierungs Probleme oder Fehler beheben, kann es sehr nützlich sein, wenn Sie das Debuggen über ein zusätzliches Paar von Augen haben. Visual Studio Live Share aktiviert "kollaboratives Debuggen" oder "mitdebuggen" durch Freigeben der Debugsitzung für alle Gäste, wenn der Host das Debugging startet.
 
-Als Host haben Sie vollständige Kontrolle über eine Debugsitzung gestartet oder beendet, aber gleichzeitig zu debuggen darstellen, einige Risiken Wenn Sie gemeinsam mit einer anderen Person, die Sie nicht vertrauen. Live Share ermöglicht Gäste Sie einladen, Konsole/REPL-Befehle auszuführen, und es ist daher **ein Risiko des Ausführens eines Befehls, die Sie nicht möchten, führen sie von einem böswilligen Akteur**.
+Als Host haben Sie die vollständige Kontrolle darüber, wann eine Debugsitzung gestartet oder angehalten wird, aber das kodebuggen stellt einige Risiken dar, wenn Sie nicht vertrauenswürdige Personen freigeben. Live Share können Gäste, die Sie einladen, Konsolen-/repl-Befehle auszuführen. Daher besteht das **Risiko, dass ein böswilliger Akteur einen Befehl durchführt, den Sie nicht ausführen**möchten.
 
-Daher sollten Sie **Debuggen nur zusammen mit denen Sie vertrauen.**
+Folglich sollten Sie **nur mit denjenigen, denen Sie Vertrauen, eine kodebuggen.**
 
-Weitere Informationen: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#co-debugging) [![VS](../media/vs-icon-15x15.png)](../use/vs.md#co-debugging)
+Weitere Informationen: [![vs Code](../media/vscode-icon-15x15.png)](../how-to-guides/vscode.md#co-debugging) [![vs](../media/vs-icon-15x15.png)](../how-to-guides/vs.md#co-debugging)
 
-## <a name="sharing-a-local-server"></a>Freigeben von einem lokalen server
+## <a name="sharing-a-local-server"></a>Freigeben eines lokalen Servers
 
-Beim gemeinsamen Debuggen kann es sehr hilfreich sein, Zugriff auf verschiedene Teile der Anwendung zu erhalten, die den Gästen vom Gastgeber für die Debugsitzung „serviert“ werden. Sie möchten möglicherweise Zugriff auf die app in einem Browser, auf eine lokale Datenbank zugreifen oder einen REST-Endpunkt in den Tools erreicht. Live Share können Sie "Share a Server" der genau denselben Port der Gastcomputer einen anderen lokalen Port auf dem Computer des Hosts zugeordnet ist. Als Gast, können Sie dann eine Interaktion mit der Anwendung genau so, als ob es lokal auf Ihrem Computer ausgeführt wurde (z. B. Host und Gast können sowohl Zugriff auf eine Web-app unter http://localhost:3000).
+Beim gemeinsamen Debuggen kann es sehr hilfreich sein, Zugriff auf verschiedene Teile der Anwendung zu erhalten, die den Gästen vom Gastgeber für die Debugsitzung „serviert“ werden. Möglicherweise möchten Sie in einem Browser auf die App zugreifen, auf eine lokale Datenbank zugreifen oder einen Rest-Endpunkt aus ihren Tools erreichen. Mit Live Share können Sie einen Server freigeben, der einen lokalen Port auf dem Computer des Hosts dem exakt gleichen Port auf dem Gastcomputer zuordnet. Als Gast können Sie mit der Anwendung genau so interagieren, als ob Sie lokal auf Ihrem Computer ausgeführt würde (z. b. der Host und der Gast können auf eine Web-App zugreifen, die auf http://localhost:3000) ausgeführt wird.
 
-Als Host und Sie sollten jedoch **werden mit den Ports, die Sie freigeben sehr selektiven** mit Gäste und nur-Anwendung stattdessen Systemports ports. Für Gäste verhalten sich freigegebene Ports so, als würde der Server oder Dienst auf dem lokalen Gastcomputer ausgeführt werden. Dies ist zwar sehr nützlich, kann aber auch riskant sein, wenn der falsche Port freigegeben wird. Aus diesem Grund ist Live Share keine Annahmen über Was soll, oder sollte nicht freigegeben werden, ohne eine Konfigurationseinstellung und dem Host, der eine Aktion.
+Als Host sollten Sie jedoch **mit den Ports, die Sie für Gäste freigeben, sehr selektiv vorgehen** und nur Anwendungsports anstelle von Systemports freigeben. Für Gäste verhalten sich freigegebene Ports so, als würde der Server oder Dienst auf dem lokalen Gastcomputer ausgeführt werden. Dies ist zwar sehr nützlich, kann aber auch riskant sein, wenn der falsche Port freigegeben wird. Aus diesem Grund trifft Live Share keine Annahmen darüber, was ohne eine Konfigurationseinstellung oder nicht freigegeben werden sollte, und der Host führt eine Aktion aus.
 
-In Visual Studio die **web Anwendungsport** angegeben in ASP.NET-Projekten ist **automatisch während des Debuggens nur freigegebene** um Gastzugriff für die Web-app zu ermöglichen, bei der Ausführung. Allerdings können Sie diese Automatisierung deaktivieren, indem Sie die Einstellung Tools > Optionen > Live Share > "Freigabe Web-app Debuggen" auf "False", falls gewünscht.
+In Visual Studio wird der in ASP.NET-Projekten angegebene **Webanwendungs Port** **nur beim Debuggen automatisch freigegeben** , um den Gast Zugriff auf die Web-App bei der Ausführung zu vereinfachen. Sie können diese Automatisierung jedoch deaktivieren, indem Sie Tools > Optionen > Live Share > "Web-App beim Debuggen freigeben" auf "false" festlegen, wenn Sie dies bevorzugen.
 
-In Visual Studio Code, Live-Freigabe versucht, **erkennen die richtigen Anwendungsports** und teilen Sie sie. Allerdings können Sie diese deaktivieren, indem Sie "Settings.JSON" Folgendes hinzufügen:
+In Visual Studio Code versucht Live Share, **die richtigen Anwendungsports zu erkennen** und freizugeben. Sie können dies jedoch deaktivieren, indem Sie Folgendes zu "Settings. JSON" hinzufügen:
 
         liveshare.autoShareServers: false
 
-Walten Sie in beiden Fällen Sorgfalt, wenn zusätzliche Ports freigeben.
+Achten Sie in beiden Fällen darauf, dass Sie zusätzliche Ports freigeben.
 
-Erfahren Sie mehr über das Konfigurieren dieser Funktion: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#share-a-server) [![VS](../media/vs-icon-15x15.png)](../use/vs.md#share-a-server)
+Weitere Informationen zum Konfigurieren des Features finden Sie hier: [![vs Code](../media/vscode-icon-15x15.png)](../how-to-guides/vscode.md#share-a-server) [![vs](../media/vs-icon-15x15.png)](../how-to-guides/vs.md#share-a-server)
 
-## <a name="sharing-a-terminal"></a>Freigeben von einem terminal
+## <a name="sharing-a-terminal"></a>Freigeben eines Terminals
 
-Die moderne Entwicklung nutzt oft eine Vielzahl von Befehlszeilentools. Glücklicherweise ermöglicht Live Share es Ihnen als Gastgeber, für Gäste optional „ein Terminal freizugeben“. Das freigegebene Terminal kann schreibgeschützt oder vollständig für die Zusammenarbeit eingerichtet sein, damit Sie und Ihre Gäste Befehle ausführen und die Ergebnisse anzeigen können. Als Host fungiert können Sie um weitere Mitwirkende entweder nur die Ausgabe anzuzeigen oder um eine beliebige Anzahl von der Befehlszeile verwenden Tools zum Ausführen von Builds, Tests oder sogar selektieren Sie umgebungsspezifische-Probleme zu ermöglichen.
+Die moderne Entwicklung nutzt oft eine Vielzahl von Befehlszeilentools. Glücklicherweise ermöglicht Live Share es Ihnen als Gastgeber, für Gäste optional „ein Terminal freizugeben“. Das freigegebene Terminal kann schreibgeschützt oder vollständig für die Zusammenarbeit eingerichtet sein, damit Sie und Ihre Gäste Befehle ausführen und die Ergebnisse anzeigen können. Als Host können Sie es anderen Projektmitarbeitern gestatten, entweder die Ausgabe zu sehen oder eine beliebige Anzahl von Befehlszeilen Tools zu verwenden, um Tests, Builds oder sogar Umgebungs spezifische Probleme auszuführen.
 
-Nur Hosts können beginnen, freigegebener Terminals, um zu verhindern, dass Gäste aus einen Startvorgang und Aktionen, die Sie nicht erwartet oder überwacht werden. Wenn Sie ein freigegebenes Terminal als Host starten, können Sie angeben, ob er sollte schreibgeschützt sein oder Lese-/Schreibzugriff. Im zweiten Fall kann jede Person einschließlich des Gastgebers Befehle im Terminal eingeben. Dadurch können unerwünschte Gastaktionen leicht unterbunden werden. **Die Lese- und Schreibberechtigungen sollten Sie aus Sicherheitsgründen ausschließlich Gästen bereitstellen, die darauf angewiesen sind**. Terminals mit Leseberechtigungen sollten Sie in Szenarios einsetzen, in denen Gäste nur die Ausgabe der von Ihnen ausgeführten Befehle sehen dürfen.
+Nur Hosts können freigegebene Terminals starten, um zu verhindern, dass Gast Betriebssysteme gestartet werden. Wenn Sie ein frei gegebenes Terminal als Host starten, können Sie angeben, ob es schreibgeschützt oder Lese-/Schreibzugriff sein soll. Im zweiten Fall kann jede Person einschließlich des Gastgebers Befehle im Terminal eingeben. Dadurch können unerwünschte Gastaktionen leicht unterbunden werden. **Die Lese- und Schreibberechtigungen sollten Sie aus Sicherheitsgründen ausschließlich Gästen bereitstellen, die darauf angewiesen sind**. Terminals mit Leseberechtigungen sollten Sie in Szenarios einsetzen, in denen Gäste nur die Ausgabe der von Ihnen ausgeführten Befehle sehen dürfen.
 
-In Visual Studio werden Terminals standardmäßig nicht freigegeben. In VS Code Terminals werden automatisch freigegeben **schreibgeschützte** standardmäßig. Allerdings können Sie diese deaktivieren, indem Sie "Settings.JSON" Folgendes hinzufügen:
+In Visual Studio werden Terminals standardmäßig nicht freigegeben. In vs Code werden Terminals standardmäßig automatisch als schreibgeschützt **frei** gegeben. Sie können dies jedoch deaktivieren, indem Sie Folgendes zu "Settings. JSON" hinzufügen:
 
 ```json
 "liveshare.autoShareTerminals": false
 ```
 
-Weitere Informationen: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#share-a-terminal) [![VS](../media/vs-icon-15x15.png)](../use/vs.md#share-a-terminal)
+Weitere Informationen: [![vs Code](../media/vscode-icon-15x15.png)](../how-to-guides/vscode.md#share-a-terminal) [![vs](../media/vs-icon-15x15.png)](../how-to-guides/vs.md#share-a-terminal)
 
-## <a name="aad-admin-consent"></a>AAD-Administratorzustimmung
+## <a name="aad-admin-consent"></a>Zustimmung für Aad-Administrator
 
-Bei der Anmeldung mit einem Microsoft gesichert **Geschäfts-, Schul- oder UNI-e-Mail-Adresse** möglicherweise folgende Meldung angezeigt, **"Administratorgenehmigung"** bei der Anmeldung. Dies ist da Live Share Lesezugriff auf Benutzerinformationen für seine Sicherheitsfunktionen erfordert und der Azure AD-Mandanten erforderlich "administratorzustimmung" für neue Anwendungen, die Zugriff auf den Inhalt des Verzeichnisses.
+Wenn Sie sich mit einer von Microsoft gesicherten Geschäfts **-, Schul-oder Uni-e-Mail-Adresse** anmelden, wird bei der Anmeldung möglicherweise die Meldung **"Administrator Genehmigung erforderlich** Der Grund hierfür ist, dass Live Share Lesezugriff auf Benutzerinformationen für seine Sicherheitsfunktionen erfordert, und Ihr Azure AD Mandant muss für neue Anwendungen, die auf den Inhalt des Verzeichnisses zugreifen, eine "Administrator Zustimmung" erfordern.
 
-Ihr AD-Administrator müssen zum Beheben dieses Problems für Sie mit den folgenden Informationen:
+Ihr AD-Administrator muss dies mit den folgenden Informationen beheben:
 
-* **Anwendungsname**: Visual Studio-Livefreigabe (Insider)
-* **Anwendungstyp**: Webanwendung
-* **Anwendungsstatus**: Produktion
-* **Delegierte Berechtigungen**: User.Read
+* **Anwendungs Name**: Visual Studio Live Share (Insider)
+* **Anwendungstyp**: Web-App
+* **Anwendungs Status**: Produktion
+* **Delegierte Berechtigungen**: User. Read
 * **Anwendungs-URL**: https://insiders.liveshare.vsengsaas.visualstudio.com/
 * **Antwort-URL**: https://insiders.liveshare.vsengsaas.visualstudio.com/auth/redirect/windowslive/
 
-Dies müsste nur einmal für jede Person, die Live Share ausgeführt werden. Finden Sie unter [hier](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes#admin-restricted-scopes) und [hier](https://stackoverflow.com/questions/39861830/azure-ad-admin-consent-from-the-azure-portal) Details.
+Dies muss nur einmal für alle Benutzer erfolgen, die Live Share verwenden. Weitere Informationen finden Sie [hier](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes#admin-restricted-scopes) und [hier](https://stackoverflow.com/questions/39861830/azure-ad-admin-consent-from-the-azure-portal) .
 
 ## <a name="see-also"></a>Siehe auch
 
-* [Vorgehensweise: Zusammenarbeiten mithilfe von Visual Studio Code](../use/vscode.md)
-* [Vorgehensweise: Zusammenarbeiten mithilfe von Visual Studio](../use/vs.md)
+* [Gewusst wie: zusammenarbeiten mit Visual Studio Code](../how-to-guides/vscode.md)
+* [Gewusst wie: zusammenarbeiten mithilfe von Visual Studio](../how-to-guides/vs.md)
 * [Anforderungen an die Konnektivität für Live Share](connectivity.md)
 
 Gibt es Probleme? Lesen Sie [Troubleshooting](../troubleshooting.md) oder [Feedback geben](../support.md).

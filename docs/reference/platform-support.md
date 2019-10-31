@@ -1,6 +1,6 @@
 ---
-title: Unterstützung der Plattform und Sprache – Visual Studio Live Share | Microsoft-Dokumentation
-description: Eine Übersicht über die Plattform und Sprache-Unterstützung für Visual Studio Live Share.
+title: Unterstützung für Plattformen und Sprachen-Visual Studio Live Share | Microsoft-Dokumentation
+description: Eine Übersicht über die Platt Form-und Sprachunterstützung für die Visual Studio-Live Freigabe.
 ms.custom: ''
 ms.date: 04/25/2018
 ms.reviewer: ''
@@ -11,12 +11,12 @@ ms.author: joncart
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 91e80df324a0b2f49fdf37a5270cf7b86fca5c7c
-ms.sourcegitcommit: 100fce9b9bbcd7e6f68d40659bd2760e9537de37
+ms.openlocfilehash: 386a8204787ed378413e1b35b7c2a80e0de678ce
+ms.sourcegitcommit: c6ef4e5a9aec4f682718819c58efeab599e2781b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58640223"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73170086"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -24,166 +24,166 @@ All rights reserved.
 Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
 -->
 
-# <a name="language-and-platform-support"></a>Sprach-und plattformunterstützung
+# <a name="language-and-platform-support"></a>Sprach- und Plattformunterstützung
 
-Visual Studio Live Share Funktionen sollen bunten Vielfalt an Sprachen und Plattformen funktionieren. Jedoch sind die bloße Anzahl von Variationen, einige Plattformen und Sprachen umfassendere als andere. Dieses Dokument behandelt dem aktuellen Zustand einer Reihe von gängigen Sprachen und Plattformen für die derzeit unterstützten Funktionen bezeichnet.
+Die Funktionen von Visual Studio Live Share sind für die Verwendung in einer Vielzahl von Sprachen und Anwendungsplattformen vorgesehen. Allerdings sind einige Plattformen und Sprachen aufgrund der reinen Anzahl von Variationen besser als andere Plattformen und Sprachen. In diesem Dokument wird der aktuelle bekannte Zustand einer Reihe beliebter Sprachen und Plattformen für derzeit unterstützte Funktionen behandelt.
 
-Sehen Sie eine Sprache oder Plattform benötigen Sie? Möchten Sie hinzufügen, die nicht angezeigt? [Hier abstimmen.](https://github.com/MicrosoftDocs/live-share/issues/12)
+Sie benötigen eine Sprache oder Plattform, die Sie benötigen? Möchten Sie eine hinzufügen, die Sie nicht sehen? [Stimmen Sie hier ab.](https://github.com/MicrosoftDocs/live-share/issues/12)
 
 ## <a name="visual-studio-code"></a>Visual Studio Code
 
-Alle Sprachen und Plattformen dieselbe Datei-Intellisense (wenn die jeweilige Erweiterung installiert ist), sowie die farbliche Kennzeichnung und gemeinsam bearbeitungsunterstützung. Die Listen unten sind komplexere Funktionen derzeit ohne vollständige, universelle Unterstützung:
+Alle Sprachen/Plattformen verfügen über die gleiche Datei IntelliSense (wenn die jeweilige Erweiterung installiert ist) sowie Unterstützung für farbliche und Co-Bearbeitung. In der folgenden Liste werden erweiterte Features behandelt, die derzeit ohne umfassende universelle Unterstützung sind:
 
 ### <a name="languages"></a>Sprachen
 
-| Sprache | Freigegebene Sprachdienste | Freigegebene Debuggen |
+| Sprache | Freigegebene Sprachdienste | Frei gegebenes Debugging |
 |----------|--------------------------------|--------------|
-| Ansible | ✅ | *N/V* |
+| Ansible | ✅ | *nicht zutreffend* |
 | Ballerina | ✅ | ✅ |
 | Bash | ✅ | ✅ |
 | C++ | ✅ | ✅ |
 | C# | ✅ | ✅ |
-| Clojure | ✅ | *N/V* <sup>4</sup> |
-| [ColdFusion (CFML)](https://marketplace.visualstudio.com/items?itemName=KamasamaK.vscode-cfml) | ✅ | *N/V* <sup>4</sup> |
-| [Crystal](https://marketplace.visualstudio.com/items?itemName=faustinoaq.crystal-lang) | ✅ | *N/V* <sup>4</sup> |
-| CSHTML | *N/V* <sup>1</sup> | ✅ |
-| CSS | *N/V* | *N/V* |
-| DART | ✅ | ✅ |
-| Docker | ✅ | *N/V* |
+| Clojure | ✅ | Nicht zutreffend <sup>4</sup> |
+| [ColdFusion (CFML)](https://marketplace.visualstudio.com/items?itemName=KamasamaK.vscode-cfml) | ✅ | Nicht zutreffend <sup>4</sup> |
+| [SAP](https://marketplace.visualstudio.com/items?itemName=faustinoaq.crystal-lang) | ✅ | Nicht zutreffend <sup>4</sup> |
+| CSHTML | *N/v* <sup>1</sup> | ✅ |
+| CSS | *nicht zutreffend* | *nicht zutreffend* |
+| Darts | ✅ | ✅ |
+| Docker | ✅ | *nicht zutreffend* |
 | Elixir | ✅ | ✅ |
-| ELM | ✅ |  *N/V* <sup>4</sup> |
+| Elfmeter | ✅ |  Nicht zutreffend <sup>4</sup> |
 | Erlang | ✅ | ✅ |
-| F# | ✅ |  *N/V* <sup>4</sup> |
-| Fluss | ✅ |  *N/V* <sup>4</sup> |
-| Fortran | ✅ | *N/V* |
+| F# | ✅ |  Nicht zutreffend <sup>4</sup> |
+| Fluss | ✅ |  Nicht zutreffend <sup>4</sup> |
+| Fortran | ✅ | *nicht zutreffend* |
 | Gehe zu | ✅ | ✅ |
-| Gradle | ✅ | *N/V* <sup>4</sup> |
-| GraphQL | ✅ | *N/V* <sup>4</sup> |
+| Gradle | ✅ | Nicht zutreffend <sup>4</sup> |
+| Graphql | ✅ | Nicht zutreffend <sup>4</sup> |
 | Haskell | ✅ | ✅ |
-| HTML | *N/V* | <sup>2</sup> |
+| HTML | *nicht zutreffend* | <sup>2</sup> |
 | Java | ✅ | ✅ |
-| JavaScript / TypeScript | ✅ | ✅ <sup>3</sup> |
-| Julia | ✅ | *N/V* <sup>4</sup> |
-| [Kotlin](https://marketplace.visualstudio.com/items?itemName=mathiasfrohlich.Kotlin) | *N/V* | *N/V* <sup>4</sup> |
+| JavaScript/typescript | ✅ | ✅ <sup>3</sup> |
+| Julia | ✅ | Nicht zutreffend <sup>4</sup> |
+| [Kotlin](https://marketplace.visualstudio.com/items?itemName=mathiasfrohlich.Kotlin) | *nicht zutreffend* | Nicht zutreffend <sup>4</sup> |
 | Lua | ✅ | ✅ |
-| Markdown | ✅ | *N/V* |
-| MATLAB |  ✅ | *N/V* <sup>4</sup> |
-| Objective-C | ✅ | *N/V* <sup>4</sup> |
-| Pascal-Schreibweise | ✅ | *N/V* <sup>4</sup> |
+| Markdown | ✅ | *nicht zutreffend* |
+| MATLAB |  ✅ | Nicht zutreffend <sup>4</sup> |
+| Objective-C | ✅ | Nicht zutreffend <sup>4</sup> |
+| Pas | ✅ | Nicht zutreffend <sup>4</sup> |
 | Perl | ✅ | ✅ |
 | PHP | ✅ | ✅ |
-| PowerShell | *N/V* | ✅ |
+| PowerShell | *nicht zutreffend* | ✅ |
 | Python |  ✅ | ✅ |
-| PureScript | ✅ | *N/V* <sup>4</sup> |
-| R |  ✅ | *N/V* <sup>4</sup> |
-| [Reason/OCaml](https://marketplace.visualstudio.com/items?itemName=freebroccolo.reasonml) | ✅ | *N/V* <sup>4</sup> |
-| reStructuredText | ✅ | *N/V* |
+| Purescript | ✅ | Nicht zutreffend <sup>4</sup> |
+| R |  ✅ | Nicht zutreffend <sup>4</sup> |
+| [Grund/ocaml](https://marketplace.visualstudio.com/items?itemName=freebroccolo.reasonml) | ✅ | Nicht zutreffend <sup>4</sup> |
+| Umstrukturierung Text | ✅ | *nicht zutreffend* |
 | Ruby | ✅ | ✅ |
-| Rust | ✅ | *N/V* <sup>4</sup> |
-| [Sass](https://marketplace.visualstudio.com/items?itemName=robinbentley.sass-indented) | ✅ | *N/V* |
-| Scala | ✅ | *N/V* <sup>4</sup> |
-| Solidity | ✅ | *N/V* <sup>4</sup> |
-| SQL / T-SQL | *N/V* | *N/V* <sup>4</sup> |
-| [Stylus](https://marketplace.visualstudio.com/items?itemName=sysoev.language-stylus) | ✅ | *N/V* |
-| [Svelte](https://marketplace.visualstudio.com/items?itemName=JamesBirtles.svelte-vscode) | ✅ | *N/V* <sup>4</sup> |
-| Swift | ✅ | *N/V* <sup>4</sup> |
-| Terraform | ✅ | *N/V* <sup>4</sup> |
-| XML | ✅ | *N/V* <sup>4</sup> |
-| YAML | ✅ | *N/V* <sup>4</sup> |
+| Rust | ✅ | Nicht zutreffend <sup>4</sup> |
+| [Beschäftigte](https://marketplace.visualstudio.com/items?itemName=robinbentley.sass-indented) | ✅ | *nicht zutreffend* |
+| AS | ✅ | Nicht zutreffend <sup>4</sup> |
+| Solidity | ✅ | Nicht zutreffend <sup>4</sup> |
+| SQL/T-SQL | *nicht zutreffend* | Nicht zutreffend <sup>4</sup> |
+| [Stift](https://marketplace.visualstudio.com/items?itemName=sysoev.language-stylus) | ✅ | *nicht zutreffend* |
+| [Svelte](https://marketplace.visualstudio.com/items?itemName=JamesBirtles.svelte-vscode) | ✅ | Nicht zutreffend <sup>4</sup> |
+| Swift | ✅ | Nicht zutreffend <sup>4</sup> |
+| TERRAFORM | ✅ | Nicht zutreffend <sup>4</sup> |
+| XML | ✅ | Nicht zutreffend <sup>4</sup> |
+| YAML | ✅ | Nicht zutreffend <sup>4</sup> |
 
-<sup>1</sup> keine CSHTML-Unterstützung in C# Erweiterung.<br />
-<sup>2</sup> eingebetteten JavaScript in HTML-Code wird unterstützt, wenn debugging des Clients durchführen.<br />
-<sup>3</sup> JavaScript / TypeScript-Debuggen für Knoten oder den Browser.<br />
-<sup>4</sup> die jeweilige Erweiterung für Visual Studio Code unterstützt derzeit keine Debuggen. Sobald dies der Fall, untersuchen wir gemeinsam die debugging-Unterstützung hinzugefügt wird. <br />
+<sup>1</sup> keine cshtml-unter C# Stützung in der Erweiterung.<br />
+<sup>2</sup> eingebettetes Javascript in HTML wird beim Debuggen von Clients unterstützt.<br />
+<sup>3</sup> JavaScript/typescript-Debuggen für Knoten oder Browser.<br />
+<sup>4</sup> die entsprechende Erweiterung für vs Code unterstützt derzeit nicht das Debuggen. Sobald dies der Fall ist, wird das Hinzufügen von Co-Debugging-Unterstützung untersucht. <br />
 
 ### <a name="platforms"></a>Plattformen
 
-| App-Plattform-Typ | Freigegebene Debuggen | App-Freigabe |
+| App-/Plattformtyp | Frei gegebenes Debugging | App-Freigabe |
 |-------------------|--------------|-------------|
-| Arduino | ✅ | *N/V* |
-| Azure App Service | ✅ | *N/V* |
+| Arduino | ✅ | *nicht zutreffend* |
+| Azure App Service | ✅ | *nicht zutreffend* |
 | Azure Dev Spaces | ✅ | ✅ <sup>1</sup> |
-| Azure-Funktionen (lokal und Remote) | ✅ | ✅ <sup>1</sup> |
-| Blockchain (Ethereum) | ✅ | ✅ <sup>1</sup> |
-| Konsole / CLI | ✅ | ✅ <sup>4</sup> |
+| Azure Functions (lokal und Remote) | ✅ | ✅ <sup>1</sup> |
+| Blockchain (ethereum) | ✅ | ✅ <sup>1</sup> |
+| Konsole/CLI | ✅ | ✅ <sup>4</sup> |
 | Databases | <sup>5</sup> | ✅ <sup>1</sup> |
-| Desktop (Electron/systemeigen) | ✅ | <sup>9</sup> |
+| Desktop (Elektronen/System eigen) | ✅ | <sup>9</sup> |
 | Dynamics NAV 2018 | ✅ | ✅ <sup>1</sup> |
 | Spiele (Unity) | ✅ | <sup>9</sup> |
 | Spiele (Unreal) | ✅ | <sup>9</sup> |
 | Kubernetes (YAML, Helm) | ✅ |  ✅ <sup>1</sup> |
-| Markdown | *N/V* | ✅ <sup>6</sup> |
-| Mobile (Cordova) | ✅ | ✅ <sup>1,7</sup> |
-| Mobile (systemeigen) | ✅ | <sup>9</sup> |
-| Mobile (React Native) | ✅ | ✅ <sup>1,8</sup> |
-| Web-app / API (Back-End) | ✅ | ✅ <sup>1</sup> |
-| Web-app (Front-End) | ✅ <sup>2</sup> | ✅ <sup>3</sup> |
-| VS Code-Erweiterungen | | <sup>9</sup> |
+| Markdown | *nicht zutreffend* | ✅ <sup>6</sup> |
+| Mobile (Cordova) | ✅ | ✅ <sup>1, 7</sup> |
+| Mobile (System eigen) | ✅ | <sup>9</sup> |
+| Mobile (systemeigene Reaktion) | ✅ | ✅ <sup>1, 8</sup> |
+| Web-App/API (Back-End) | ✅ | ✅ <sup>1</sup> |
+| Web-App (Front-End) | ✅ <sup>2</sup> | ✅ <sup>3</sup> |
+| VS Code Erweiterungen | | <sup>9</sup> |
 
-<sup>1</sup> über [Freigabe lokaler Server](../use/vscode.md#share-a-server).<br />
-<sup>2</sup> Debuggen tritt auf, für der Hosts Browser anstatt als Gast.<br />
-<sup>3</sup> anhand der Back-End.<br />
-<sup>4</sup> über freigegebener Terminals unterstützt.<br />
-<sup>5</sup> Datenbank gespeicherte Prozeduren Debuggen wird derzeit nicht unterstützt <br />
-<sup>6</sup> über "Preview". Images werden jedoch nicht aufgrund eines bekannten Problems angezeigt. [Stimme (👍) hier.](https://github.com/MicrosoftDocs/live-share/issues/61)<br />
-<sup>7</sup> Cordova-apps können gemeinsam genutzt werden, über die Plattform "Browser"<br />
-<sup>8</sup> react Native-apps können gemeinsam genutzt werden, über Expo und [freigegebener Server](../use/vscode.md#share-a-server).<br />
-<sup>9</sup> live Share unterstützt derzeit keine Freigabe von Windows-Bildschirme. [Stimme (👍) hier.](https://github.com/MicrosoftDocs/live-share/issues/236)
+<sup>1</sup> über [Freigeben des lokalen Servers](../how-to-guides/vscode.md#share-a-server).<br />
+<sup>2</sup> das Debuggen erfolgt im Browser des Hosts anstelle von "Gast".<br />
+<sup>3</sup> durch Freigeben von Back-End.<br />
+<sup>4</sup> unterstützt durch freigegebene Terminals.<br />
+<sup>5</sup> gespeicherte Prozeduren für das Debuggen <br />
+<sup>6</sup> über "Vorschau". Images werden jedoch aufgrund eines bekannten Problems nicht angezeigt. [Stimmen Sie (👍) hier ab.](https://github.com/MicrosoftDocs/live-share/issues/61)<br />
+<sup>7</sup> Cordova-Apps können über die Plattform "Browser" freigegeben werden.<br />
+<sup>8</sup> reagieren Sie auf native Apps können über die Expo und frei [gegebene Server](../how-to-guides/vscode.md#share-a-server)freigegeben werden.<br />
+<sup>9</sup> Live Share unterstützt derzeit nicht die Freigabe von Fenstern/Bildschirmen. [Stimmen Sie (👍) hier ab.](https://github.com/MicrosoftDocs/live-share/issues/236)
 
 ## <a name="visual-studio"></a>Visual Studio
 
-Die meisten Sprachen einige Einzeldatei Intellisense-Unterstützung verfügen, es gibt einige Einschränkungen, die unten beschriebenen. Alle Sprachen/Plattformen unterstützen, gleichzeitig bearbeiten. Der Rest der Liste umfasst erweiterte Funktionen derzeit ohne vollständige, universelle Unterstützung:
+Obwohl die meisten Sprachen einige IntelliSense-Unterstützung für einzelne Dateien aufweisen, gibt es einige Einschränkungen, die im folgenden beschrieben werden. Alle Sprachen/Plattformen unterstützen die Co-Bearbeitung. Der Rest der Liste umfasst erweiterte Features, die derzeit ohne umfassende universelle Unterstützung sind:
 
 ### <a name="languages"></a>Sprachen
 
-| Sprache | Einzeldatei-Sprachdienste | Projektweite-Sprachdienste | Debuggen von Co |
+| Sprache | Sprachdienste für einzelne Dateien | Projekt weite Sprachdienste | Kodebuggen |
 |----------|-------------------------------|--------------------------------|--------------|
 | C# | ✅ | ✅ | ✅ |
-| CSHTML | ✅  <sup>1</sup> | | ✅ |
+| CSHTML | ✅<sup>1</sup> | | ✅ |
 | ASPX | ✅ <sup>1</sup> |  | ✅ |
-| HTML | ✅ | *N/V* | <sup>2</sup> |
-| CSS | ✅ | *N/V* | *N/V* |
-| JavaScript / TypeScript | ✅ | ✅ | ✅ <sup>3</sup> |
+| HTML | ✅ | *nicht zutreffend* | <sup>2</sup> |
+| CSS | ✅ | *nicht zutreffend* | *nicht zutreffend* |
+| JavaScript/typescript | ✅ | ✅ | ✅ <sup>3</sup> |
 | C++ | ✅ | ✅ | ✅ |
 | Python | ✅ | | ✅ |
-| Markdown | ✅ | *N/V* | *N/V* |
-| PowerShell | ✅ | *N/V* | ✅ |
+| Markdown | ✅ | *nicht zutreffend* | *nicht zutreffend* |
+| PowerShell | ✅ | *nicht zutreffend* | ✅ |
 | VB.NET | ✅ | | ✅ |
 | VBHTML | ✅ <sup>1</sup> | | ✅ |
-| XAML | ✅ | *N/V* | <sup>4</sup> |
-| SQL / T-SQL | ✅ | *N/V* | |
+| XAML | ✅ | *nicht zutreffend* | <sup>4</sup> |
+| SQL/T-SQL | ✅ | *nicht zutreffend* | |
 | F# | ✅ | | ✅ |
-| R | ❌ <sup>5</sup> | *N/V* | ✅ |
+| R | ❌ <sup>5</sup> | *nicht zutreffend* | ✅ |
 
-<sup>1</sup> Lücke: ASPX, CSHTML und VBHTML haben Sie eine bekannte Probleme rund um eingebettete C#bereitgestellte Code-Behind-/ VB-Unterstützung C#/VB-Dateien werden nicht aufgelöst, aufgrund der vollständige IntelliSense-Funktionalität nicht implementiert wird. [Stimme (👍) hier auf CSHTML/VBHTML.](https://github.com/MicrosoftDocs/live-share/issues/59) [Stimme (👍) hier bei ASPX.](https://github.com/MicrosoftDocs/live-share/issues/70)<br />
-<sup>2</sup> eingebetteten JavaScript in HTML-Code wird unterstützt, wenn debugging des Clients durchführen.<br />
-<sup>3</sup> JavaScript / TypeScript-Debuggen für Knoten oder den Browser.<br />
-<sup>4</sup> Debuggen von XAML selbst technisch n/v ist, zwar Debuggen von Code-Behind wird unterstützt.<br />
-<sup>5</sup> Lücke: R-Sprache-Dienstfehler auf der Gastseite auf die Verknüpfung und nach jeder neue-Zeile. Wird nicht unterstützt. [Stimme (👍) hier.](https://github.com/MicrosoftDocs/live-share/issues/72)<br />
+<sup>1</sup> Lücke: cshtml, vbhtml und aspx haben bekannte Probleme bei der eingebetteten C#/VB Unterstützung von Code-Behind C#/VB-Dateien werden nicht aufgelöst, weil die vollständige IntelliSense-Implementierung nicht implementiert ist. [Stimmen Sie (👍) hier auf cshtml/vbhtml ab.](https://github.com/MicrosoftDocs/live-share/issues/59) [Stimmen Sie (👍) hier unter aspx ab.](https://github.com/MicrosoftDocs/live-share/issues/70)<br />
+<sup>2</sup> eingebettetes Javascript in HTML wird beim Debuggen von Clients unterstützt.<br />
+<sup>3</sup> JavaScript/typescript-Debuggen für Knoten oder Browser.<br />
+<sup>4</sup> obwohl das Debuggen von XAML selbst technisch gesehen N/v ist, wird das Debugging von Code Behind unterstützt.<br />
+<sup>5</sup> Lücke: R-Sprachdienst Fehler auf der Gastseite bei Join und nach jedem Zeilen Bereich. Wird nicht unterstützt. [Stimmen Sie (👍) hier ab.](https://github.com/MicrosoftDocs/live-share/issues/72)<br />
 
 ### <a name="platforms"></a>Plattformen
 
-| App-Plattform-Typ | Gemeinsames Debuggen | App-Freigabe |
+| App-/Plattformtyp | Gemeinsames Debuggen | App-Freigabe |
 |-------------------|--------------|-------------|
-| Web-app / API (Back-End) | ✅ | ✅ <sup>1</sup> |
-| Web-app (Front-End) | ✅ <sup>2</sup> | ✅ <sup>3</sup> |
+| Web-App/API (Back-End) | ✅ | ✅ <sup>1</sup> |
+| Web-App (Front-End) | ✅ <sup>2</sup> | ✅ <sup>3</sup> |
 | Überprüfung auf | ✅  | ✅ <sup>5</sup> |
 | Azure Service Fabric | ✅ | ✅ <sup>5</sup> |
-| [Azure Dev Leerzeichen](https://aka.ms/devspaces) | ✅ | ✅ <sup>1</sup> |
+| [Azure Dev Spaces](https://aka.ms/devspaces) | ✅ | ✅ <sup>1</sup> |
 | Databases | <sup>4</sup> | ✅ <sup>5</sup> |
-| Konsole / CLI | ✅ | ✅ <sup>6</sup> |
+| Konsole/CLI | ✅ | ✅ <sup>6</sup> |
 | Desktop (WinForms) | ✅ | |
 | Desktop (WPF) | ✅ | |
 | Universelle Windows-Plattform | ✅ |  |
 | VS-Erweiterungen | ✅ |  |
 
-<sup>1</sup> über [Freigabe lokaler Server](../use/vs.md#share-a-server). ASP.NET Web-Apps können Sie auch [automatische Web app-Freigabe](../use/vs.md#automatic-web-app-sharing).<br />
-<sup>2</sup> Debuggen tritt auf, für der Hosts Browser anstatt als Gast.<br />
-<sup>3</sup> anhand der Back-End.<br />
-<sup>4</sup> Datenbank gespeicherte Prozeduren Debuggen wird derzeit nicht unterstützt <br />
-<sup>5</sup> über [Freigabe lokaler Server](../use/vs.md#share-a-server). <br />
-<sup>6</sup> teilweise über freigegebener Terminals unterstützt.<br />
-<sup>?</sup> Noch nicht überprüft wurden.
+<sup>1</sup> über [Freigeben des lokalen Servers](../how-to-guides/vs.md#share-a-server). ASP.net Web-Apps können auch die [Automatische Web-App-Freigabe](../how-to-guides/vs.md#automatic-web-app-sharing)verwenden.<br />
+<sup>2</sup> das Debuggen erfolgt im Browser des Hosts anstelle von "Gast".<br />
+<sup>3</sup> durch Freigeben von Back-End.<br />
+<sup>4</sup> gespeicherte Prozeduren für das Debuggen gespeicherter Daten <br />
+<sup>5</sup> über [Freigeben des lokalen Servers](../how-to-guides/vs.md#share-a-server). <br />
+<sup>6</sup> teilweise unterstützt über freigegebene Terminals.<br />
+<sup>?</sup> Noch nicht überprüft.
 
 ## <a name="see-also"></a>Siehe auch
 

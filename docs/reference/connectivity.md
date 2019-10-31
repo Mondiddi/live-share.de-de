@@ -1,6 +1,6 @@
 ---
-title: Konnektivität – Visual Studio-Livefreigabe | Microsoft-Dokumentation
-description: Informationen zu den Modi für Konnektivität und die Verbindung von für Visual Studio Live Share.
+title: Konnektivität-Visual Studio Live Share | Microsoft-Dokumentation
+description: Informationen zu Konnektivität und Verbindungs Modi für Visual Studio Live share.
 ms.custom: ''
 ms.date: 03/22/2018
 ms.reviewer: ''
@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: c685df798fc10b449c3e73db678e3b5d34e73ef0
-ms.sourcegitcommit: 100fce9b9bbcd7e6f68d40659bd2760e9537de37
+ms.openlocfilehash: c1d537ac80daddcf83d18942c8d837f3c0ce370b
+ms.sourcegitcommit: c6ef4e5a9aec4f682718819c58efeab599e2781b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58640080"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73169991"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -26,68 +26,68 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # <a name="connectivity-requirements-for-live-share"></a>Anforderungen an die Konnektivität für Live Share
 
-Dieser Artikel beschreibt die Anforderungen an die Konnektivität für Visual Studio Live Share verfügbaren Verbindungsoptionen und bekannten Lösungen bei Verwendung von anwendbar.
+In diesem Artikel werden die Konnektivitätsanforderungen für Visual Studio Live Share, verfügbare Konnektivitätsoptionen und ggf. bekannte Problem Umgehungen zusammengefasst.
 
 ## <a name="sign-in"></a>Anmelden
 
-Können Sie sich in der Live-Freigabe, die mit einer [Azure Active Directory](https://azure.microsoft.com/en-us/services/active-directory) unterstützt Geschäfts-, Schul- oder unikonto ein [Microsoft-Konto](https://account.microsoft.com/account), oder ein [GitHub-Profil](https://github.com/). In der Regel Anmeldung URLs für diese sind in den meisten Organisationen, die angesichts der Anzahl von öffentlichen mit Internetzugriff Produkte, die, außer wenn nicht der Fall, öffnen Sie vom Netzwerkadministrator zum Öffnen `login.microsoftonline.com` und/oder `github.com` zusätzlich zu den Domänen [unten aufgeführten](#requirements-for-connection-modes).
+Sie können sich mit einem beliebigen [Azure Active Directory](https://azure.microsoft.com/en-us/services/active-directory) gesicherten Geschäfts-, Schul-oder unikonto, einem [Microsoft-Konto](https://account.microsoft.com/account)oder einem [GitHub-Profil](https://github.com/)bei Live Share anmelden. In den meisten Organisationen sind in der Regel Anmelde-URLs geöffnet, die über die Anzahl der öffentlichen Produkte verfügen, von denen Sie verwendet werden. Falls nicht, wenden Sie sich an Ihren Netzwerkadministrator, wenn Sie `login.microsoftonline.com` und/oder `github.com` zusätzlich zu den [unten aufgeführten](#requirements-for-connection-modes)Domänen öffnen.
 
 > [!NOTE]
-> Für lokale Active Directory (AD FS) und einem lokalen GitHub Enterprise-Konten werden derzeit nicht unterstützt [(abstimmen 👍)](https://github.com/MicrosoftDocs/live-share/issues/341).
+> AD FS-Konten (lokales AD) und lokale GitHub Enterprise-Konten werden zurzeit nicht unterstützt [(up-Vote 👍)](https://github.com/MicrosoftDocs/live-share/issues/341).
 
-## <a name="connection-modes"></a>Verbindungsmodi
+## <a name="connection-modes"></a>Verbindungs Modi
 
-Um sicherzustellen, dass eine optimale erkannt Leistung zu erzielen, standardmäßig Visual Studio Live Share automatisch, ob eine Zusammenarbeit Sitzung-Hostcomputer und Gastcomputer können direkt über ein Netzwerk kommunizieren und nur über die Cloud überträgt, wenn keine Route zwischen ihnen vorhanden ist. Dieser Modus gemischten "Auto" ist flexibel und kann auch einige Gäste Relay über die Cloud, während andere direkt für die gleiche Sitzung eine Verbindung herstellen.
+Um eine optimale Leistung zu gewährleisten, erkennt standardmäßig Visual Studio Live Share automatisch, ob ein Zusammenarbeits Sitzung-Host Computer und Gastcomputer direkt über ein Netzwerk und nur Relays über die Cloud kommunizieren können, wenn keine Verbindung besteht. Dieser gemischte "Auto"-Modus ist flexibel und ermöglicht es einigen Gästen sogar, über die Cloud zu übertragen, während andere direkt für dieselbe Sitzung eine Verbindung herstellen.
 
-Die direkte Verbindungen erfolgt über einen cloudbasierten-Mechanismus, um die Sicherheit zu gewährleisten, jedoch erforderlich, ein Port zwischen 5990 und 5999 geöffnet werden, um die Konnektivität zu aktivieren. Daher bei der Freigabe zum ersten Mal Ihre desktop-Firewalls auffordern können Sie einen Port öffnen. Annahme, dass dies optional, da diese ignorieren sie bewirkt einfach Live Share immer das Relay im Auto-Modus verwenden.
+Die direkten Verbindungen werden über einen cloudbasierten Mechanismus authentifiziert, um die Sicherheit sicherzustellen, aber es ist erforderlich, dass ein Port zwischen 5990 und 5999 geöffnet wird, um die Konnektivität zu ermöglichen. Dies hat zur Folge, dass Sie bei der erstmaligen Freigabe von der Desktop Firewall aufgefordert werden, einen Port zu öffnen. Das akzeptieren ist optional, da das ignorieren lediglich dazu führt, dass Live Share immer das Relay verwendet, wenn es sich im Auto-Modus befindet.
 
-Alle Verbindungen in Visual Studio Live Share sind SSH oder SSL verschlüsselt und authentifiziert ein zentraler Dienst, um sicherzustellen, dass nur die in der zusammenarbeitssitzung den Inhalt zugreifen können. Darüber hinaus Live Share Cloud Relay weitergeleitet, damit Datenverkehr nicht beibehalten und nicht "snoop" den Datenverkehr in keiner Weise.
+Alle Verbindungen in Visual Studio Live Share werden per SSH oder SSL verschlüsselt und für einen zentralen Dienst authentifiziert, um sicherzustellen, dass nur die in der Zusammenarbeits Sitzung Zugriff auf den Inhalt erhalten. Außerdem speichert das cloudrelay von Live Share keinen Datenverkehr, der durch ihn weitergeleitet wird, und führt den Datenverkehr nicht in irgendeiner Weise aus.
 
-## <a name="changing-the-connection-mode"></a>Ändern den Verbindungsmodus
+## <a name="changing-the-connection-mode"></a>Ändern des Verbindungs Modus
 
-Wenn Sie lieber direkte oder Relay-Verbindungen zu deaktivieren oder werden einfach Behandeln von Konnektivitätsproblemen, können Sie andere Verbindungsmodi erzwingen.
+Wenn Sie vorziehen, direkte oder relaor-Verbindungen zu deaktivieren oder einfach Verbindungsprobleme zu beheben, können Sie andere Verbindungs Modi erzwingen.
 
-| Modus | Hostverhalten | Gast-Verhalten |
+| Modus | Host Verhalten | Gast Verhalten |
 |------|----------------|----------------------|
-| Auto | Zusammenarbeitssitzung des Hosts werden direkte Verbindungen von geschützten, authentifizierten oder cloudbasierte relaykommunikation Verbindungen akzeptiert. | Versucht, eine direkte Verbindung zu verwenden, und greift zurück, über die Cloud übertragen werden, wenn dies nicht möglich ist. |
-| Direkt | Zusammenarbeitssitzung des Hosts akzeptiert nur authentifizierte, sichere direkte Verbindungen. | Versucht, eine direkte Verbindung zu verwenden, und wird beendet, wenn sie keine Verbindung herstellen kann. |
-| Relay | Zusammenarbeitssitzung des Hosts lässt keine direkten Verbindungen zu. Klicken Sie auf dem Computer des Hosts wird kein Port geöffnet. | Immer eine Verbindung über die Cloud. |
+| Auto | Die Zusammenarbeits Sitzung des Hosts nimmt sichere, authentifizierte direkte Verbindungen oder cloudrelawayverbindungen an. | Versucht, eine direkte Verbindung zu verwenden, und greift auf die Cloud zurück, wenn dies fehlschlägt. |
+| Direkt | Die Zusammenarbeits Sitzung des Hosts akzeptiert nur authentifizierte, sichere direkte Verbindungen. | Versucht, eine direkte Verbindung zu verwenden, und wird beendet, wenn keine Verbindung hergestellt werden kann. |
+| Relay | Die Zusammenarbeits Sitzung des Hosts lässt keine direkten Verbindungen zu. Auf dem Computer des Hosts wird kein Port geöffnet. | Stellt immer eine Verbindung über die Cloud her. |
 
 So ändern Sie den Modus:
 
-**VS:**
+**Jews**
 
-1. Wechseln Sie zu Extras > Optionen > Live Share.
-2. Wählen Sie den Modus, in der Dropdownliste "Verbindungsmodus".
-3. Starten Sie Visual Studio neu.
+1. Wechseln Sie zu Extras > Optionen > Live share.
+2. Wählen Sie den Modus aus der Dropdown Liste "Verbindungs Modus" aus.
+3. Neu starten im Vergleich zu
 
-**Visual Studio Code:**
+**VS Code:**
 
-1. Bearbeiten Sie "Settings.JSON" (Datei > Voreinstellungen > Einstellungen).
-2. Legen Sie `"liveshare.connectionMode"` zu `"auto"`, `"direct"`, oder `"relay"` je nach Bedarf.
-3. Starten Sie Visual Studio Code neu.
+1. Bearbeiten Sie Settings. JSON (Datei > Einstellungen > Einstellungen).
+2. Legen Sie `"liveshare.connectionMode"` abhängig von Ihrer Präferenz auf `"auto"`, `"direct"`oder `"relay"` fest.
+3. Starten Sie vs Code neu.
 
-## <a name="requirements-for-connection-modes"></a>Anforderungen für die Verbindungsmodi
+## <a name="requirements-for-connection-modes"></a>Anforderungen für Verbindungs Modi
 
-Der Verbindungsmodus ab bestimmen, die bestimmte Ports und URLs, die für Live Share-Funktion verfügbar sein müssen.
+Der Verbindungs Modus, in dem Sie sich befinden, bestimmt die spezifischen Ports und URLs, die für die Funktion Live Share verfügbar sein müssen.
 
-| Modus | Client-Zugriff als Voraussetzung | Problembehandlung |
+| Modus | Client Zugriffs Anforderung | Problembehandlung |
 |------|--------------|-----------------|
-| Beliebig | Ausgehender Zugriff auf `*.liveshare.vsengsaas.visualstudio.com:443` | Stellen Sie sicher Ihre Unternehmens oder persönlichen Netzwerkfirewall können Sie mit dieser Domäne zu verbinden. Geben Sie https://insiders.liveshare.vsengsaas.visualstudio.com in einem Browser und stellen Sie sicher, gelangen Sie auf der Visual Studio Live Share-Homepage. Sie können auch in ausgeführt werden [Proxyprobleme](#proxies) , die aufgelöst werden müssen.|
-| (VS Code) | Ausgehender Zugriff auf `download.microsoft.com:443` | Stellen Sie sicher Ihre Unternehmens oder persönlichen Netzwerkfirewall können Sie mit dieser Domäne zu verbinden. Sie können auch in ausgeführt werden [Proxyprobleme](#proxies) , die aufgelöst werden müssen. |
-| Auto | Auto-Switches. Finden Sie direkte und Relay-Modi. | Wechseln Sie zum direkten oder relay-Modus zur Problembehandlung. |
-| Direkt | Hosts: Ein Port in der Bereich 5990-5999 muss geöffnet werden, um eingehende LAN-Verbindungen zu akzeptieren.<br /><br />Gäste: Ein Netzwerk und die ausgehenden Zugriff auf den Host auf diese gleichen Port. | Überprüfen Sie "Vsls-Agent" nicht von Ihrer desktop-Firewall-Software für diesen Portbereich blockiert wird, und Sie gegenseitig pingen können. Während Windows und anderer Desktopsoftware beim ersten aufgefordert, sollte der Agent wird gestartet, wir haben gesehen, Instanzen, in dem Gruppenrichtlinien zu verhindern, dass dies geschieht, und Sie müssen [fügen Sie den Eintrag manuell](#manually-adding-a-firewall-entry). Sie können auch in ausgeführt werden [Proxyprobleme](#proxies) , die aufgelöst werden müssen. |
-| Relay | Ausgehender Zugriff auf `*.servicebus.windows.net:443`. | Stellen Sie sicher Ihre Unternehmens oder persönlichen Netzwerkfirewall können Sie mit dieser Domäne zu verbinden. Sie können auch in ausgeführt werden [Proxyprobleme](#proxies) , die aufgelöst werden müssen.|
+| Beliebig | Ausgehender Zugriff auf `*.liveshare.vsengsaas.visualstudio.com:443` | Stellen Sie sicher, dass Ihre unternehmenseigene oder persönliche Netzwerk Firewall Ihnen ermöglicht, eine Verbindung mit dieser Domäne herzustellen. Geben Sie https://insiders.liveshare.vsengsaas.visualstudio.com in einem Browser ein, und überprüfen Sie, ob Sie auf der Startseite Visual Studio Live share. Möglicherweise treten auch [Proxy Probleme](#proxies) auf, die aufgelöst werden müssen.|
+| Any (vs Code) | Ausgehender Zugriff auf `download.microsoft.com:443` | Stellen Sie sicher, dass Ihre unternehmenseigene oder persönliche Netzwerk Firewall Ihnen ermöglicht, eine Verbindung mit dieser Domäne herzustellen. Möglicherweise treten auch [Proxy Probleme](#proxies) auf, die aufgelöst werden müssen. |
+| Auto | Automatische Switches. Weitere Informationen finden Sie unter den Modi Direct und Relay | Wechseln Sie zur Problembehandlung in den Direct-oder Relay-Modus. |
+| Direkt | Hosts: ein Port im Bereich 5990 bis 5999 muss geöffnet werden, um eingehende lokale Netzwerkverbindungen zu akzeptieren.<br /><br />Gäste: eine Netzwerk Route und ein ausgehender Zugriff auf den Host auf demselben Port. | Vergewissern Sie sich, dass "vsls-Agent" nicht durch Ihre Desktop-Firewallsoftware für diesen Port Bereich blockiert wird und Sie einen Ping gegen einen anderen durchsetzen können. Während Windows und andere Desktop Software Sie beim ersten Start des Agents auffordern sollten, haben wir Instanzen gesehen, die dies verhindern, und Sie müssen [den Eintrag manuell hinzufügen](#manually-adding-a-firewall-entry). Möglicherweise treten auch [Proxy Probleme](#proxies) auf, die aufgelöst werden müssen. |
+| Relay | Ausgehender Zugriff auf `*.servicebus.windows.net:443`. | Stellen Sie sicher, dass Ihre unternehmenseigene oder persönliche Netzwerk Firewall Ihnen ermöglicht, eine Verbindung mit dieser Domäne herzustellen. Möglicherweise treten auch [Proxy Probleme](#proxies) auf, die aufgelöst werden müssen.|
 
-## <a name="manually-adding-a-firewall-entry"></a>Einen Firewall-Eintrag hinzufügen manuell.
+## <a name="manually-adding-a-firewall-entry"></a>Manuelles Hinzufügen von firewalleinträgen
 
-Wie oben beschrieben, direkten Modus erfordert, dass Ihre persönliche Firewall zulassen **Vsls-Agent** , akzeptieren Verbindungen im Port liegen 5990-5999. Wenn Sie möchten die direkten Modus verwenden, aber haben festgestellt, dass Ihre Firewall kein Vsls-Agent-Eintrag vorhanden ist, können Sie sie manuell hinzufügen. Die Vorgehensweise von Firewall-Software variieren, doch finden Sie Informationen über  **[Konfigurieren der Windows-Firewall](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-inbound-program-or-service-rule)**.
+Wie oben beschrieben, erfordert die persönliche Firewall, dass die persönliche Firewall den **vsls-Agent** erlaubt, Verbindungen im Port Bereich 5990-5999 zu akzeptieren. Wenn Sie den direkten Modus verwenden möchten, aber festgestellt haben, dass die Firewall nicht über einen vsls-Agent-Eintrag verfügt, können Sie ihn manuell hinzufügen. Wie Sie dies tun, hängt von der Firewallsoftware ab, aber hier finden Sie Informationen zum **[Konfigurieren der Windows-Firewall](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-inbound-program-or-service-rule)** .
 
-Wenn Sie einen Eintrag für Vsls-Agent nicht angezeigt werden, finden den Agent ausführbare Sie in einem der folgenden Speicherorte.
+Wenn kein Eintrag für vsls-Agent angezeigt wird, finden Sie die ausführbare Agent-Datei an einem der folgenden Speicherorte.
 
-### <a name="vs-code-agent-location"></a>Speicherort des VS Code-Agents
+### <a name="vs-code-agent-location"></a>Speicherort des vs Code Agents
 
-Ersatz **VERSION** für die Versionsnummer der Erweiterung in einer der folgenden Pfade:
+Ersetzen Sie die **Versions** Nummer der Erweiterung in einem der folgenden Pfade:
 
 - **macOS, Linux**
 
@@ -97,34 +97,34 @@ Ersatz **VERSION** für die Versionsnummer der Erweiterung in einer der folgende
 
     `%USERPROFILE%\.vscode\extensions\ms-vsliveshare.vsliveshare-VERSION\dotnet_modules\vsls-agent.exe`
 
-### <a name="visual-studio-agent-location"></a>Speicherort der Visual Studio-Agents
+### <a name="visual-studio-agent-location"></a>Speicherort von Visual Studio-Agent
 
-Der Speicherort von Visual Studio ist dynamischer, aber Sie können diese Schritte zum Suchen der ausführbaren Datei:
+Der Visual Studio-Speicherort ist dynamischer, aber Sie können die folgenden Schritte ausführen, um die ausführbare Datei zu finden:
 
-1. Navigieren Sie zu das Visual Studio-Installationsverzeichnis. Dies ist normalerweise `C:\Program Files (x86)\Microsoft Visual Studio\EDITION` , in denen **EDITION** ist Community, Enterprise usw.
+1. Navigieren Sie zu Ihrem Visual Studio-Installationsort. Dies ist in der Regel `C:\Program Files (x86)\Microsoft Visual Studio\EDITION`, wobei **Edition** Community, Enterprise usw. ist.
 
-2. Eine Suche nach `vsls-agent.exe` in unter dem **IDE\Extensions** Unterordner.
+2. Führen Sie im Unterordner **ide\extensions** eine Suche nach `vsls-agent.exe` in aus.
 
-Leider müssen Sie diesen Schritt nicht ausführen **jedes Mal aktualisieren Sie Visual Studio Live Share.**
+Leider müssen Sie diesen Schritt möglicherweise **jedes Mal ausführen, wenn Sie Visual Studio Live Share aktualisieren.**
 
 ## <a name="proxies"></a>Proxys
 
-Visual Studio Live Share weist derzeit einige Einschränkungen für den Proxy verwenden. Während die automatische Proxy-Einstellungen für Windows, MacOS oder Linux-Verwendung (und mit bestimmten Proxykonfigurationen auf Windows) funktioniert die **"http_proxy"** und **HTTPS_PROXY** Umgebungsvariablen müssen nastavit *Global*.
+Visual Studio Live Share weist derzeit einige Einschränkungen bezüglich der Proxy Verwendung auf. Während die automatischen Proxy Einstellungen unter Windows verwendet werden sollen, müssen die Umgebungsvariablen **HTTP_PROXY** und **HTTPS_PROXY** *Global*festgelegt werden, wenn Sie macOS oder Linux (und mit bestimmten Proxy Konfigurationen unter Windows) verwenden.
 
-Wenn Ihr Proxy automatisch für Sie nicht festlegt, können Sie die Variablen manuell in der folgenden Form festlegen:
+Wenn Ihr Proxy diese nicht automatisch für Sie festgelegt hat, können Sie die Variablen manuell in der folgenden Form festlegen:
 
 `HTTPS_PROXY=http://proxy-ip-address:proxyport`
 
-Wenn Sie einen Authentifizierungsproxy und/oder verfügen, können Sie Ihre Benutzer und Kennwort wie folgt hinzufügen:
+Wenn Sie über einen authentifizier enden Proxy verfügen, können Sie den Benutzer und das Kennwort wie folgt hinzufügen:
 
 `HTTPS_PROXY=http://user:password@proxy-ip-address:proxyport`
 
-Wenn diese Einstellungen, die Sie über eine Lösung des Problems nicht [informieren Sie uns](https://github.com/MicrosoftDocs/live-share/issues/86) die Einzelheiten der Proxy einrichten, damit wir einen Blick auf die Verbesserung des Supports entfernen können.
+Wenn diese Einstellungen das Problem nicht lösen, informieren Sie [uns](https://github.com/MicrosoftDocs/live-share/issues/86) über die Besonderheiten ihres proxysetups, damit wir uns mit der Verbesserung des Supports beschäftigen können.
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Vorgehensweise: Zusammenarbeiten mithilfe von Visual Studio Code](../use/vscode.md)
-- [Vorgehensweise: Zusammenarbeiten mithilfe von Visual Studio](../use/vs.md)
+- [Gewusst wie: zusammenarbeiten mit Visual Studio Code](../how-to-guides/vscode.md)
+- [Gewusst wie: zusammenarbeiten mithilfe von Visual Studio](../how-to-guides/vs.md)
 - [Sicherheitsfeatures von Live Share](security.md)
 
 Gibt es Probleme? Lesen Sie [Troubleshooting](../troubleshooting.md) oder [Feedback geben](../support.md).

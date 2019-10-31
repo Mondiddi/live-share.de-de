@@ -1,6 +1,6 @@
 ---
-title: Manuelle Joins – Visual Studio Live Share | Microsoft-Dokumentation
-description: Informationen zum Verknüpfen mit einer zusammenarbeitssitzung manuell in Visual Studio Live freigeben.
+title: Manueller Join-Visual Studio Live Share | Microsoft-Dokumentation
+description: Informationen zum manuellen beitreten einer Zusammenarbeits Sitzung in Visual Studio Live share.
 ms.custom: ''
 ms.date: 03/22/2018
 ms.reviewer: ''
@@ -11,68 +11,68 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 8ec4bac1c169c17de5e5ec8d26352cc13d62683b
-ms.sourcegitcommit: 100fce9b9bbcd7e6f68d40659bd2760e9537de37
+ms.openlocfilehash: 1057c6276302fb0df682798dd06684b4835c051e
+ms.sourcegitcommit: c6ef4e5a9aec4f682718819c58efeab599e2781b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58640067"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73170121"
 ---
-# <a name="join-a-session-manually"></a>Manuelles Verknüpfen von einer Sitzungs
+# <a name="join-a-session-manually"></a>Manuelles Hinzufügen einer Sitzung
 
-Zusätzlich zum Öffnen von links in einem Browser, um eine zusammenarbeitssitzung verknüpfen, können Sie manuell beitreten, indem Sie den Link in einem bereits ausgeführten Tool einfügen. Dies kann nützlich sein, wenn Sie ein anderes Tool verwenden, als Sie in der Regel nicht, oder wenn Sie Probleme bei der Einladung Links aus irgendeinem Grund arbeiten möchten.
+Zusätzlich zum Öffnen eines Links in einem Browser zum beitreten zu einer Zusammenarbeits Sitzung können Sie manuell beitreten, indem Sie den Link in ein bereits ablaufendes Tool einfügen. Dies kann hilfreich sein, wenn Sie ein anderes Tool verwenden möchten als in der Regel, oder wenn Sie Probleme mit dem Aufrufen von Einladungs Links haben, die aus irgendeinem Grund funktionieren.
 
-Die genauen Anweisungen unterschiedlich [Visual Studio](#join-from-visual-studio) und [Visual Studio Code](#join-from-visual-studio-code), also wählen Sie das Tool, das Sie für Weitere Informationen zu verwenden möchten.
+Die genauen Anweisungen unterscheiden sich zwischen [Visual Studio](#join-from-visual-studio) und [Visual Studio Code](#join-from-visual-studio-code). Wählen Sie also das Tool aus, das Sie verwenden möchten, um weitere Informationen zu erhalten.
 
-## <a name="join-from-visual-studio-code"></a>Verbinden von Visual Studio-Code
+## <a name="join-from-visual-studio-code"></a>Join von Visual Studio Code
 
-### <a name="1-sign-in"></a>1. Anmelden
+### <a name="1-sign-in"></a>1. anmelden
 
->**Hinweis**: Wenn Sie eine zusammenarbeitssitzung als nur-Lese Gast verknüpfen möchten, können Sie die Anmeldung überspringen. Sie haben Zugriff auf die Anzeige und Navigation, um den Code, der freigegeben ist aber nicht in der Lage, Änderungen vornehmen.
+>**Hinweis:** Wenn Sie eine Zusammenarbeits Sitzung als schreibgeschützten Gast beitreten möchten, können Sie die Anmeldung überspringen. Sie haben Zugriff auf das Anzeigen und Navigieren in dem Code, der freigegeben ist, aber nicht in der Lage ist, Änderungen vorzunehmen.
 
 ![Popupbenachrichtigung mit der Aufforderung, sich über einen Webbrowser anzumelden](../media/vscode-sign-in-toast.png)
 
-Wenn Sie mit anderen Personen zusammenarbeiten möchten, müssen Sie sich in Visual Studio Live Share anmelden, damit diese wissen, wer Sie sind. **Klicken Sie auf** auf der "Live Share" Statusleiste Element, oder drücken Sie **STRG + UMSCHALT + P / Cmd + UMSCHALT + P** , und wählen Sie die "Live-Freigabe: Sign In With Browser“ (Live Share: Mit Browser anmelden) aus.
+Wenn Sie mit anderen Personen zusammenarbeiten möchten, müssen Sie sich in Visual Studio Live Share anmelden, damit diese wissen, wer Sie sind. **Klicken Sie** auf das Element "Live Share" Statusleiste, oder drücken Sie **STRG + UMSCHALT + p/cmd + UMSCHALT + p** , und wählen Sie den Befehl "Live Share: Anmelden mit Browser" aus.
 
 ![Schaltfläche zum Anmelden in Visual Studio Code](../media/vscode-sign-in-button.png)
 
-Ihr Browser wird gestartet, während eine Benachrichtigung, starten Sie aufgefordert werden, melden Sie sich bei angezeigt wird. Schließen Sie den Anmeldevorgang in Ihrem Browser ab. Wenn Sie fertig sind, schließen Sie einfach den Browser.
+Ihr Browser wird gestartet, während eine Benachrichtigung angezeigt wird, in der Sie aufgefordert werden, sich anzumelden. Schließen Sie den Anmeldevorgang in Ihrem Browser ab. Wenn Sie fertig sind, schließen Sie einfach den Browser.
 
-Wenn Sie Probleme mit Visual Studio Code ausführen, nicht um eine erfolgreiche Anmeldung auswählen, klicken Sie auf den Link "Probleme" auf dem erfolgsbildschirm "im Browser, und befolgen Sie die Anweisungen. Sehen Sie sich [Problembehandlung](../troubleshooting.md#sign-in) Weitere Tipps.
+Wenn beim Auftreten von Problemen vs Code die erfolgreiche Anmeldung nicht erfolgreich ist, klicken Sie auf dem Bildschirm Erfolg im Browser auf den Link "fehlerhaft", und befolgen Sie die Anweisungen. Weitere Tipps finden Sie in der [Problem](../troubleshooting.md#sign-in) Behandlung.
 
-### <a name="2-use-the-join-command"></a>2. Verwenden Sie den joinbefehl
+### <a name="2-use-the-join-command"></a>2. verwenden Sie den Join-Befehl.
 
-Öffnen Sie die Viewlet Live Share in der Aktivitätsleiste von VS Code, und wählen Sie die "Join zusammenarbeitssitzung..." Symbol "oder der Eintrag.
+Öffnen Sie das Live Share Viewlet in der vs Code Aktivitäts Leiste, und wählen Sie die Sitzung "Zusammenarbeits Sitzung beitreten..." aus. Symbol oder Eintrag.
 
 ![Viewlet-Symbol für den Beitritt](../media/vscode-join-viewlet.png)
 
->**Hinweis**: Wenn Sie als nur-Lese Gast verknüpfen, werden klicken Sie dann aufgefordert, geben Sie einen Anzeigenamen ein, die Teilnehmer, die Sie in der Sitzung identifiziert werden können.
+>**Hinweis:** Wenn Sie als Schreib geschützter Gast beitreten, werden Sie aufgefordert, einen anzeigen Amen einzugeben, damit Teilnehmer Sie in der Sitzung identifizieren können.
 
-### <a name="3-paste-the-invite-link"></a>3. Fügen Sie den Link für die INVITE-Nachricht
+### <a name="3-paste-the-invite-link"></a>3. Fügen Sie den Einladungslink ein.
 
-Fügen Sie in der einladungs-URL, die Sie gesendet wurden, und drücken EINGABETASTE, um zu bestätigen.
+Fügen Sie die gesendete Einladungs-URL ein, und drücken Sie die EINGABETASTE, um dies zu bestätigen.
 
 Das ist alles! Nach einigen Augenblicken sollte eine Verbindung mit der Zusammenarbeitssitzung hergestellt werden.
 
-## <a name="join-from-visual-studio"></a>Verbinden von Visual Studio
+## <a name="join-from-visual-studio"></a>Join aus Visual Studio
 
-### <a name="1-sign-in"></a>1. Anmelden
+### <a name="1-sign-in"></a>1. anmelden
 
-Nach Abschluss der Installation starten Sie Visual Studio, und melden Sie sich, wenn Sie noch nicht getan haben. Wenn Sie eine andere Anmeldung für Visual Studio als verwenden müssen Ihre [personalisierungskonto](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio), wechseln Sie zu **Tools &gt; Optionen &gt; Live Share &gt; Benutzerkonto**.
+Starten Sie Visual Studio nach der Installation, und melden Sie sich an, falls Sie dies noch nicht getan haben. Wenn Sie eine andere Anmeldung als Ihr [Personalisierungs Konto](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio)für Visual Studio verwenden müssen, wechseln Sie zu Extras **&gt; Optionen &gt; Live Share &gt; Benutzerkontos**.
 
-![Melden Sie sich bei Visual Studio](../media/vs-sign-in-button.png)
+![VS-Anmeldung](../media/vs-sign-in-button.png)
 
-Noch immer Probleme? Finden Sie unter [Problembehandlung](../troubleshooting.md#sign-in).
+Noch immer Probleme? Siehe [Problem](../troubleshooting.md#sign-in)Behandlung.
 
-### <a name="2-use-the-join-command"></a>2. Verwenden Sie den joinbefehl
+### <a name="2-use-the-join-command"></a>2. verwenden Sie den Join-Befehl.
 
-Wechseln Sie einfach zu **Datei > Join Zusammenarbeitssitzung**.
+Wechseln Sie einfach zu **Datei > Sitzung Zusammenarbeit beitreten**.
 
 ![Beitrittsmenü in Visual Studio](../media/vs-join.png)
 
-### <a name="3-paste-the-invite-link"></a>3. Fügen Sie den Link für die INVITE-Nachricht
+### <a name="3-paste-the-invite-link"></a>3. Fügen Sie den Einladungslink ein.
 
-Fügen Sie in der einladungs-URL, die Sie gesendet wurden, und drücken EINGABETASTE, um zu bestätigen.
+Fügen Sie die gesendete Einladungs-URL ein, und drücken Sie die EINGABETASTE, um dies zu bestätigen.
 
 Das ist alles! Nach einigen Augenblicken sollte eine Verbindung mit der Zusammenarbeitssitzung hergestellt werden.
 
@@ -80,14 +80,14 @@ Das ist alles! Nach einigen Augenblicken sollte eine Verbindung mit der Zusammen
 
 Schnellstarts
 
-- [Schnellstart: Freigeben Ihres ersten Projekts](../quickstart/share.md)
-- [Schnellstart: Beitreten zu Ihrer ersten Sitzung](../quickstart/join.md)
+- [Schnellstart: Freigeben des ersten Projekts](../quickstart/share.md)
+- [Schnellstart: beitreten zur ersten Sitzung](../quickstart/join.md)
 
 Gewusst wie
 
-- [Vorgehensweise: Zusammenarbeiten mithilfe von Visual Studio Code](../use/vscode.md)
-- [Vorgehensweise: Zusammenarbeiten mithilfe von Visual Studio](../use/vs.md)
-- [Vorgehensweise: Bereitstellen von feedback](../support.md)
+- [Gewusst wie: zusammenarbeiten mit Visual Studio Code](../how-to-guides/vscode.md)
+- [Gewusst wie: zusammenarbeiten mithilfe von Visual Studio](../how-to-guides/vs.md)
+- [Gewusst wie: Bereitstellen von Feedback](../support.md)
 
 Referenz
 
