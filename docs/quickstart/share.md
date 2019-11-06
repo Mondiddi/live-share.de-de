@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: e65656c604a9dbc479a03a503fe01d7e2d938072
-ms.sourcegitcommit: c702aafb65b0fc43cb210e1bb7340cef48b57f35
+ms.openlocfilehash: 32fc12da3b26ccb1f6d5b984915dfd0cc6afd647
+ms.sourcegitcommit: c6ef4e5a9aec4f682718819c58efeab599e2781b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67322796"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73170011"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -46,7 +46,7 @@ Die Installation der Erweiterung ist einfach. Führen Sie folgende Schritte aus:
     <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="../media/vs-code.svg" width="128px" alt="Visual Studio Code logo"/></td>
     <td style="border:none;">
         <strong>Visual Studio Code (1.22.0+)</strong><br />
-        1. Installieren Sie <a href="https://code.visualstudio.com/">Visual Studio Code</a> für Windows (7, 8.1 oder 10), macOS <b>(Sierra+)</b>, 64-Bit-Linux <b> (<a href="../use/vscode.md#installation">Details</a>)</b><br />
+        1. Installieren Sie <a href="https://code.visualstudio.com/">Visual Studio Code</a> für Windows (7, 8.1 oder 10), macOS <b>(Sierra+)</b>, 64-Bit-Linux <b> (<a href="../how-to-guides/vscode.md#installation">Details</a>)</b><br />
         2. Laden Sie die Visual Studio Live Share-Erweiterung aus dem Marketplace herunter, und installieren Sie sie. <br />
         3. Laden Sie sie erneut, und warten Sie, dass die Abhängigkeiten heruntergeladen und installiert werden (siehe die Statusleiste).<br />
         4. <strong>Linux</strong>: Wenn Sie aufgefordert werden, <a href="../reference/linux.md#install-linux-prerequisites">Bibliotheken zu installieren</a>, klicken Sie auf „Installieren“, geben Sie das Kennwort ein, und starten Sie abschließend VS Code erneut.<br />
@@ -98,7 +98,7 @@ In **VS Code** wird Ihr Browser gestartet, während Sie eine eingeblendete Benac
 
 ![Popupbenachrichtigung mit der Aufforderung, sich über einen Webbrowser anzumelden](../media/vscode-sign-in-toast.png)
 
-> **Linux-Benutzer:** Wenn Sie eine ältere Version von Live Share (v0.3.295 oder darunter) verwenden, werden Sie möglicherweise aufgefordert, einen Benutzercode einzugeben. Aktualisieren Sie auf die neueste Version der Erweiterung, oder klicken Sie nach Ihrer Anmeldung auf den Link „Gibt es Probleme?“, um den Code anzuzeigen. Lesen Sie [hier die Details dazu](../use/vscode.md#sign-in-using-a-user-code).
+> **Linux-Benutzer:** Wenn Sie eine ältere Version von Live Share (v0.3.295 oder darunter) verwenden, werden Sie möglicherweise aufgefordert, einen Benutzercode einzugeben. Aktualisieren Sie auf die neueste Version der Erweiterung, oder klicken Sie nach Ihrer Anmeldung auf den Link „Gibt es Probleme?“, um den Code anzuzeigen. Lesen Sie [hier die Details dazu](../how-to-guides/vscode.md#sign-in-using-a-user-code).
 
 In **Visual Studio** verwendet Live Share automatisch Ihr [Personalisierungskonto](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio). Deshalb können Sie sich einfach wie gewohnt anmelden. Wenn Sie aber lieber eine andere Anmeldung als Ihr Visual Studio-Personalisierungskonto verwenden möchten, wechseln Sie zu **Tools &gt; Optionen &gt; Live Share &gt; Benutzerkonto**, und wählen Sie andere Anmeldeinformationen aus.
 
@@ -190,7 +190,7 @@ Das ist alles! Hier sind ein paar Dinge zum Ausprobieren, sobald ein Gast Ihrer 
 1. Geben Sie einen Server frei, damit Sie etwas überprüfen können, z.B. eine Web-App, die auf dem Computer des Gasts ausgeführt wird.
 1. Geben Sie ein Terminal frei, und führen Sie einige Befehle aus.
 
-Informationen, wie diese Aktionen ausgeführt werden, und vieles mehr finden Sie in der Erweiterungsdokumentation zu [Visual Studio Code](../use/vscode.md) und [Visual Studio](../use/vs.md).
+Informationen, wie diese Aktionen ausgeführt werden, und vieles mehr finden Sie in der Erweiterungsdokumentation zu [Visual Studio Code](../how-to-guides/vscode.md) und [Visual Studio](../how-to-guides/vs.md).
 
 Gibt es Probleme? Lesen Sie [Troubleshooting](../troubleshooting.md) oder [Feedback geben](../support.md).
 
@@ -199,10 +199,10 @@ Gibt es Probleme? Lesen Sie [Troubleshooting](../troubleshooting.md) oder [Feedb
 Wenn Sie weitere Informationen benötigen, sehen Sie sich diese zusätzlichen Artikel an.
 
 - [Schnellstart: Beitreten zu Ihrer ersten Zusammenarbeitssitzung](join.md)
-- [Vorgehensweise: Zusammenarbeiten mithilfe von Visual Studio Code](../use/vscode.md)
-- [Vorgehensweise: Zusammenarbeiten mithilfe von Visual Studio](../use/vs.md)
+- [Vorgehensweise: Zusammenarbeiten mithilfe von Visual Studio Code](../how-to-guides/vscode.md)
+- [Vorgehensweise: Zusammenarbeiten mithilfe von Visual Studio](../how-to-guides/vs.md)
 
-Verweis
+Referenz
 
 - [Anforderungen an die Konnektivität für Live Share](../reference/connectivity.md)
 - [Sicherheitsfeatures von Live Share](../reference/security.md)
