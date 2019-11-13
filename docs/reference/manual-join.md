@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 1057c6276302fb0df682798dd06684b4835c051e
-ms.sourcegitcommit: c6ef4e5a9aec4f682718819c58efeab599e2781b
+ms.openlocfilehash: 0d46cb53a28bfac1c088371ff5eecdb6af0c8420
+ms.sourcegitcommit: 3a1b22eac528b0f6a241f9fec7ec20264db24cfe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73170121"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74019789"
 ---
 # <a name="join-a-session-manually"></a>Manuelles Hinzufügen einer Sitzung
 
@@ -28,7 +28,7 @@ Die genauen Anweisungen unterscheiden sich zwischen [Visual Studio](#join-from-v
 
 ### <a name="1-sign-in"></a>1. anmelden
 
->**Hinweis:** Wenn Sie eine Zusammenarbeits Sitzung als schreibgeschützten Gast beitreten möchten, können Sie die Anmeldung überspringen. Sie haben Zugriff auf das Anzeigen und Navigieren in dem Code, der freigegeben ist, aber nicht in der Lage ist, Änderungen vorzunehmen.
+>**Hinweis:** Wenn Sie eine Zusammenarbeits Sitzung als Schreib geschütztes "guesasdsat" beitreten möchten, können Sie die Anmeldung überspringen. Sie haben Zugriff auf das Anzeigen und Navigieren in dem Code, der freigegeben ist, aber nicht in der Lage ist, Änderungen vorzunehmen.
 
 ![Popupbenachrichtigung mit der Aufforderung, sich über einen Webbrowser anzumelden](../media/vscode-sign-in-toast.png)
 
@@ -85,8 +85,8 @@ Schnellstarts
 
 Gewusst wie
 
-- [Gewusst wie: zusammenarbeiten mit Visual Studio Code](../how-to-guides/vscode.md)
-- [Gewusst wie: zusammenarbeiten mithilfe von Visual Studio](../how-to-guides/vs.md)
+- [Gewusst wie: zusammenarbeiten mit Visual Studio Code](../use/vscode.md)
+- [Gewusst wie: zusammenarbeiten mithilfe von Visual Studio](../use/vs.md)
 - [Gewusst wie: Bereitstellen von Feedback](../support.md)
 
 Referenz

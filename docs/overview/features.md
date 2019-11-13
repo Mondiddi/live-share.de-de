@@ -11,12 +11,12 @@ ms.author: fubaduba
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 8091a7ba5cf1f57f192ecea18da4473c8fdd99f7
-ms.sourcegitcommit: c6ef4e5a9aec4f682718819c58efeab599e2781b
+ms.openlocfilehash: 79ff9d0218fe0ef83cf78fa7163aaad8c1f97edd
+ms.sourcegitcommit: 3a1b22eac528b0f6a241f9fec7ec20264db24cfe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73179950"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74019775"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -37,13 +37,13 @@ Zusammenarbeitssitzungs-Gastgeber können alle ihre Tools und Dienste nutzen, w�
 
 Wenn Sie etwas als Gastgeber „freigeben“, starten Sie eine Zusammenarbeitssitzung, in der die Inhalte eines Projekts, einer Lösung oder eines Ordners freigegeben sind. Gäste erhalten über den Einladungslink, den Sie ihnen senden, Zugriff auf diesen Inhalt. Während „Freigabe“ eine Kurzform für „Freigabe eines Projekts“ ist, öffnet sie auch die Tür zur Freigabe anderer Funktionen wie dem Debuggen.
 
-**Weitere Informationen:** [![vs Code](../media/vscode-icon-15x15.png)](../how-to-guides/vscode.md#share-a-project) [![vs](../media/vs-icon-15x15.png)](../how-to-guides/vs.md#share-a-project)
+**Weitere Informationen:** [![vs Code](../media/vscode-icon-15x15.png)](../use/vscode.md#share-a-project) [![vs](../media/vs-icon-15x15.png)](../use/vs.md#share-a-project)
 
 #### <a name="joining"></a>Verknüpfen
 
 Wenn Sie auf einen Einladungslink klicken, der Ihnen von einem Gastgeber gesendet wurde, können Sie einer Zusammenarbeitssitzung als Gast „beitreten“ und auf alle Inhalte oder Funktionen zugreifen, die der Gastgeber durch Aktivierung für Sie freigegeben hat. Der Weblink bietet eine schnelle Möglichkeit, in eine Zusammenarbeitssitzung zu springen, wenn Sie die Erweiterung bereits installiert haben, und – wenn nicht – eine schnelle Möglichkeit zum Einrichten von Informationen.
 
-**Weitere Informationen:** [![vs Code](../media/vscode-icon-15x15.png)](../how-to-guides/vscode.md#join-a-collaboration-session) [![vs](../media/vs-icon-15x15.png)](../how-to-guides/vs.md#join-a-collaboration-session)
+**Weitere Informationen:** [![vs Code](../media/vscode-icon-15x15.png)](../use/vscode.md#join-a-collaboration-session) [![vs](../media/vs-icon-15x15.png)](../use/vs.md#join-a-collaboration-session)
 
 ### <a name="features"></a>Features
 
@@ -54,13 +54,13 @@ Wenn Sie dieselbe Datei als ein weiterer Projektmitarbeiter öffnen, können Sie
 > [!NOTE]
 > Bei der gemeinsamen Bearbeitung gibt es ein paar Einschränkungen. Lesen Sie [Plattformunterstützung](../reference/platform-support.md), um sich über den Status von Features je nach Sprache zu informieren.
 
-**Weitere Informationen:** [![vs Code](../media/vscode-icon-15x15.png)](../how-to-guides/vscode.md#co-editing) [![vs](../media/vs-icon-15x15.png)](../how-to-guides/vs.md#co-editing)
+**Weitere Informationen:** [![vs Code](../media/vscode-icon-15x15.png)](../use/vscode.md#co-editing) [![vs](../media/vs-icon-15x15.png)](../use/vs.md#co-editing)
 
 #### <a name="following-and-focusing"></a>Folgen und sich konzentrieren
 
 Manchmal müssen Sie ein Problem erläutern oder etwas entwerfen, dass sich über mehrere Dateien oder Stellen im Code erstreckt. In diesen Fällen kann es hilfreich sein, einem Kollegen vorübergehend zu folgen, während er sich bei der gemeinsamen Bearbeitung durch das gesamte Projekt bewegt. Aus diesem Grund „folgen“ Sie als Gast beim Beitritt zu einer Zusammenarbeitssitzung automatisch der Bearbeitungsstelle des Gastgebers. Gastgeber und Gäste können mit einem einfachen Mausklick aufeinander folgend hinein- und hinausspringen. Außerdem möchten Sie vielleicht alle Teilnehmer bitten, Ihnen zu folgen. In Live Share können Sie mit einer Benachrichtigung anfordern, dass jeder seine Aufmerksamkeit auf Sie „konzentriert“. Dies erleichtert es den Teilnehmern, Ihnen ebenfalls zu folgen.
 
-**Weitere Informationen:** [![vs Code](../media/vscode-icon-15x15.png)](../how-to-guides/vscode.md#following) [![vs](../media/vs-icon-15x15.png)](../how-to-guides/vs.md#following)
+**Weitere Informationen:** [![vs Code](../media/vscode-icon-15x15.png)](../use/vscode.md#following) [![vs](../media/vs-icon-15x15.png)](../use/vs.md#following)
 
 #### <a name="co-debugging"></a>Gemeinsames Debuggen
 
@@ -69,19 +69,19 @@ Wenn Sie schwierige Codierungsprobleme oder Fehler debuggen, kann es sehr hilfre
 > [!NOTE]
 > Lesen Sie [Plattformunterstützung](../reference/platform-support.md), um sich über den Status von Debuggingfeatures je nach Sprache oder Plattform zu informieren.
 
-**Weitere Informationen:** [![vs Code](../media/vscode-icon-15x15.png)](../how-to-guides/vscode.md#co-debugging) [![vs](../media/vs-icon-15x15.png)](../how-to-guides/vs.md#co-debugging)
+**Weitere Informationen:** [![vs Code](../media/vscode-icon-15x15.png)](../use/vscode.md#co-debugging) [![vs](../media/vs-icon-15x15.png)](../use/vs.md#co-debugging)
 
 #### <a name="share-server--share-port"></a>Freigeben eines Servers / Freigeben eines Ports
 
 Beim gemeinsamen Debuggen kann es sehr hilfreich sein, Zugriff auf verschiedene Teile der Anwendung zu erhalten, die den Gästen vom Gastgeber für die Debugsitzung „serviert“ werden. Vielleicht möchten Sie auf die App in einem Browser zugreifen, auf eine lokale Datenbank zugreifen oder über Ihre Tools einen REST-Endpunkt erreichen. Live Share ermöglicht Ihnen die „Freigabe eines Servers“, wodurch ein lokaler Port auf dem Computer des Gastgebers genau demselben Port auf dem Computer jedes Gasts zugeordnet wird. Als Gast können Sie dann mit der Anwendung genauso interagieren, als wenn sie auf Ihrem Computer lokal ausgeführt würde (beispielsweise können sowohl Gastgeber als auch Gast auf eine Web-App zugreifen, die auf dem http://localhost:3000) ausgeführt wird).
 
-**Weitere Informationen:** [![vs Code](../media/vscode-icon-15x15.png)](../how-to-guides/vscode.md#share-a-server) [![vs](../media/vs-icon-15x15.png)](../how-to-guides/vs.md#share-a-server)
+**Weitere Informationen:** [![vs Code](../media/vscode-icon-15x15.png)](../use/vscode.md#share-a-server) [![vs](../media/vs-icon-15x15.png)](../use/vs.md#share-a-server)
 
 #### <a name="share-terminals"></a>Freigeben von Terminals
 
 Die moderne Entwicklung nutzt oft eine Vielzahl von Befehlszeilentools. Glücklicherweise ermöglicht Live Share es Ihnen als Gastgeber, für Gäste optional „ein Terminal freizugeben“. Das freigegebene Terminal kann schreibgeschützt oder vollständig für Zusammenarbeit eingerichtet sein, damit Sie und Ihre Gäste Befehle ausführen und die Ergebnisse anzeigen können. Als Gastgeber behalten Sie immer die Kontrolle und können entscheiden, ob andere Projektmitarbeiter Befehle selber ausführen oder nur die Befehlsausgabe anzeigen können. Tatsächlich können Sie alles, was Sie für sich behalten möchten, in einem nicht freigegebenen Terminal ausführen.
 
-**Weitere Informationen:** [![vs Code](../media/vscode-icon-15x15.png)](../how-to-guides/vscode.md#share-a-terminal) [![vs](../media/vs-icon-15x15.png)](../how-to-guides/vs.md#share-a-terminal)
+**Weitere Informationen:** [![vs Code](../media/vscode-icon-15x15.png)](../use/vscode.md#share-a-terminal) [![vs](../media/vs-icon-15x15.png)](../use/vs.md#share-a-terminal)
 
 #### <a name="access-controls"></a>Zugriffssteuerungen
 
