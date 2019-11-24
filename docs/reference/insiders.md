@@ -37,7 +37,7 @@ Live Share können jetzt wiederverwendbare Sitzungen hosten. Wiederverwendbare S
 
 Gehen Sie zum Erstellen einer wiederverwendbaren Sitzung folgendermaßen vor:
 1. Wechseln Sie mit `Ctrl+Shift+P` zum `Command Palette`.
-1. Geben Sie "Live SHA..." ein. und klicken Sie auf die Freigabe "** @ no__t-1Live": Befehl zum Erstellen einer wiederverwendbaren Sitzungs Verknüpfung @ no__t-0 @ no__t-1 '.
+1. Geben Sie "Live SHA..." ein. und klicken Sie auf den Befehl " **_Live Share: wiederverwendbarer Sitzungs Link erstellen_** ".
 
 ![vscode-Reus ablesessioncmd](../media/vscode-cmdpalette-createreusablelink.png)
 
@@ -54,9 +54,9 @@ Gehen Sie zum Erstellen einer wiederverwendbaren Sitzung folgendermaßen vor:
 
 ## Werden Sie Insider <a name="BecomeanInsider"></a>
 
-Standardmäßig verwenden Sie nach der Installation der Visual Studio Live Share-Erweiterung die Funktion "`Stable`", die alle Funktionen für die Bereitstellung (z. b. Co-Bearbeitung, frei gegebenes Debuggen, Terminals) umfasst. Wenn Sie jedoch einen frühen Zugriff auf das Feature erhalten möchten, an dem wir arbeiten, können Sie die Funktion "`Insiders`" abonnieren, indem Sie die folgende Einstellung in Ihrer IDE ändern:
+Standardmäßig verwenden Sie nach der Installation der Visual Studio Live Share-Erweiterung den `Stable` Featuresatz, der alle Funktionen für die Bereitstellung (z. b. Co-Bearbeitung, frei gegebenes Debuggen, Terminals) umfasst. Wenn Sie jedoch einen frühen Zugriff auf das Feature erhalten möchten, an dem wir arbeiten, können Sie den `Insiders` Featuresatz abonnieren, indem Sie die folgende Einstellung in Ihrer IDE ändern:
 
-* Visual Studio
+* Visual Studio
 
     ![Feature-Set-vs](../media/feature-set-vs.png)
 
@@ -64,7 +64,7 @@ Standardmäßig verwenden Sie nach der Installation der Visual Studio Live Share
 
     ![Feature-Set-vscode](../media/feature-set-vscode.png)
 
-In den folgenden Abschnitten werden die Funktionen beschrieben, die sich derzeit in der `Insiders`-featuremenge befinden und daher zum Auswerten bereit sind, nachdem Sie die oben genannte Einstellung geändert haben:
+In den folgenden Abschnitten werden die Funktionen beschrieben, die derzeit in der `Insiders` Featuregruppe enthalten sind und daher zur Auswertung bereit sind, nachdem Sie die oben genannte Einstellung geändert haben:
 
 
 
