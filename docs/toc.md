@@ -6,6 +6,7 @@
 # Schnellstarts
 ## [Freigeben Ihres ersten Projekts](quickstart/share.md)
 ## [Beitreten zu Ihrer ersten Sitzung](quickstart/join.md)
+## [Beitreten über den Browser](quickstart/browser-join.md)
 # Anleitungen: VS Code
 ## [Übersicht](use/vscode.md)
 ## [Installieren](use/vscode.md#installation)
