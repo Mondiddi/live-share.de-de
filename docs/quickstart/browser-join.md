@@ -10,12 +10,12 @@ ms.author: fishah
 manager: joncart
 ms.workload:
 - liveshare
-ms.openlocfilehash: 741292a3df8b86a8f7a9484875b352ebe6e8ec10
-ms.sourcegitcommit: 382f069abbd81ed258d497a974b30379be36b4f0
+ms.openlocfilehash: 9544e1ad333903c663b9b4ecda35ca745020b4ae
+ms.sourcegitcommit: 6bf13781dc42a2bf51a19312ede37dff98ab33ea
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79510636"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80295916"
 ---
 <!--
 Copyright &copy; Microsoft Corporation
@@ -27,8 +27,6 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 Alle Live Share Zusammenarbeits Sitzungen können nun aus dem Browser verknüpft werden. Dies bedeutet, dass ein Gast ihrer Sitzung nicht mehr vs Code oder Visual Studio installieren muss, um der Sitzung beizutreten. Dies ist besonders hilfreich für alle diese Instanzen, wenn Sie möchten, dass ein Benutzer schnell in Ihre Sitzung gelangt, oder für Studenten, die die Desktop Clients oft nicht installiert haben.
 
-> [!TIP]
-> Weitere Informationen zu den häufigsten Fragen zum beitreten aus dem Browser finden Sie unten im Abschnitt mit den häufig gestellten Fragen.
 
 # <a name="how-to-join-a-live-share-session-from-the-browser"></a>Beitreten zu einer Live Share Sitzung über den Browser 
 
@@ -46,20 +44,24 @@ Live Share generiert einen joinlink, der für den Gast freigegeben werden kann. 
 Nachdem der Gast der Sitzung beigetreten ist, kann er genauso wie bei der Zusammenarbeit mit den Desktop Clients weiter gehen.
 
 ![Animation der vollständigen Treue](https://user-images.githubusercontent.com/51928518/76942009-40e24d80-68ba-11ea-885c-6eb1069ed550.gif)
-# <a name="frequently-asked-questions"></a>Häufig gestellte Fragen 
 
-##### <a name="1-is-there-an-environment-running-in-the-background-that-is-hosting-my-session-in-the-browser"></a>1. gibt es eine Umgebung, die im Hintergrund ausgeführt wird, die meine Sitzung im Browser gehostet?
-Wenn Sie eine Live Share Sitzung über den Browser hinzufügen, wird keine neue Umgebung hochgefahren. Dabei handelt es sich um einen Server losen Dienst. 
-##### <a name="2-do-i-have-to-pay-for-the-service-of-joining-from-the-browser"></a>2. muss ich für den Dienst zum beitreten aus dem Browser bezahlen?
-Das beitreten aus dem Browser ist kostenlos, ähnlich wie alle Live share.
+<!---
+# Frequently asked questions 
 
-##### <a name="3-how-is-this-different-from-visual-studio-online"></a>3. wie unterscheidet sich dies von Visual Studio Online?
-Wenn Sie über den Browser beitreten, greifen Sie während der Sitzung nur über den Browser auf den vs Code-Client zu. Sobald die Sitzung beendet ist, werden alle Dateien und Ordner zusammen mit den Editorfunktionen geschlossen. Wenn Sie einen Editor im Browser verwenden möchten, der in ihrer eigenen Umgebung zum Bearbeiten Ihrer eigenen Dateien gesichert ist, müssen Sie [Visual Studio Online verwenden.](aka.ms/vso)
+##### 1. Is there an environment running in the background, that is hosting my session in the browser?
+When you join a Live Share session from the browser, there is no new environment spun up. It is a serverless service. 
+##### 2. Do I have to pay for the service of joining from the browser?
+Joining from the browser is free, much like all of Live Share.
 
-##### <a name="4-does-this-work-for-all-browsers"></a>4. funktioniert das für alle Browser?
-Ja. Dies funktioniert für alle Browser. 
-##### <a name="5-is-there-a-vs-client-that-i-can-use-in-the-browser"></a>5. gibt es einen vs-Client, der im Browser verwendet werden kann?
-Das ist noch nicht verfügbar. 
+##### 3. How is this different from Visual Studio Online?
+When you join from the browser, you only access the VS Code client from the browser during the session. Once the session ends, all the files and folders along with editor capabilities will close. To use an editor in the browser, backed with your own environment to edit your own files, you must use [Visual Studio Online.](aka.ms/vso)
 
-# <a name="feedback-and-issues"></a>Feedback und Probleme 
-Dies ist ein Vorschau Feature, und wir hoffen, dass Sie Benutzer Feedback erhalten, um die Benutzer Funktionalität zu verbessern. Füllen Sie hier Feedback oder Probleme aus, die Sie in unserem GitHub-Repository sehen [.](https://github.com/MicrosoftDocs/live-share/issues/new?template=bug_report.md)
+##### 4. Does this work for all browsers?
+Yes. This works on all browsers. 
+##### 5. Is there a VS client that I can use in the browser?
+We do not have this available yet. 
+
+# Feedback and issues 
+This is a preview feature, and we hope to get user feedback to improve the experience. Please fill out any feedback or issues you see on our GitHub repo [here.](https://github.com/MicrosoftDocs/live-share/issues/new?template=bug_report.md)
+
+--->

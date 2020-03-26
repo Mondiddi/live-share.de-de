@@ -11,38 +11,40 @@ ms.author: fubaduba
 manager: JonathanCarter
 ms.workload:
 - liveshare
-ms.openlocfilehash: 810c60754c0be4f11511fb1ccbb0bb612de42e5d
-ms.sourcegitcommit: 3a1b22eac528b0f6a241f9fec7ec20264db24cfe
+ms.openlocfilehash: 0ac1ba213c59df2dc3b1d05d89e4186c823a250f
+ms.sourcegitcommit: 6bf13781dc42a2bf51a19312ede37dff98ab33ea
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74019832"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80295958"
 ---
 <!--
-Copyright © Microsoft Corporation
+Copyright &copy; Microsoft Corporation
 All rights reserved.
 Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
 -->
 
 # <a name="how-to-do-technical-interviews-using-live-share"></a>Vorgehensweise: technische Interviews mithilfe von Live Share
 
-Bevor Sie Live Share für technische Interviews verwenden, müssen Sie einen integralen Schritt ausführen: **herunterladen Visual Studio Code und das Live Share Erweiterungspaket aus seinem Marketplace** , indem Sie die folgenden [Schritte ausführen.](../use/vscode.md)
+Die Verwendung von Live Share für Interviews ermöglicht es dem Interviewer und dem Kandidaten, eine schnelle und zuverlässige Interview Sitzung mit einer vollständig präzisen IDE oder einem Editor zu haben. 
 
-Live Share bietet Ihnen die Möglichkeit, wiederverwendbare Sitzungen zu hosten. Dies bedeutet, dass Sie eine Live Share Sitzung im Voraus für Ihre technischen Interviews planen können und sich keine Gedanken über den Verbindungs Ablauf machen können.
 
-> [!TIP] 
->Eine wiederverwendbare Sitzungs Verknüpfung ist dauerhaft und wird 30 Tage nach dem Erstellungsdatum oder dem Datum der letzten Verwendung beibehalten. Stellen Sie beim Erstellen einer wiederverwendbaren Sitzungs Verknüpfung für Ihr Interview sicher, dass das Gespräch innerhalb von 30 Tagen nach dem Datum der Erstellung des Links liegt. Wenn der Link abläuft, erstellen Sie einfach eine neue wiederverwendbare Sitzung. (Es gibt eine Möglichkeit, um sicherzustellen, dass der Link nie abläuft, aber dies ist für Interviews einfacher!)
+## <a name="setup-for-interviewer"></a>Setup für den Interviewer 
+Wenn Sie einen Kandidaten mit Live Share interviewen möchten, müssen Sie zunächst einen der beiden Desktop Clients:
 
-### <a name="what-to-do-as-an-interviewer"></a>**Was muss ich als Interviewer tun?**
+Installieren Sie [Visual Studio](../use/vs.md) , das mit der Live Share-Erweiterung integriert ist.
 
-Als Interviewer fungieren Sie als Host der Live Share Sitzung. Wenn Sie mit Live Share nicht vertraut sind, empfehlen wir Ihnen, sich im Abschnitt [Freigeben eines Projekts](../use/vscode.md) dieses Handbuchs zu informieren.
+>[!TIP] 
+> Stellen Sie sicher, dass Sie Insider für Live Share aktivieren, indem Sie zu Extras *> Optionen > Live Share > Erweiterte > Features*wechseln. Dies ermöglicht es Ihnen, unsere integrierte audioaufruf-Unterstützung für Interviews zu verwenden.
 
-Nachdem Sie nun eine Live Share Sitzung für Ihr technisches Interview erstellt haben, erstellen Sie anstelle der regulären Zusammenarbeits Sitzung eine spezielle "wiederverwendbare Sitzung". Dadurch haben Sie die Möglichkeit, eine Live Share Sitzung zu verwenden, die im Voraus geplant und dann jederzeit verwendet werden kann.
+Oder installieren Sie [Visual Studio Code](../.use/vscode.md) , und laden Sie das [Live Share Extension Pack]() aus dem Marketplace herunter. Das Erweiterungspaket stellt Ihnen unsere Audiounterstützung für Interviews bereit. 
 
-Gehen Sie zum Erstellen einer wiederverwendbaren Sitzung folgendermaßen vor:
+## <a name="scheduling-an-interview"></a>Planen eines Interviews 
+
+**Live share in vs Code** bietet Ihnen die Möglichkeit, Live Share Sitzungen im Voraus zu erstellen. Sie können die folgenden Schritte ausführen, um eine Sitzung im Voraus zu erstellen:
 
 1. Wechseln Sie mit `Ctrl+Shift+P` zum `Command Palette`.
-1. Geben Sie "Live SHA..." ein. und klicken Sie auf den Befehl " **_Live Share: wiederverwendbarer Sitzungs Link erstellen_** ".
+1. Geben Sie "Live SHA..." ein. und klicken Sie auf den Befehl "_Live Share: wiederverwendbarer Sitzungs Link erstellen_".
 
 ![vscode-Reus ablesessioncmd](../media/vscode-cmdpalette-createreusablelink.png)
 
@@ -50,23 +52,39 @@ Gehen Sie zum Erstellen einer wiederverwendbaren Sitzung folgendermaßen vor:
 
 ![vscode-Reus ablesessionnotif](../media/vscode-notification-resuablesession.png)
 
-4. Ihre wiederverwendbare Sitzung wurde erstellt! Geben Sie den Link für Ihre Sitzungs-Mate frei, und verwenden Sie ihn jedes Mal für den Zugriff auf die Sitzung.
+4. senden Sie den Link.
 
 Wenn Sie über diesen Link verfügen, geben Sie ihn einfach über eine e-Mail oder den gewählten planungsmechanismus für das Interview frei. Alles, was Sie tun müssen, ist, dass Sie zum Zeitpunkt des Interviews auf diesen Link klicken, und Sie befinden sich in einer Live Share Sitzung. 
+> [!TIP] 
+>Eine wiederverwendbare Sitzungs Verknüpfung ist dauerhaft und wird 30 Tage nach dem Erstellungsdatum oder dem Datum der letzten Verwendung beibehalten. Stellen Sie beim Erstellen einer wiederverwendbaren Sitzungs Verknüpfung für Ihr Interview sicher, dass das Gespräch innerhalb von 30 Tagen nach dem Datum der Erstellung des Links liegt. Wenn der Link abläuft, erstellen Sie einfach eine neue wiederverwendbare Sitzung. (Es gibt eine Möglichkeit, um sicherzustellen, dass der Link nie abläuft, aber dies ist für Interviews einfacher!)
 
-### <a name="what-to-do-as-the-interviewee"></a>**Was ist mit dem Interviewten zu tun?**
+**Hinweis:** Derzeit ist Live share in Visual Studio nicht in der Lage, Sitzungen im Voraus zu erstellen. Bei Interviews, die Sie mithilfe von Live share in Visual Studio durchführen, können Sie in unserem Leitfaden zum Starten einer sofortigen [Live Share Sitzung finden](../quickstart/share.md) .
 
-Wenn Sie mit Live Share ein technisches Interview erwarten möchten, haben Sie Glück! Wir möchten sicherstellen, dass Sie mit den grundlegenden Live Share Features vertraut sind, damit Sie sich während Ihres Interviews zufrieden sind.
 
-1. Nehmen Sie sich vor dem Vorstellungsgespräch etwas Zeit, und überprüfen Sie das Handbuch, um [zu](../use/vscode.md) verstehen, wie Live Share funktioniert.
 
-1. Möglicherweise möchten Sie Visual Studio Code vorab installieren, damit Sie nicht auf den Abschluss der Installation warten, nachdem Sie Ihr Interview gestartet haben.
+## <a name="setup-for-candidate"></a>Setup für Kandidaten
+Obwohl ein Kandidat immer entweder Visual Studio oder Visual Studio Code installieren kann, um dem Gespräch beizutreten, ist dies nicht erforderlich. **Live Share interviewsitzungen können ohne vorherige Einrichtung über Kandidaten verknüpft werden.** Sie können zum Zeitpunkt der Sitzung auf den Link zum Gespräch klicken und sich über **den Browser anmelden**. Weitere Informationen [finden Sie hier.](../quickstart/browser-join.md)
 
-1. Wenn Sie nicht über die Zeit verfügen, machen Sie sich keine Sorgen. Sie benötigen lediglich einen Link zu einer Live Share Sitzung, die ihr Interviewer bei der Planung des Interviews sendet. Wenn Sie einfach auf den Link klicken, werden Sie automatisch alle erforderlichen Schritte durchführen.
 
-1. Klicken Sie zum Zeitpunkt des Interviews einfach auf den Link, und befolgen Sie die Schritte, die Sie durchführen. Wenn Sie früh dran sind oder Ihr Interviewer das Gespräch zu spät ist, machen Sie sich keine Sorgen! Sie befinden sich einfach in der "Lobby", die darauf wartet, dass Ihr Interviewer beitreten kann. Es sind keine weiteren Schritte erforderlich, und sobald der Interviewer an der Sitzung teilnimmt, wird er automatisch gestartet.
+
+<!--
+### **What to do as an Interviewer?**
+
+As an interviewer you will act as the host of the Live Share session. If you are not familiar with Live Share, we suggest you refer to the [share a project](../use/vscode.md) section of our how-to guide
+### **What to do as the Interviewee?**
+
+If you are expecting to do a Technical Interview using Live Share, you are in luck! We want to make sure you are familiar with the basic Live Share features so you feel comfortable during your interview.
+
+1. Before the interview, take some time and look over the [How-to guide](../use/vscode.md) so you understand how Live Share works.
+
+1. You may want to install Visual Studio Code beforehand so that you are not waiting for the installation to complete once you start your interview
+
+1. If you don't have the time, no worries. All you need to have a full interview is the link to a Live Share session your interviewer sends you while scheduling the interview. Just clicking on the link will automatically take you through all the steps needed.
+
+1. At the time of the interview, just click on the link and follow the steps it takes you through. If you are early or your interviewer is late to the interview, don't worry! You will just be in the 'lobby' waiting for your interviewer to join. No other steps are required, and once your interviewer joins the session will automatically start.
 
 >[!NOTE]
->Wenn Sie feststellen, dass die Sitzung vor oder nach dem Beitritt des Interviewers getrennt wurde, machen Sie sich keine Sorgen. Beenden Sie diese Sitzung, wenn Sie nicht bereits geschlossen ist, und klicken Sie erneut auf denselben Link.
+>If you find that the session has disconnected before or after the interviewer joined, don't worry. Just exit out of that session if (it isn't already closed) and re-click on the same link!
 
-Sie sind jetzt für die Verwendung von Live Share für Ihr Interview festgelegt! 
+You are now all set to go with using Live Share for your interview! 
+-->
