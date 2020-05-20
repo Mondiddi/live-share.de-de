@@ -11,12 +11,12 @@ ms.author: fubaduba
 manager: JonathanCarter
 ms.workload:
 - liveshare
-ms.openlocfilehash: 0ac1ba213c59df2dc3b1d05d89e4186c823a250f
-ms.sourcegitcommit: 6bf13781dc42a2bf51a19312ede37dff98ab33ea
+ms.openlocfilehash: db2365b92f5b18198a2f976e1c6ce3d5abb755c5
+ms.sourcegitcommit: d7f923c1bcd0430b48065ea2c0902b470f530987
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80295958"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83569521"
 ---
 <!--
 Copyright &copy; Microsoft Corporation
@@ -35,15 +35,15 @@ Wenn Sie einen Kandidaten mit Live Share interviewen möchten, müssen Sie zunä
 Installieren Sie [Visual Studio](../use/vs.md) , das mit der Live Share-Erweiterung integriert ist.
 
 >[!TIP] 
-> Stellen Sie sicher, dass Sie Insider für Live Share aktivieren, indem Sie zu Extras *> Optionen > Live Share > Erweiterte > Features*wechseln. Dies ermöglicht es Ihnen, unsere integrierte audioaufruf-Unterstützung für Interviews zu verwenden.
+> Stellen Sie sicher, dass Sie Insider für Live Share aktivieren, indem Sie zu Extras *> Optionen > Live Share > erweiterte > Features*wechseln. Dies ermöglicht es Ihnen, unsere integrierte audioaufruf-Unterstützung für Interviews zu verwenden.
 
-Oder installieren Sie [Visual Studio Code](../.use/vscode.md) , und laden Sie das [Live Share Extension Pack]() aus dem Marketplace herunter. Das Erweiterungspaket stellt Ihnen unsere Audiounterstützung für Interviews bereit. 
+Oder installieren Sie [Visual Studio Code](../use/vscode.md) , und laden Sie das [Live Share Extension Pack](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack) aus dem Marketplace herunter. Das Erweiterungspaket stellt Ihnen unsere Audiounterstützung für Interviews bereit. 
 
 ## <a name="scheduling-an-interview"></a>Planen eines Interviews 
 
 **Live share in vs Code** bietet Ihnen die Möglichkeit, Live Share Sitzungen im Voraus zu erstellen. Sie können die folgenden Schritte ausführen, um eine Sitzung im Voraus zu erstellen:
 
-1. Wechseln Sie mit `Ctrl+Shift+P` zum `Command Palette`.
+1. Wechseln Sie zur `Command Palette` Verwendung von.`Ctrl+Shift+P`
 1. Geben Sie "Live SHA..." ein. und klicken Sie auf den Befehl "_Live Share: wiederverwendbarer Sitzungs Link erstellen_".
 
 ![vscode-Reus ablesessioncmd](../media/vscode-cmdpalette-createreusablelink.png)

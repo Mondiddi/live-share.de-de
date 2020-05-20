@@ -1,6 +1,6 @@
 ---
 title: Beitreten aus dem Browser-Visual Studio Live Share | Microsoft-Dokumentation
-description: Einführung in den Wei-Browser
+description: Einführung in den Browser
 ms.date: 03/18/2020
 ms.reviewer: ''
 ms.suite: ''
@@ -10,12 +10,12 @@ ms.author: fishah
 manager: joncart
 ms.workload:
 - liveshare
-ms.openlocfilehash: 9544e1ad333903c663b9b4ecda35ca745020b4ae
-ms.sourcegitcommit: 6bf13781dc42a2bf51a19312ede37dff98ab33ea
+ms.openlocfilehash: 5e485397ff23be0fdab8449fad6237d829775c55
+ms.sourcegitcommit: d7f923c1bcd0430b48065ea2c0902b470f530987
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80295916"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83569534"
 ---
 <!--
 Copyright &copy; Microsoft Corporation
@@ -25,7 +25,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # <a name="preview-joining-a-live-share-session-from-the-browser"></a>✨ [Vorschau] ✨ beitreten zu einer Live Share Sitzung über den Browser
 
-Alle Live Share Zusammenarbeits Sitzungen können nun aus dem Browser verknüpft werden. Dies bedeutet, dass ein Gast ihrer Sitzung nicht mehr vs Code oder Visual Studio installieren muss, um der Sitzung beizutreten. Dies ist besonders hilfreich für alle diese Instanzen, wenn Sie möchten, dass ein Benutzer schnell in Ihre Sitzung gelangt, oder für Studenten, die die Desktop Clients oft nicht installiert haben.
+Alle Live Share Zusammenarbeits Sitzungen können nun über den Browser verknüpft werden. Dies bedeutet, dass ein Gast ihrer Sitzung nicht mehr vs Code oder Visual Studio installieren muss, um der Sitzung beizutreten. Dies ist besonders hilfreich für alle diese Instanzen, wenn Sie möchten, dass ein Benutzer schnell in Ihre Sitzung gelangt, oder für Studenten, die die Desktop Clients oft nicht installiert haben.
 
 
 # <a name="how-to-join-a-live-share-session-from-the-browser"></a>Beitreten zu einer Live Share Sitzung über den Browser 
