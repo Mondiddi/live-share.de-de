@@ -3,6 +3,7 @@
 ## [Introduction (Einführung)](index.md)
 ## [Features](overview/features.md)
 ## [Gängige Anwendungsfälle](reference/use-cases.md)
+## [Neuigkeiten](overview/what's-new.md)
 # Schnellstarts
 ## [Freigeben Ihres ersten Projekts](quickstart/share.md)
 ## [Beitreten zu Ihrer ersten Sitzung](quickstart/join.md)
