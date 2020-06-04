@@ -9,12 +9,12 @@ author: fubaduba
 ms.author: fubaduba
 ms.workload:
 - liveshare
-ms.openlocfilehash: 4a8effee55f3f2ff035df1c40eebefb3a628760f
-ms.sourcegitcommit: d7f923c1bcd0430b48065ea2c0902b470f530987
+ms.openlocfilehash: f473cbba9cd79e1ab1f4fbb010ca6c6f8e27c045
+ms.sourcegitcommit: a48488302bc56abdedf7130ec22b4e21ac16a4ef
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83569794"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84337150"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -22,20 +22,38 @@ All rights reserved.
 Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
 -->
 
-# <a name="integrated-chat-and-audio-support"></a>Integrierte Chat-und Audiounterstützung
-#### <a name="preview"></a>[Vorschau]
+## <a name="integrated-chat"></a>Integrierter Chat 
+Live Share jetzt den integrierten Chat für [Visual Studio Code](..\use\vscode.md) und [Live Share Web.](..\quickstart\browser-join). Dies bedeutet, dass Sie in Ihrer IDE mit ihren Peers chatten können.
 
-Live Share wird jetzt in [Visual Studio Code](..\use\vscode.md) und [Live Share Web integriert.](..\quickstart\browser-join)
-Sowohl Live Share Chat als auch Audiodaten ermöglichen Benutzern eine umfassende Kommunikation innerhalb ihrer Live Share Sitzung. Sowohl der Host als auch die Gäste in der Sitzung können auf diese Features zugreifen, wenn Visual Studio Code und Live Share Web verwendet werden. 
+>[!TIP]
+>Live Share zuvor eine begleitende Erweiterung bereitgestellt. Dies bedeutete, dass Benutzer mit dieser Erweiterung Chat in Live Share verwenden konnten. Diese Erweiterung wurde nun abgewertet, und alle Benutzer von Live share in vs Code und dem WebClient verfügen über einen Chatdienst.
 
-*Bleiben Sie auf dem neuesten Stand, um sich über die ersten Schritte zu informieren.*
+### <a name="common-questions"></a>Häufig gestellte Fragen
 
-#### <a name="common-questions"></a>Häufig gestellte Fragen
+##### <a name="why-am-i-seeing-this-error-message"></a>Warum wird diese Fehlermeldung angezeigt?
 
-###### <a name="1-when-will-these-preview-features-be-enabled"></a>1. Wann werden diese Vorschau Features aktiviert?
-Live Share Chat und Audiodaten werden in der nächsten Woche für Benutzer Visual Studio Code und Live Share Webbenutzer aktiviert.
+Wenn Sie automatische Updates für Ihre Erweiterungen deaktiviert haben (einschließlich Live Share und der Live Share begleitenden Chat Erweiterung), werden die folgenden Fehlermeldungen angezeigt.
 
-###### <a name="2-will-all-live-share-sessions-default-to-and-audio-call"></a>2. werden für alle Live Share Sitzungen standardmäßig und Audioanrufe verwendet?
-Nein. Sowohl Chat als auch Audiodaten sind optional, damit Sie Ihren Workflow bei Bedarf hinzufügen können.
+1. Wenn Sie den Host oder den Gast haben, wenn Sie die Live Share begleitende Chat-Erweiterung installiert haben, wenn Folgendes angezeigt wird:
+
+>Aktualisieren Sie die `Live Share Chat` Begleit Erweiterung. Die installierte Version ist nicht mehr kompatibel.
+
+Diese Fehlermeldung erfordert, dass Sie den Live Share Companion Chat aktualisieren, um die neue integrierte Chatfunktion zu verwenden.
+Besuchen Sie den Marketplace, und suchen Sie nach *Chat* und Update auf die neueste Version. 
+
+2. Als Gast, wenn Sie über die neuesten Versionen der Live Share Erweiterungen verfügen und Folgendes angezeigt wird:
+
+>Der Host dieser Zusammenarbeits Sitzung ist derzeit nicht vom Chat getrennt oder verwendet eine Version von _Live Share_ , die dieses Feature nicht unterstützt. [Weitere Informationen] 
+
+Der Host Ihrer Live Share Sitzung verwendet entweder Visual Studio oder andere Plattformen, um eine Sitzung zu hosten, die Live Share integrierten Chat noch nicht unterstützt. Möglicherweise wird auch die Fehlermeldung 1 angezeigt. oben aufgeführt.
+
+3. Als Host oder Gast, wenn diese Fehlermeldung angezeigt wird: 
+
+> Die Person, die Sie kontaktieren möchten, ist zurzeit nicht verfügbar oder verwendet eine Version von _Live Share_ , die dieses Feature nicht unterstützt. [Weitere Informationen] 
+
+>Der Chatdienst ist zurzeit nicht getrennt.Versuchen Sie es in Kürze erneut.
+
+Der Host Ihrer Live Share Sitzung verwendet entweder Visual Studio oder andere Plattformen, um eine Sitzung zu hosten, die Live Share integrierten Chat noch nicht unterstützt. Sie sind möglicherweise auch derzeit nicht verfügbar. Möglicherweise wird auch die Fehlermeldung 1 angezeigt. oben aufgeführt.
 
 
+**Für den Benutzer integrierten Chat benötigen Sie automatische Updates für Ihre Live Share-Erweiterungen auf.** 
