@@ -9,12 +9,12 @@ author: fubaduba
 ms.author: fubaduba
 ms.workload:
 - liveshare
-ms.openlocfilehash: f473cbba9cd79e1ab1f4fbb010ca6c6f8e27c045
-ms.sourcegitcommit: a48488302bc56abdedf7130ec22b4e21ac16a4ef
+ms.openlocfilehash: 55425a7d57775a4e042e87b8dceb86532e1b966a
+ms.sourcegitcommit: 211b17e49e7343786bd6859b65444cedd5e24958
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84337150"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85796062"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -56,4 +56,4 @@ Der Host Ihrer Live Share Sitzung verwendet entweder Visual Studio oder andere P
 Der Host Ihrer Live Share Sitzung verwendet entweder Visual Studio oder andere Plattformen, um eine Sitzung zu hosten, die Live Share integrierten Chat noch nicht unterstützt. Sie sind möglicherweise auch derzeit nicht verfügbar. Möglicherweise wird auch die Fehlermeldung 1 angezeigt. oben aufgeführt.
 
 
-**Für den Benutzer integrierten Chat benötigen Sie automatische Updates für Ihre Live Share-Erweiterungen auf.** 
+**Um den integrierten Chat zu verwenden, benötigen Sie automatische Updates für Ihre Live Share-Erweiterungen auf.** 
