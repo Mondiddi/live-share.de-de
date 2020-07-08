@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: e65656c604a9dbc479a03a503fe01d7e2d938072
-ms.sourcegitcommit: 6bf13781dc42a2bf51a19312ede37dff98ab33ea
+ms.openlocfilehash: 9bee74ed4d494e948f2255321faab3fb5093d694
+ms.sourcegitcommit: 211b17e49e7343786bd6859b65444cedd5e24958
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "73170011"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85796075"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -108,7 +108,7 @@ Sollten weiterhin Probleme auftreten, lesen Sie [Problembehandlung](../troublesh
 
 Verwenden Sie Ihren normalen Workflow zum Öffnen eines Ordners, eines Projekts oder einer Projektmappe, den/das/die Sie in Visual Studio oder Visual Studio Code freigeben möchten.
 
-### <a name="4-optional-update-hidden-or-excluded-files"></a>4. [Optional] Update ausgeblendet oder ausgeschlossene Dateien
+## <a name="4-optional-update-hidden-or-excluded-files"></a>4. [Optional] Update ausgeblendet oder ausgeschlossene Dateien
 
 In Live Share werden Dateien/Ordner, auf die in GITIGNORE-Dateien in Ihren freigegebenen Ordnern verwiesen wird, vor Gästen standardmäßig **ausgeblendet**. Durch **Ausblenden** einer Datei wird verhindert, dass sie in der Dateistruktur des Gasts angezeigt wird. Durch **Ausschließen** einer Datei wird eine striktere Regel angewendet. Sie verhindert, dass Live Share die Datei für den Gast öffnet – in Situationen wie „Gehe zu Definition“ oder wenn Sie während des Debuggens oder beim „gefolgt werden“ die Datei schrittweise ausführen. Wenn Sie unterschiedliche Dateien ausblenden/ausschließen möchten, kann eine **.vsls.json**-Datei Ihrem Projekt mit diesen Einstellungen hinzugefügt werden. Die Details dazu finden Sie unter [Steuern von Dateizugriff und Sichtbarkeit](../reference/security.md#controlling-file-access-and-visibility).
 
@@ -153,7 +153,7 @@ Außerdem können Sie in **VS Code** eine schreibgeschützte Sitzung über die V
 
 ![Popupbenachrichtigung mit der Aufforderung, sich über einen Webbrowser anzumelden](../media/vscode-read-only-viewlet.png)
 
-### <a name="7-send-someone-the-invite-link"></a>7. Anderen Personen den Einladungslink senden
+## <a name="7-send-someone-the-invite-link"></a>7. Anderen Personen den Einladungslink senden
 
 Senden Sie den Link per E-Mail, Slack, Skype usw. an die Personen, die Sie einladen möchten. Wenn die Empfänger den Link in einem Browser öffnen, können sie der Zusammenarbeitssitzung beitreten. Dort sind die Inhalte des Ordners, des Projekts oder der Projektmappe freigegeben, den/das/die Sie geöffnet haben. Bitte beachten Sie: Angesichts der Zugriffsebene, die Live Share-Sitzungen Gästen bereitstellen können, **sollten Sie Inhalte nur für vertrauenswürdige Personen freigeben** und die Folgen Ihrer Freigabe durchdenken.
 
