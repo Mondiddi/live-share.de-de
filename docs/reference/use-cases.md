@@ -11,12 +11,12 @@ ms.author: joncart
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 0d328ad39b35ae1c6338825848857342765418d9
-ms.sourcegitcommit: 3a1b22eac528b0f6a241f9fec7ec20264db24cfe
+ms.openlocfilehash: f3005deae16cba2c16b59d9570b11cc7e35c6f84
+ms.sourcegitcommit: c484bdb0d54c23a47561b3cf492cf2a10b2b1599
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74019826"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88577007"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -47,9 +47,9 @@ In diesem Dokument werden einige Anwendungsfälle hervorgehoben, für die Visual
 
 ## <a name="quick-assistance"></a>Schnelle Unterstützung
 
-Wenn Sie auf ein Problem stoßen (z. b. den Versuch, einen Fehler zu beheben, die Umgebung einrichten), können Sie Visual Studio Live Share verwenden, um umgehend Unterstützung von einem anderen Peer zu suchen. In vielen Fällen ist es nicht sofort klar, welcher Kontext von der Person, die Hilfe bereitstellt, benötigt wird, und Live Share dadurch erleichtert, den Zugriff auf das gesamte Projekt bereitzustellen. Wenn/bei Bedarf, werden mehr (z. b. ein lokaler Server schreibgeschützt) weitergegeben. Terminal). Es ist nicht erforderlich, Code Ausschnitte und/oder Fehlermeldungen hin-und herzusenden.
+Wenn Sie auf ein Problem stoßen (z. b. den Versuch, einen Fehler zu beheben, die Umgebung einrichten), können Sie Visual Studio Live Share verwenden, um umgehend Unterstützung von einem anderen Peer zu suchen. In vielen Fällen ist es nicht sofort zu verdeutlichen, welcher Kontext von der Person bereitgestellt wird, die Hilfe benötigt, und daher ist Live Share hilfreich, wenn Sie den Zugriff auf das gesamte Projekt bereitstellen und ggf. inkrementell mehr freigeben (z. b. ein lokaler Server, ein Schreib geschütztes Terminal). Es ist nicht erforderlich, Code Ausschnitte und/oder Fehlermeldungen hin-und herzusenden.
 
-Da Live Share Ihnen außerdem die Freigabe ihrer aktiven Debugsitzung ermöglicht, ohne dass "Gäste" die erforderlichen Plattformen (z. b. Node. js, go, .net Core) oder die Tool Erweiterungen installieren müssen, können Sie die Auflösung schneller erreichen und verhindern, dass "nicht "Reproduktion" auf meinem Computer. Mit Live Share können Sie den Debugzustand für andere Programmiersprachen oder Laufzeitumgebungen (z. b. Kubernetes, systemeigene APP) freigeben. unabhängig davon, welche Hilfe Sie benötigen, können Sie Sie freigeben!
+Da Live Share eine gemeinsame Verwendung ihrer aktiven Debugsitzung ermöglicht, ohne dass "Gäste" die erforderlichen Plattformen (z. b. Node.js-, go-, .net Core-) oder Tool Erweiterungen installieren müssen, können Sie Sie dabei unterstützen, die Auflösung schneller zu lösen und zu verhindern, dass auf dem Computer keine Reproduktion durchführt. Mit Live Share können Sie den Debugzustand für andere Programmiersprachen oder Laufzeitumgebungen (z. b. Kubernetes, systemeigene APP) freigeben. unabhängig davon, welche Hilfe Sie benötigen, können Sie Sie freigeben!
 
 ### <a name="office-hours"></a>Bürostunden
 
@@ -80,12 +80,12 @@ Die [Mob](https://en.wikipedia.org/wiki/Mob_programming) -Programmierung (oder S
 Derzeit werden von Live Share bis zu 30 Gäste innerhalb einer Sitzung unterstützt.
 > [!TIP]
 > So aktivieren Sie 30 Gäste in einer Sitzung:
-> - **Vs Code:** "LiveShare. ereguestlimit": "true" zu "Settings. JSON" hinzufügen
+> - **Vs Code:** fügen Sie "LiveShare. eredguestlimit": "true" hinzu, um zu settings.js.
 > - Im **Vergleich zu:** Legen Sie Extras > Optionen > Live Share > höheres Gast Limit auf "true" fest. 
 
 ### <a name="coding-competitions--hack-a-thons"></a>Programmieren von Wettbewerben/Hack-A-THONS
 
-Codierungs Wettbewerbe und Hack-a-THONS sind praktisch kurzfristige, einzelne Aufgaben Variationen der Mob-Programmierung. Die Mitglieder des Teams und Ihre aktuelle Rolle sind ebenfalls potenziell dynamisch. Da dieser Anwendungsfall in der Regel auch Zeit empfindlich ist, kann die Möglichkeit der Zusammenarbeit in Echtzeit, ohne dass ein völlig neues Tool übernommen werden muss, und die Möglichkeit zur Zusammenarbeit, ohne auf einen Bildschirm oder eine Tastatur beschränkt zu sein, bei steigender Ausführung ein Protokoll sein. End.
+Codierungs Wettbewerbe und Hack-a-THONS sind praktisch kurzfristige, einzelne Aufgaben Variationen der Mob-Programmierung. Die Mitglieder des Teams und Ihre aktuelle Rolle sind ebenfalls potenziell dynamisch. Da dieser Anwendungsfall in der Regel auch Zeit empfindlich ist, kann die Möglichkeit der Zusammenarbeit in Echtzeit, ohne dass ein völlig neues Tool übernommen werden muss, und die Möglichkeit zur Zusammenarbeit, ohne auf einen Bildschirm oder eine Tastatur beschränkt zu sein, bei zunehmender Geschwindigkeit in den Protokollmodus gehen.
 
 Da die Teilnehmer in dieser Umgebung nicht immer vollständig "vertrauenswürdig" sind, können Sie einen Gast jederzeit aus einer Sitzung entfernen (und blockieren). Dadurch wird "Hosts" mit der vollen Kontrolle über Ihre Umgebung bereitgestellt.
 
@@ -107,7 +107,7 @@ Im Allgemeinen ist Live Share bestrebt, Entwicklern bei der Freigabe von Kenntni
 
 ### <a name="peer-mentoring--onboarding"></a>Peer-Mentoring/Onboarding
 
-Bei der Einführung eines Entwicklers in eine neue CodeBase, einen Funktionsbereich, eine Technologie usw. können Sie Live Share verwenden, um Sie durch das Projekt zu durchlaufen (mit `Follow Mode`), sodass Sie sie zusammen mit Ihnen, aber von ihrer eigenen persönlichen IDE aus verfolgen können. Da Live Share die "Gäste" die unabhängige Navigation im Projekt ermöglicht (z. b. das Öffnen einer Datei, die Durchführung einer `Peek Definition`), können Sie die Option "zulassen" befolgen, aber auch bei Bedarf schnelle Suchvorgänge durchführen (z. b. "Hmm", was funktioniert diese Funktion?).
+Bei der Einführung eines Entwicklers in eine neue CodeBase, einen Funktionsbereich, eine Technologie usw. können Sie Live Share verwenden, um Sie durch das Projekt zu durchlaufen (mithilfe `Follow Mode` von), sodass Sie mit Ihnen, aber von ihrer eigenen persönlichen IDE aus folgen können. Da Live Share den "Gästen" die unabhängige Navigation im Projekt ermöglicht (z. b. das Öffnen einer Datei, die Durchführung eines `Peek Definition` ), können Sie die Option "zulassen" befolgen, aber auch bei Bedarf schnelle Suchvorgänge durchführen (z. b. "Hmm", was funktioniert diese Funktion?).
 
 ### <a name="team-brown-bags"></a>Team braune Taschen
 
@@ -115,15 +115,15 @@ Team braune Behälter sind effektiv wie peermentate, werden jedoch einem ganzen 
 
 ### <a name="classroom-lectures"></a>Classroom-Vorlesungen
 
-Wenn Dozenten eine Lektion unterrichten, können Sie Live Share verwenden, um Ihr Projekt für Schüler und Studenten freizugeben, anstatt einfach den Bildschirm zu präsentieren. Dadurch kann die gesamte Klasse zusammen mit dem Lehrer befolgt werden, während Sie gleichzeitig mit dem Projekt interagieren kann. Außerdem kann der Lehrkräfte einzelne Schüler/Studenten bitten, einen bestimmten Teil der Lektion zu lösen (z. b. "welche Methode soll hier aufgerufen werden?"), was bei sozialen Aspekten der Klasse hilfreich sein kann, ohne dass die Schüler/Studenten in den Vordergrund gehen müssen. oder sogar physisch im gleichen Raum (z. b. Onlinekurse) vorhanden sein.
+Wenn Dozenten eine Lektion unterrichten, können Sie Live Share verwenden, um Ihr Projekt für Schüler und Studenten freizugeben, anstatt einfach den Bildschirm zu präsentieren. Dadurch kann die gesamte Klasse zusammen mit dem Lehrer befolgt werden, während Sie gleichzeitig mit dem Projekt interagieren kann. Außerdem kann der Lehrer einzelne Schüler/Studenten bitten, einen bestimmten Teil der Lektion zu lösen (z. b. "welche Methode soll hier aufgerufen werden?"). Dies kann bei sozialen Aspekten der-Klasse hilfreich sein, ohne dass die Schüler/Studenten auf den Anfang des Raums einsteigen oder sogar physisch im gleichen Raum (z. b. Onlinekurse) vorhanden sein müssen.
 
 Zur Unterstützung der Classroom-Einstellungen Live Share die Freigabe im schreibgeschützten Modus aktiviert. Dozenten können den schreibgeschützten Modus verwenden, damit Sie Ihre Projekte für Schüler und Studenten freigeben können, ohne sich Gedanken über unnötige oder versehentliche Änderungen machen zu müssen.
 
 Außerdem bietet Live Share Unterstützung für die Aktivierung von bis zu 30 Gästen, die einer Zusammenarbeits Sitzung beitreten. Auf diese Weise können Dozenten die gesamte Klasse in eine Sitzung einbinden und Code zusammen anzeigen.
 
-So aktivieren Sie dieses Feature:
+So aktivieren Sie diese Funktion:
 
-- **Vs Code:** Fügen Sie "LiveShare. ereguestlimit": "true" zu "Settings. JSON" hinzu.
+- **Vs Code:** Fügen Sie "LiveShare. eredguestlimit": "true" hinzu, um zu settings.js.
 - Im **Vergleich zu:** Legen Sie Extras > Optionen > Live Share > höheres Gast Limit auf "true" fest.
 
 Um Live Share für dieses Szenario vollständig zu optimieren, müssen wir die Art und Weise vereinfachen, in der Sitzungen initiiert werden ([#422](https://github.com/MicrosoftDocs/live-share/issues/422)).
@@ -136,15 +136,15 @@ Da Live share es Ihnen ermöglicht, das Projekt sofort für andere freizugeben, 
 
 Da Live Share das Freigeben eines beliebigen Verzeichnisses ermöglicht, können Sie darüber hinaus Code Überprüfungen durchführen, auch wenn Sie die Versionskontrolle derzeit nicht verwenden (obwohl Sie dies tun sollten), oder wenn das Team PRS nicht verwendet (z. b. Sie verwenden die trunk basierte Entwicklung).
 
-Die Quell Code Verwaltung wird von Live Share derzeit nicht gemeinsam genutzt, was ein wichtiger Teil des Kontexts ist, wenn Sie für Code Überprüfungen verwendet wird. Dies ist in unserer Roadmap zu sehen, und Feedback zu Priorität wird sehr geschätzt ([Vote 👍 hier](https://github.com/MicrosoftDocs/live-share/issues/36)).
+Die Quell Code Verwaltung wird von Live Share derzeit nicht gemeinsam genutzt, was ein wichtiger Teil des Kontexts ist, wenn Sie für Code Überprüfungen verwendet wird. Dies ist unsere Roadmap, und jedes Feedback zur Priorität wird sehr geschätzt ([Stimme 👍 hier](https://github.com/MicrosoftDocs/live-share/issues/36)zu).
 
 ## <a name="technical-interviews"></a>Technische Interviews
 
-Wenn Sie Kandidaten für eine Entwickler Position anzeigen, ist es oft hilfreich, über whiteboarddiskussionen hinauszugehen und stattdessen zu beobachten, wie Sie ein Codierungs Problem innerhalb einer echten IDE lösen können (insbesondere, wenn Ihr Team/Ihre Organisation auf einem Tool, das Sie möchten sehen, dass Sie verwendet werden.) Dies hat nicht nur den Vorteil, dass Sie auf eine Art und Weise arbeiten können (die meisten Entwickler sind nicht auf Whiteboards Codieren!), sondern Sie erhalten bei der Arbeit sofort Feedback und Unterstützung (z. b. Buildfehler, IntelliSense). Häufig ist es wichtiger, den Denkprozess eines Kandidaten zu verstehen, anstatt die genaue Syntax und/oder API-Namen zu merken. Auf diese Weise bietet Live Share eine Umgebung, die mit einer paar Programmierungs Sitzung vergleichbar ist, aber den Teilnehmer in der eigenen Umgebung (einschließlich der Einstellungen des Betriebssystems, wie z. b. Barrierefreiheit) finden kann, und funktioniert gleichermaßen für lokale oder Remote-Interviews.
+Beim Überprüfen der Kandidaten für eine Entwickler Position ist es häufig hilfreich, über whiteboarddiskussionen hinauszugehen und stattdessen zu beobachten, wie Sie ein Codierungs Problem innerhalb einer echten IDE lösen können (insbesondere, wenn Ihr Team/Ihre Organisation auf einem Tool, das Sie verwenden möchten, "standardisiert" hat). Dies hat nicht nur den Vorteil, dass Sie auf eine Art und Weise arbeiten können (die meisten Entwickler sind nicht auf Whiteboards Codieren!), sondern Sie erhalten bei der Arbeit sofort Feedback und Unterstützung (z. b. Buildfehler, IntelliSense). Häufig ist es wichtiger, den Denkprozess eines Kandidaten zu verstehen, anstatt die genaue Syntax und/oder API-Namen zu merken. Auf diese Weise bietet Live Share eine Umgebung, die mit einer paar Programmierungs Sitzung vergleichbar ist, aber den Teilnehmer in der eigenen Umgebung (einschließlich der Einstellungen des Betriebssystems, wie z. b. Barrierefreiheit) finden kann, und funktioniert gleichermaßen für lokale oder Remote-Interviews. Durch das beitreten zu einer Sitzung aus dem Internet kann der Kandidat die Entwicklungsumgebung und Codebasis des Teams verwenden, ohne etwas herunterzuladen. 
 
 Außerdem ist die reale Entwicklung mehr als das einfache Schreiben von Code. Da Live Share auch das gemeinsame Debuggen, Tasks und Terminals unterstützt, ermöglicht es den Interviewern, Kandidaten während der Diagnose eines Problems zu beobachten und Ihnen die entsprechenden Tools zur Verfügung zu stellen (z. b. schrittweise Debuggen, Tests ausführen). Da der gesamte Kontext vom Computer des Hosts entfernt ist, können Kandidaten schnell in die "Interview Umgebung" springen, ohne Ihren Computer einrichten zu müssen (neben der Installation Live Share). Die Teams können dann ein Repository mit freigegebenen Interview-apps verwalten (oder ihre tatsächliche Produkt-Codebasis verwenden), die geklont und für Kandidaten freigegeben werden können, indem Sie Ihnen einfach vor jedem Gespräch die Sitzungs-URL senden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Sprach- und Plattformunterstützung](../reference/platform-support.md)
 - [Anforderungen an die Konnektivität für Live Share](../reference/connectivity.md)
