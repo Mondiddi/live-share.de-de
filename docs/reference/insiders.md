@@ -1,5 +1,5 @@
 ---
-title: Insider-Visual Studio Live Share | Microsoft-Dokumentation
+title: Insider | Microsoft-Dokumentation
 description: Eine Beschreibung des Kanals ' Insider ' in Visual Studio Live share.
 ms.custom: ''
 ms.date: 04/02/2019
@@ -11,12 +11,12 @@ ms.author: joncart
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: b343fb129952003f9c9fcab7dcb9f5e3b28660a1
-ms.sourcegitcommit: 6b1c502ba1763527aa69bad2e0c919d60a47153d
+ms.openlocfilehash: a58bf30ad1c6f4c4cecedb1a07ca0482a67f5ec7
+ms.sourcegitcommit: 9deed590c0876b732c8eb150a9a23498a8243efc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86300282"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98870720"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -57,7 +57,7 @@ Die folgenden Insider-Features wurden per pushübertragung an Public übermittel
 Live Share können jetzt wiederverwendbare Sitzungen hosten. Wiederverwendbare Sitzungen bieten Ihnen die Möglichkeit, eine Live Share Sitzung für verschiedene Szenarien wiederzuverwenden. Dies bedeutet, dass Sie eine Live Share Sitzung im Voraus für Ihre technischen Interviews planen können, eine wöchentliche Mob-Programming-Sitzung, die gleiche Sitzung verwenden, während Sie einen Freund betreuen, und vieles mehr!
 
 Gehen Sie zum Erstellen einer wiederverwendbaren Sitzung folgendermaßen vor:
-1. Wechseln Sie zur `Command Palette` Verwendung von.`Ctrl+Shift+P`
+1. Wechseln Sie zur `Command Palette` Verwendung von. `Ctrl+Shift+P`
 1. Geben Sie "Live SHA..." ein. und klicken Sie auf den Befehl "**_Live Share: wiederverwendbarer Sitzungs Link erstellen_**".
 
 ![vscode-Reus ablesessioncmd](../media/vscode-cmdpalette-createreusablelink.png)
@@ -73,7 +73,7 @@ Gehen Sie zum Erstellen einer wiederverwendbaren Sitzung folgendermaßen vor:
  
 
 
-## <a name="become-an-insider"></a>Werden Sie Insider <a name="BecomeanInsider"> </a>
+## <a name="become-an-insider"></a>Werden Sie Insider <a name="BecomeanInsider"></a>
 
 Standardmäßig verwenden Sie nach der Installation der Visual Studio Live Share Erweiterung den `Stable` Featuresatz, der alle Funktionen für die Bereitstellung (z. b. Co-Bearbeitung, frei gegebenes Debuggen, Terminals) umfasst. Wenn Sie jedoch einen frühen Zugriff auf das Feature erhalten möchten, an dem wir arbeiten, können Sie die featuremenge abonnieren, `Insiders` indem Sie die folgende Einstellung in Ihrer IDE ändern:
 

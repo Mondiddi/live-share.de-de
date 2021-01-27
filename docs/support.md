@@ -1,5 +1,5 @@
 ---
-title: Unterstützung für Plattformen und Sprachen-Visual Studio Live Share | Microsoft-Dokumentation
+title: Unterstützung für Plattformen und Sprachen | Microsoft-Dokumentation
 description: Eine Übersicht über die Platt Form-und Sprachunterstützung für die Visual Studio-Live Freigabe.
 ms.custom: ''
 ms.date: 03/22/2018
@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 36cd7cc5923e593c6bbd3220b5f4ba92a7ca6130
-ms.sourcegitcommit: c6ef4e5a9aec4f682718819c58efeab599e2781b
+ms.openlocfilehash: 1b9cc09611262f9733ec4a675ce2967688cfa9a1
+ms.sourcegitcommit: 9deed590c0876b732c8eb150a9a23498a8243efc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73170066"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98870918"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -32,13 +32,13 @@ Haben Sie eine Frage oder ein Feedback? Es gibt viele Möglichkeiten, mitwirken 
 
 Kurz gesagt:
 
-- **Bekannte Probleme:** Anzeigen von [Fehlern](https://aka.ms/vsls-bugs) oder [Featureanforderungen](https://aka.ms/vsls-feature-requests) und die Abstimmung mithilfe einer 👍-Reaktion.
+- **Bekannte Probleme:** Anzeigen von [Fehlern](https://aka.ms/vsls-bugs) oder [Featureanforderungen](https://aka.ms/vsls-feature-requests) und die Abstimmung mithilfe einer 👍 Reaktion.
 - **Fehler vs Code:** [Protokollieren eines neuen Problems](https://aka.ms/vsls-new-issue). Verwenden Sie den Befehl "Live Share: Exportieren von Protokollen", und [ziehen Sie die ZIP-](https://help.github.com/articles/file-attachments-on-issues-and-pull-requests/) Dateien per Drag & amp; Drop auf den Bug oder [per e-Mail](mailto:vsls-feedback@microsoft.com).
 - **Vs Bugs:** [Hilfe > Senden von Feedback > Melden eines Problems...](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017) Beheben Sie das Problem vor dem senden, und die Protokolle werden automatisch angefügt.
-- **Funktionsanforderungen:** [Protokollieren Sie eine neue Anforderung](https://aka.ms/vsls-new-issue) , oder verwenden Sie eine 👍 Reaktion, um [eine vorhandene abzugleichen](https://aka.ms/vsls-feature-requests).
-- **Kontaktieren Sie uns:** [vsls-feedback@microsoft.com](mailto:vsls-feedback@microsoft.com), [#vsliveshare](https://aka.ms/vsls-twitter)oder der Community Run [Slack](https://aka.ms/vsls-slack).
+- **Funktionsanforderungen:** [Protokollieren Sie eine neue Anforderung](https://aka.ms/vsls-new-issue) , oder verwenden Sie eine 👍 Reaktion, um [eine vorhandene](https://aka.ms/vsls-feature-requests)zu verwenden.
+- **Kontaktieren Sie uns:** [vsls-feedback@microsoft.com](mailto:vsls-feedback@microsoft.com) , [#vsliveshare](https://aka.ms/vsls-twitter)oder der Community Run [Slack](https://aka.ms/vsls-slack).
 
-Weitere Details finden Sie weiter unten.
+Unten sind weitere Details hierzu angegeben.
 
 ## <a name="documentation"></a>Dokumentation
 
@@ -48,7 +48,7 @@ Einige unserer Referenzdokumente verfügen möglicherweise über das, was Sie be
 - [Sprach- und Plattformunterstützung](reference/platform-support.md)
 - [Unterstützung für Erweiterung](reference/extensions.md)
 - [Problembehandlung](troubleshooting.md)
-- [FAQ](faq.md)
+- [Häufig gestellte Fragen](faq.md)
 
 ## <a name="issues-and-requests"></a>Probleme und Anforderungen
 
@@ -62,18 +62,18 @@ GitHub-Probleme und Visual Studio-Problemberichte sind eine gute Möglichkeit, s
 
 ## <a name="other"></a>Andere
 
-- **E-Mail:** [vsls-feedback@microsoft.com](mailto:vsls-feedback@microsoft.com)
+- **E-Mail:**[vsls-feedback@microsoft.com](mailto:vsls-feedback@microsoft.com)
 - **Twitter:** Erreichen Sie uns auf Twitter mit [#vsliveshare](https://aka.ms/vsls-twitter)!
 - **Slack:** Wir hängen auch auf der Community auf, [Live Share Slack](https://aka.ms/vsls-slack)auszuführen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 Schnellstarts
 
 - [Freigeben Ihres ersten Projekts](quickstart/share.md)
 - [Beitreten zu Ihrer ersten Sitzung](quickstart/join.md)
 
-Gewusst wie
+Vorgehensweisen
 
-- [Zusammenarbeiten mithilfe von Visual Studio Code](how-to-guides/vscode.md)
-- [Zusammenarbeiten mithilfe von Visual Studio](how-to-guides/vs.md)
+- [Zusammenarbeiten mithilfe von Visual Studio Code](use/vscode.md)
+- [Zusammenarbeiten mithilfe von Visual Studio](use/vs.md)

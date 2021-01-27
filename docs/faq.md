@@ -1,6 +1,6 @@
 ---
-title: Häufig gestellte Fragen – Visual Studio-Livefreigabe | Microsoft-Dokumentation
-description: Häufig gestellte Fragen zu Visual Studio Live Share ein.
+title: FAQ | Microsoft-Dokumentation
+description: Häufig gestellte Fragen zu Visual Studio Live share.
 ms.custom: ''
 ms.date: 05/05/2018
 ms.reviewer: ''
@@ -11,12 +11,12 @@ ms.author: joncart
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 91ffc42c06e70839dbadbd2487cd02970ded3346
-ms.sourcegitcommit: bfa1020882095fcc7d31cd71cf1f2e601e3bea06
+ms.openlocfilehash: 3da327261766ea0aea7ed167059c864100d25da0
+ms.sourcegitcommit: 9deed590c0876b732c8eb150a9a23498a8243efc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "66224709"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98870487"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -24,75 +24,75 @@ All rights reserved.
 Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
 -->
 
-# <a name="frequently-asked-questions"></a>Häufig gestellte Fragen (FAQs)
+# <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
 ## <a name="what-is-live-share"></a>Was ist Live Share?
-Live Share ermöglicht Ihnen gemeinsames Bearbeiten und Debuggen mit anderen in Echtzeit – unabhängig von Ihren verwendeten Programmiersprachen oder erstellten App-Typen. Sie können sofort (und sicher) des aktuellen Projekts, und klicken Sie dann nach Bedarf, freigeben, Debugsitzungen, Terminaldienste-Instanzen, "localhost"-Web-apps und mehr! Entwickler, die Ihre Sitzungen verknüpfen erhalten Sie alle von ihrem Editor-Kontext aus Ihrer Umgebung (z. B. Language Services, Debuggen), um sicherzustellen, dass sie mit der Zusammenarbeit produktiv sofort, ohne alle Repositorys klonen, oder installieren Sie alle SDKs beginnen können.
+Live Share ermöglicht Ihnen gemeinsames Bearbeiten und Debuggen mit anderen in Echtzeit – unabhängig von Ihren verwendeten Programmiersprachen oder erstellten App-Typen. Sie können das aktuelle Projekt sofort (und sicher) freigeben und dann nach Bedarf Debuggingsitzungen, Terminal Instanzen, localhost-Web-Apps und vieles mehr freigeben. Entwickler, die ihren Sitzungen beitreten, erhalten Ihren gesamten Editor-Kontext von Ihrer Umgebung (z. b. Sprachdienste, Debuggen), wodurch sichergestellt wird, dass Sie sofort produktiv zusammenarbeiten können, ohne dass Sie irgendwelche Repositorys Klonen oder sdgt installieren müssen.
 
-## <a name="what-are-the-tooling-requirements-for-using-live-share"></a>Was sind die Tools-Anforderungen für die Verwendung von Live Share?
-Die [Kernfunktionen](#what-are-the-core-capabilities-of-live-share) von Live Share werden in der folgenden Tools vollständig unterstützt:
+## <a name="what-are-the-tooling-requirements-for-using-live-share"></a>Welche Tool Anforderungen gelten für die Verwendung von Live Share?
+Die [wichtigsten Funktionen](#what-are-the-core-capabilities-of-live-share) von Live Share werden in den folgenden Tools vollständig unterstützt:
 
 * [Visual Studio 2019](https://visualstudio.microsoft.com/vs/)
-* [Visual Studio 2017 (15.6+)](https://visualstudio.microsoft.com/vs/older-downloads/)
+* [Visual Studio 2017 (15.6 und höher)](https://visualstudio.microsoft.com/vs/older-downloads/)
 * [Visual Studio Code](https://code.visualstudio.com/)
 
-Wir durchlaufen Sie schnell zum Reagieren auf Feedback von Benutzern. Dies erfordert, die Funktionen in Visual Studio nutzen, und Visual Studio-Code, die nur in ihre jeweiligen Vorschau/Insider-Versionen verfügbar sein. Es wird angegeben, welche featureanforderungen aktuellere Versionen von Visual Studio oder Visual Studio Code in der Dokumentation. Lokale Rückgängig/Wiederholen-Unterstützung erfordert z. B. Visual Studio 2017 15.7 und höher.
+Wir durchlaufen schnell, um auf das Feedback von Benutzern zu reagieren. Dies erfordert, dass wir die Features in Visual Studio und Visual Studio Code nutzen, die nur in den jeweiligen Vorschau-/Insider-Releases verfügbar sind. Wir geben an, welche Features neuere Versionen von vs oder vs Code in der Dokumentation erfordern. Beispielsweise erfordert die Unterstützung für lokale Rückgängig/Wiederholen Visual Studio 2017 15,7 +.
 
-## <a name="what-are-the-core-capabilities-of-live-share"></a>Was sind die Kernfunktionen von Live Share?
-Live Share ermöglicht Ihnen, zu Teilen Ihrer Codebasis mit den Mitgliedern Ihres Teams über eine sichere Verbindung. Klicken Sie mit Live-Freigabe können Sie mehrere Dateien in einem Arbeitsbereich gemeinsam bearbeiten, und weitere vor allem Ihrer Anwendung mit Ihren Teamkollegen Debuggen. Während der Bearbeitung zusammen Ihre Änderungen werden sofort Ihre Teamkollegen sichtbar. Während des Debuggens zusammen werden Sie derselben Debuggingsitzung Ihrer Anwendung frei. Dies bedeutet, dass Sie und Ihre Teamkollegen können die Ausführung des Programms mit Haltepunkten und Schritten steuern, aber Sie können unabhängig voneinander untersuchen, Variablen, Überwachungselemente, lokale Variablen und REPLs (z. B. das Direktfenster in Visual Studio).
+## <a name="what-are-the-core-capabilities-of-live-share"></a>Was sind die wichtigsten Funktionen von Live Share?
+Live Share ermöglicht es Ihnen, ihre Codebasis über eine sichere Verbindung für Ihre Teammitglieder freizugeben. Mit Live Share können Sie mehrere Dateien in einem Arbeitsbereich zusammenarbeiten und noch wichtiger ist, Ihre Anwendung mit ihren Teamkollegen zu debuggen. Während der Co-Bearbeitung werden Ihre Bearbeitungen sofort von ihren Teamkollegen eingesehen. Während des Debuggens teilen Sie die gleiche Debugsitzung für Ihre Anwendung. Dies bedeutet, dass Sie und ihre Teamkollegen die Programmausführung mit Breakpoints und Schritten steuern können. Sie können jedoch Variablen, Überwachungen, lokale Elemente und REPLs (z. b. das direkt Fenster in Visual Studio) unabhängig überprüfen.
 
-Livefreigabe verfügt über eine Vielzahl von Szenarien wie: Untersuchen einen Fehler, ein Problem, das Reproduktion auf Computer mit einer anderen Person wird nicht mit Entwurf zu lösen ausgibt, Paar programmieren, Durchführen einer coding Interview, Anleitung für die anderen Elemente in einem Team oder ausführen Ad-hoc-codeüberprüfungen.
+Live Share verfügt über eine Vielzahl von Anwendungsfällen, wie z. b. die Untersuchung eines Fehlers, der ein Problem anzeigt, das auf dem Computer einer anderen Person nicht wieder verwendet werden kann, die Behebung von Entwurfs Problemen, die Programmierung von Paaren, das Durchführen eines Codierungs Interviews, das betreuen anderer Mitglieder eines Teams oder das Ausführen von Ad-hoc
 
-## <a name="by-using-live-share-is-my-code-stored-on-a-microsoft-server"></a>Ist Sie mithilfe von Live Share können eigenen Code, der auf einem Microsoft-Server gespeichert?
-Nein, befindet sich der freigegebene Code, ausschließlich auf dem Computer des Entwicklers, der die Freigabe initiiert hat. Es ist nicht gespeichert oder in der Cloud in keiner Weise hochgeladen. Stattdessen Live Share einfach richtet eine sichere Verbindung zwischen Ihnen und Ihren Teamkollegen (die verschlüsselten End-to-End), und nicht zu überprüfen oder Sammeln von Daten auf den Code, der freigegeben wird.
+## <a name="by-using-live-share-is-my-code-stored-on-a-microsoft-server"></a>Mit Live Share wird mein Code auf einem Microsoft-Server gespeichert?
+Nein, der freigegebene Code befindet sich ausschließlich auf dem Computer des Entwicklers, der die Freigabe initiiert hat. Er wird in keiner Weise in die Cloud gespeichert oder hochgeladen. Stattdessen stellt Live Share einfach eine sichere Verbindung zwischen Ihnen und ihren Teamkollegen her (die End-to-End verschlüsselt ist) und keine Daten über den freigegebenen Code überprüft oder sammelt.
 
-## <a name="does-this-remote-based-model-work-anywhere-is-it-peer-to-peer"></a>Funktioniert diese Remote-basiertes Modell anywhere? Handelt es sich um Peer-zu-Peer?
-Livefreigabe die einzige Voraussetzung ist, dass die Person, die Freigabe und ihren teamkamerad Zugriff auf das Internet. Sichere Kommunikation zwischen Teammitgliedern während einer zusammenarbeitssitzung wird durch ein Azure Relay genutzt. Arbeitsbereichsversion (d. h. Quelldateien) wird nicht in der Cloud gespeichert. Keine besondere Peer-zu-Peer-Verbindung ist erforderlich, wenn eine verwendet werden kann, die Latenz zu verringern. Finden Sie unter [ändern den Verbindungsmodus](https://aka.ms/vsls-docs/connection-mode) in unserer Dokumentation für zusätzliche Details.
+## <a name="does-this-remote-based-model-work-anywhere-is-it-peer-to-peer"></a>Funktioniert dieses Remote basierte Modell überall? Handelt es sich um einen Peer-to-Peer?
+Die einzige Voraussetzung Live Share ist, dass die freigegebene Person und Ihr Teamkollegen über Internetzugang verfügen. Eine sichere Kommunikation zwischen Teammitgliedern während einer Zusammenarbeits Sitzung wird durch ein Azure Relay ermöglicht. Der Arbeitsbereich (d. h. Quelldateien) wird nicht in der Cloud gespeichert. Es ist keine spezielle Peer-to-Peer-Verbindung erforderlich, obwohl eine verwendet werden kann, um die Latenz zu verringern. Weitere Informationen finden Sie unter [Ändern des Verbindungs Modus](https://aka.ms/vsls-docs/connection-mode) in unserer Dokumentation.
 
-## <a name="what-is-shared-during-a-live-share-session"></a>Was wird bei einer Live Share-Sitzung gemeinsam genutzt?
-Alle Eingaben von Tastatur und Maus Livefreigabe nicht übertragen werden. Es kommuniziert nur die Daten für jede Aktivität Zusammenarbeit mit Ihren Teamkollegen Computern erforderlich sind. Z. B. Wenn Sie Ihrem Arbeitsbereich freigeben, wird die Ordnerstruktur gemeinsam genutzt. Wenn Sie gemeinsam eine Datei bearbeiten, dass der Inhalt Datei freigegeben werden. Wenn Sie gemeinsam Debuggen, Debugging-Aktionen (z. B. stepping) und Status (z. B. "Aufrufliste" und "lokal") freigegeben.
+## <a name="what-is-shared-during-a-live-share-session"></a>Was wird während einer Live Share Sitzung freigegeben?
+Live Share übertragen nicht alle Tastatur-und Maus Eingaben. Die Daten, die für jede Zusammenarbeits Aktivität benötigt werden, werden nur an die Computer Ihrer Teamkollegen übermittelt. Wenn Sie z. b. den Arbeitsbereich freigeben, wird die Ordnerstruktur freigegeben. Wenn Sie eine Datei kollaborativ bearbeiten, wird der Inhalt dieser Datei freigegeben. Wenn Sie gemeinsam Debuggen, werden Debugaktionen (z. b. schrittweise) und Status (z. b
 
-## <a name="when-will-live-share-be-released"></a>Wann wird Live Share veröffentlicht?
-Livefreigabe ist jetzt allgemein verfügbar! Sie können [erste Schritte mit Live Share](https://aka.ms/vsls-start) noch heute.
+## <a name="when-will-live-share-be-released"></a>Wann werden Live Share freigegeben?
+Live Share jetzt allgemein verfügbar! Sie können noch heute [mit Live Share beginnen](https://aka.ms/vsls-start) .
 
-## <a name="how-much-will-it-cost"></a>Wie viel kostet es?
-Wir sind an substanziellen free-Tarif für Visual Studio Live Share fortlaufend Verwendung zu übergeben. Wir werden die Einführung von kostenpflichtigen Tarifen mit erweiterten Features auswerten werden, wie wir die Anforderungen von der Community besser verstehen.
+## <a name="how-much-will-it-cost"></a>Wie viel wird das kosten?
+Wir haben einen substanziellen kostenlosen Tarif für Visual Studio Live Share für Entwickler bereitgestellt, der fortlaufend verwendet werden soll. Wir werden die Einführung von kostenpflichtigen Tarifen mit erweiterten Features evaluieren, da wir die Anforderungen der Community besser verstehen.
 
-## <a name="how-is-my-code-shared-with-other-teammates"></a>Wie wird mein Code mit Teamkollegen gemeinsam genutzt?
-Wenn Live Share verwenden zu können, machen Sie den Code, die, den Sie auf verfügbaren arbeiten, sodass Ihre Teamkollegen diese über einen sicheren Cloud-Dienst zum Remotes-Befehle über den Editor zugreifen können. Ihre Teamkollegen können öffnen und bearbeiten die Dateien ohne Speichern sie in der Cloud oder dauerhaft auf Ihre Kollegin des Computers zu speichern.
+## <a name="how-is-my-code-shared-with-other-teammates"></a>Wie wird mein Code für andere Teamkollegen freigegeben?
+Wenn Sie Live Share verwenden, stellen Sie sicher, dass der Code, an dem Sie arbeiten, verfügbar ist, sodass Ihre Teamkollegen über einen sicheren clouddienst darauf zugreifen können, dass Befehle aus dem Editor entfernt werden. Ihre Teamkollegen können die Dateien öffnen und bearbeiten, ohne Sie in der Cloud speichern oder Sie dauerhaft auf dem Computer Ihres Team Diensts speichern zu müssen.
 
-Live Share ermöglicht sofortigen Zugriff auf Funktionen wie die Projektstruktur, codenavigation und Suche. Darüber hinaus können Ihre Teamkollegen-Editor-Erweiterungen wie IntelliSense profitieren.
+Live Share ermöglicht den sofortigen Zugriff auf Funktionen wie die Projektstruktur, die Code Navigation und die Suche. Außerdem können Ihre Teamkollegen von Editor-Erweiterungen wie IntelliSense profitieren.
 
-## <a name="what-happens-if-a-user-goes-offline-or-stops-sharing"></a>Was geschieht, wenn ein Benutzer beendet die Freigabe oder offline geschaltet?
-Das remote-Modell erfordert, dass der Entwickler, die Freigabe von Dateien über Live Share und ihre teamkamerad online verbunden sein muss. Wenn Ihre Kollegin versucht, die Live Share verwenden, wenn Sie offline sind, werden sie nicht verknüpfen die Sitzung, bis Sie wieder online sind. Darüber hinaus werden, sobald die Zusammenarbeit beendet wird (z. B. Sie schließen Sie den Editor, in den Offlinemodus wechseln oder Aufheben der Freigabe), klicken Sie dann weiter, Aktionen oder den Zugriff auf Dateien durch Ihre Teamkollegen sofort deaktiviert.
+## <a name="what-happens-if-a-user-goes-offline-or-stops-sharing"></a>Was geschieht, wenn ein Benutzer offline geschaltet wird oder die Freigabe beendet?
+Das Remote Modell erfordert, dass die Entwickler Freigabe über Live Share und ihren Teamkollegen online sein müssen, um eine Verbindung herstellen zu können. Wenn Ihr Teamkollegen versucht, Live Share zu verwenden, wenn Sie offline sind, kann er der Sitzung erst beitreten, wenn Sie wieder online sind. Wenn die Zusammenarbeit beendet wird (z. b. Wenn Sie den Editor schließen, offline schalten oder Freigabe beenden), werden weitere Aktionen oder der Dateizugriff durch ihre Teamkollegen sofort deaktiviert.
 
-## <a name="what-about-screen-sharing"></a>Wie sieht die Bildschirmfreigabe?
-Live Share können Sie den Code Ihres Projekts und der Kontext gemeinsam zu nutzen. Es bedeutet, dass Ihre Kollegin kann problemlos sofort in Ihrer Codebasis gemeinsam mit Ihnen, ihre vertraute Tool zu verwenden. Ihren Editor oder anderen apps sind nicht freigegeben werden oder können durch Ihre Kollegin, und Sie müssen Ihren Arbeitsstil ändern, oder verwenden Sie eine Web-basierte Anwendung.
+## <a name="what-about-screen-sharing"></a>Was ist mit der Bildschirm Freigabe?
+Mit Live Share können Sie den Projekt Code und seinen Kontext freigeben. Dies bedeutet, dass Ihr Teamkollegen problemlos in Ihre Codebasis springen und mit Ihnen zusammenarbeiten kann, indem er das vertraute Tool verwendet. Der Editor oder andere apps sind nicht freigegeben oder können von Ihrem Teamkollegen nicht angezeigt werden, und Sie müssen Ihren Arbeitsstil nicht ändern oder eine webbasierte App verwenden.
 
-Livefreigabe ersetzt nicht die Bildschirmfreigabe, in denen möglicherweise möchten Sie ein Menüelement anzeigen oder visuellen Aspekte Ihrer app oder Ihrem Editor erläutert. Stattdessen müssen Sie die Option zum Verwenden von Live Share zusammen mit Chat, Sprach-, Video- und Bildschirmfreigabe.
+Live Share ersetzt die Bildschirm Freigabe nicht, wenn Sie ein Menü Element anzeigen oder visuelle Aspekte der APP oder des Editors erörtern möchten. Stattdessen haben Sie die Möglichkeit, Live Share zusammen mit Chat, sprach-, Video-und Bildschirm Freigabe zu verwenden.
 
 ## <a name="what-about-other-collaboration-tools"></a>Was ist mit anderen Tools zur Zusammenarbeit?
-Live-Dateifreigabe kann mit Chat, instant messaging oder e-Mail-Technologien verwendet werden. Wir haben festgestellt, dass viele gemeinsame Interaktionen zwischen Entwicklern in diesen Tools starten. Allerdings wird die Diskussion über Code, sie erhalten oft auf einen Punkt, an dem sie einfach zu schwierig, ein Problem mit Text, Codeausschnitte oder einzelne Dateien - erläutern mehr Kontext erforderlich ist.
+Live Share können mit Chat-, Instant Messaging-oder e-Mail-Technologien verwendet werden. Wir haben festgestellt, dass in diesen Tools viele Interaktionen zwischen den Entwicklern gestartet werden. Wenn die Diskussion jedoch über Code erfolgt, kommt es häufig zu einem Punkt, an dem es einfach zu schwierig ist, ein Problem mit Text, Code Ausschnitten oder einzelnen Dateien zu erläutern. es ist mehr Kontext erforderlich.
 
-Livefreigabe kann für viele Dinge, wie z. B. verwendet werden: Suchen die Hilfe auf ein Problem, und Beheben eines Fehlers Paar programmieren, Durchführen einer coding Interview oder Durchführen einer Ad-hoc-überprüfen Sie, vor dem committen von Code oder eine Pull-Anforderung.
+Live Share können für viele Dinge verwendet werden, wie z. b. die Suche nach Hilfe zu einem Problem, das Beheben eines Fehlers, das Koppeln der Programmierung, das Ausführen eines Codierungs Interviews oder das Durchführen einer Ad-hoc-Überprüfung vor einem codecommit oder einer Pull-Anforderung.
 
 ## <a name="what-about-other-web-editors"></a>Was ist mit anderen Web-Editoren?
-Mit webbasierten-Editoren einzustellen müssen beide Teamkollegen derselben Web-app zu verwenden, um die Zusammenarbeit, erzielt die möglicherweise nicht ihre primäre täglichen-Editor. Viele webbasierte Editoren wird davon ausgegangen, dass die Erstellung und Bereitstellung in einem virtuellen Computer, die häufig in einer Cloudumgebung gehostet.
+Mit webbasierten Editoren müssen beide Teamkollegen dieselbe Web-App verwenden, um kollaborative Vorteile zu erhalten. Dies ist möglicherweise nicht der primäre, alltägliche Editor. Viele webbasierte Editoren gehen davon aus, dass Sie eine virtuelle Maschine, die häufig in einer cloudumgebung gehostet wird, entwickeln und bereitstellen.
 
-Während dies für viele Szenarien wünschenswert sein, möchten Entwickler häufig an apps zu arbeiten, die auf einem virtuellen Computer oder in der Cloud gehostet werden nicht.  Mit Live-Freigabe können Sie und Ihre Kollegin die Funktionen der Tools-Ökosystem, zusätzlich zu den gleichen Funktionen, die in der webbasierten-Editoren verfügbar.
+Obwohl dies für viele Szenarien wünschenswert sein kann, möchten Entwickler häufig an apps arbeiten, die nicht auf einem virtuellen Computer oder in der Cloud gehostet werden.  Mit Live Share können Sie und Ihr Teamkollegen zusätzlich zu den Funktionen, die in webbasierten Editoren verfügbar sind, die Funktionen des Ökosystems "Tools" verwenden.
 
-Live-Freigabe geht einen Schritt weiter und ermöglicht es Ihnen, eine Debugsitzung zu teilen.  Dadurch besonders nützlich in anderen, mit denen Sie die Probleme zu ermitteln, der nur auf dem Computer auftreten können, ohne ihre entwicklungsworkflows ändern oder zum Ändern des Anwendungsentwurfs müssen eintragen.
+Live Share führt einen Schritt weiter und ermöglicht es Ihnen, eine Debugsitzung freizugeben.  Dies macht es besonders nützlich, wenn Sie andere Personen auflisten, um Probleme zu ermitteln, die nur auf Ihrem Computer auftreten, ohne den Entwicklungs Workflow zu ändern oder den Anwendungs Entwurf ändern zu müssen.
 
 ## <a name="which-languages-and-platforms-will-be-supported"></a>Welche Sprachen und Plattformen werden unterstützt?
-Unser Ziel ist zur Unterstützung der bunten Vielfalt an Sprachen und Plattformen, um sicherzustellen, dass wir umfassende Zusammenarbeit, unabhängig vom entwickelte Anwendung aktivieren können. Finden Sie unter den [Sprach- und plattformunterstützung](reference/platform-support.md) finden Sie Details dazu, was heute funktioniert.
+Unser Ziel besteht darin, die unterschiedlichen Sprachen und Plattformen zu unterstützen, um sicherzustellen, dass wir unabhängig vom entwickelten Anwendungstyp die umfassende Zusammenarbeit aktivieren können. Ausführliche Informationen zu den heute Funktionsweise finden Sie im Artikel zur [Unterstützung von Sprachen und Plattformen](reference/platform-support.md) .
 
-## <a name="how-many-developers-can-join-a-collaboration-session"></a>Wie viele Entwickler können eine zusammenarbeitssitzung beitreten?
-Wir unterstützen derzeit 30 gleichzeitige-Gäste zusätzlich zu den Entwickler, die ("hosting") gemeinsam nutzen, wird ihr Projekt. 
+## <a name="how-many-developers-can-join-a-collaboration-session"></a>Wie viele Entwickler können einer Zusammenarbeits Sitzung beitreten?
+Wir unterstützen derzeit 30 gleichzeitige Gäste, zusätzlich zum Entwickler, der das Projekt freigibt ("Hosting"). 
 
-## <a name="what-is-the-roadmap"></a>Wie sieht die Roadmap?
-Sie können den Satz von bekannten Problemen und Roadmap für die Elemente anzeigen [hier](https://aka.ms/vsls-issues). Wenn Sie alle Probleme, anstatt nur Feature-Anforderungen finden Sie unter möchten, finden Sie unter [hier](https://aka.ms/vsls-feature-requests). Wir empfehlen Ihnen, vorhandene Elemente abstimmen, Datei anfordern neuer Features und melden Sie sich die Fehlerberichte, um uns helfen, Form, die Richtung des Produkts für die Zukunft.
+## <a name="what-is-the-roadmap"></a>Was ist die Roadmap?
+[Hier](https://aka.ms/vsls-issues)können Sie den Satz bekannter Probleme und Roadmap-Elemente anzeigen. Wenn Sie anstelle aller Probleme nur Funktionsanforderungen sehen möchten, finden Sie [hier](https://aka.ms/vsls-feature-requests)Weitere Informationen. Wir empfehlen Ihnen, vorhandene Elemente abzustimmen, neue Featureanforderungen zu stellen und Fehlerberichte zu protokollieren, um uns dabei zu unterstützen, die Richtung des Produkts in die Zukunft zu gestalten.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Sprach- und Plattformunterstützung](platform-support.md)
 - [Anforderungen an die Konnektivität für Live Share](reference/connectivity.md)

@@ -38,10 +38,9 @@
 ## [Konnektivität](reference/connectivity.md)
 ## [Sprachenunterstützung](reference/platform-support.md)
 ## [Unterstützung für Erweiterung](reference/extensions.md)
-
-
 ## [Details zur Linux-Installation](reference/linux.md)
 ## [Insider](reference/insiders.md)
+## [Notebooks](reference/notebooks.md)
 ## [Anmerkungen zu dieser Version](https://aka.ms/vsls-releases)
 # Ressourcen
 ## [Problembehandlung](troubleshooting.md)

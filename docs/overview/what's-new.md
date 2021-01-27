@@ -1,5 +1,5 @@
 ---
-title: Übersicht – Visual Studio Live Share | Microsoft-Dokumentation
+title: Übersicht | Microsoft-Dokumentation
 description: Neue Live Share Features und Releases
 ms.custom: ''
 ms.reviewer: ''
@@ -9,12 +9,12 @@ author: fubaduba
 ms.author: fubaduba
 ms.workload:
 - liveshare
-ms.openlocfilehash: 55425a7d57775a4e042e87b8dceb86532e1b966a
-ms.sourcegitcommit: 211b17e49e7343786bd6859b65444cedd5e24958
+ms.openlocfilehash: 70adacfbb8d5e3b4ca9a7b2652c7c455a977f2f7
+ms.sourcegitcommit: 9deed590c0876b732c8eb150a9a23498a8243efc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85796062"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98870473"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -51,7 +51,7 @@ Der Host Ihrer Live Share Sitzung verwendet entweder Visual Studio oder andere P
 
 > Die Person, die Sie kontaktieren möchten, ist zurzeit nicht verfügbar oder verwendet eine Version von _Live Share_ , die dieses Feature nicht unterstützt. [Weitere Informationen] 
 
->Der Chatdienst ist zurzeit nicht getrennt.Versuchen Sie es in Kürze erneut.
+>Der Chatdienst ist zurzeit nicht getrennt. Versuchen Sie es in Kürze erneut.
 
 Der Host Ihrer Live Share Sitzung verwendet entweder Visual Studio oder andere Plattformen, um eine Sitzung zu hosten, die Live Share integrierten Chat noch nicht unterstützt. Sie sind möglicherweise auch derzeit nicht verfügbar. Möglicherweise wird auch die Fehlermeldung 1 angezeigt. oben aufgeführt.
 

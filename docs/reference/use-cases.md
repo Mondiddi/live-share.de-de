@@ -1,5 +1,5 @@
 ---
-title: 'Gängige Anwendungsfälle: Visual Studio Live Share | Microsoft-Dokumentation'
+title: Häufige Anwendungsfälle | Microsoft-Dokumentation
 description: Eine Übersicht über die Anwendungsfälle, für die Entwickler im allgemeinen Visual Studio Live share nutzen.
 ms.custom: ''
 ms.date: 05/21/2018
@@ -11,12 +11,12 @@ ms.author: joncart
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: f3005deae16cba2c16b59d9570b11cc7e35c6f84
-ms.sourcegitcommit: c484bdb0d54c23a47561b3cf492cf2a10b2b1599
+ms.openlocfilehash: deda1f483b4c4d9c7f9cf2928dde8c6cf5eea769
+ms.sourcegitcommit: 9deed590c0876b732c8eb150a9a23498a8243efc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88577007"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98870905"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -26,7 +26,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # <a name="common-use-cases"></a>Gängige Anwendungsfälle
 
-Das primäre Ziel von Visual Studio Live Share besteht darin, Entwicklern die gemeinsame Zusammenarbeit zu ermöglichen, ohne dass Sie sich über den Zeitpunkt und die Vorgehensweise (z. b. das zu verwendende Kommunikations Tool, die "richtige" Software Methodik oder den SCM-Workflow) vorstellen müssen. Auf diese Weise können Ihre Tools Interaktionen unterstützen, die auf **natürliche**Weise und so **oft** wie nötig auftreten, aber auf eine Weise, die die Funktions **Weise der Arbeit** vor sich zieht.
+Das primäre Ziel von Visual Studio Live Share besteht darin, Entwicklern die gemeinsame Zusammenarbeit zu ermöglichen, ohne dass Sie sich über den Zeitpunkt und die Vorgehensweise (z. b. das zu verwendende Kommunikations Tool, die "richtige" Software Methodik oder den SCM-Workflow) vorstellen müssen. Auf diese Weise können Ihre Tools Interaktionen unterstützen, die auf **natürliche** Weise und so **oft** wie nötig auftreten, aber auf eine Weise, die die Funktions **Weise der Arbeit** vor sich zieht.
 
 In diesem Dokument werden einige Anwendungsfälle hervorgehoben, für die Visual Studio Live Share bereits verwendet wird, und es wird beschrieben, wie gut diese derzeit unterstützt werden und wie wir diese weiter optimieren möchten (basierend auf Feedback!). Wenn Sie Live Share für etwas verwenden, das nicht bereits unten behandelt wird, oder wenn Sie der Ansicht sind, dass wir einen bestimmten Anwendungsfall besser unterstützen, informieren Sie [uns](https://github.com/MicrosoftDocs/live-share/issues/new)bitte.
 
@@ -44,6 +44,7 @@ In diesem Dokument werden einige Anwendungsfälle hervorgehoben, für die Visual
     - [Classroom-Vorlesungen](#classroom-lectures)
 - [Code Reviews](#code-reviews)
 - [Technische Interviews](#technical-interviews)
+- [Remote arbeiten](#working-remotely)
 
 ## <a name="quick-assistance"></a>Schnelle Unterstützung
 
@@ -51,7 +52,7 @@ Wenn Sie auf ein Problem stoßen (z. b. den Versuch, einen Fehler zu beheben, di
 
 Da Live Share eine gemeinsame Verwendung ihrer aktiven Debugsitzung ermöglicht, ohne dass "Gäste" die erforderlichen Plattformen (z. b. Node.js-, go-, .net Core-) oder Tool Erweiterungen installieren müssen, können Sie Sie dabei unterstützen, die Auflösung schneller zu lösen und zu verhindern, dass auf dem Computer keine Reproduktion durchführt. Mit Live Share können Sie den Debugzustand für andere Programmiersprachen oder Laufzeitumgebungen (z. b. Kubernetes, systemeigene APP) freigeben. unabhängig davon, welche Hilfe Sie benötigen, können Sie Sie freigeben!
 
-### <a name="office-hours"></a>Bürostunden
+### <a name="office-hours"></a>Arbeitszeiten
 
 Viele Unternehmen und Bildungseinrichtungen (z. b. Schulen, Online Schulungskurse) unterstützen Ihre Kunden/Mitarbeiter/Studenten zu vordefinierten Zeiten und in der Regel in regelmäßigen Abständen (z. b. jeden Freitag von 3-5 Uhr). Auf diese Weise sind "Office-Stunden" einfach eine geplante Form der "schnellen Unterstützung", anstatt vollständig Ad-hoc zu sein. Mit Live Share können Sie schnell Hilfe erhalten, da der "Experte", der Hilfe bietet, sofort einer Zusammenarbeits Sitzung beitreten und Ihre Fragen beantworten kann, ohne dass der Computer überhaupt eingerichtet werden muss.
 
@@ -143,6 +144,10 @@ Die Quell Code Verwaltung wird von Live Share derzeit nicht gemeinsam genutzt, w
 Beim Überprüfen der Kandidaten für eine Entwickler Position ist es häufig hilfreich, über whiteboarddiskussionen hinauszugehen und stattdessen zu beobachten, wie Sie ein Codierungs Problem innerhalb einer echten IDE lösen können (insbesondere, wenn Ihr Team/Ihre Organisation auf einem Tool, das Sie verwenden möchten, "standardisiert" hat). Dies hat nicht nur den Vorteil, dass Sie auf eine Art und Weise arbeiten können (die meisten Entwickler sind nicht auf Whiteboards Codieren!), sondern Sie erhalten bei der Arbeit sofort Feedback und Unterstützung (z. b. Buildfehler, IntelliSense). Häufig ist es wichtiger, den Denkprozess eines Kandidaten zu verstehen, anstatt die genaue Syntax und/oder API-Namen zu merken. Auf diese Weise bietet Live Share eine Umgebung, die mit einer paar Programmierungs Sitzung vergleichbar ist, aber den Teilnehmer in der eigenen Umgebung (einschließlich der Einstellungen des Betriebssystems, wie z. b. Barrierefreiheit) finden kann, und funktioniert gleichermaßen für lokale oder Remote-Interviews. Durch das beitreten zu einer Sitzung aus dem Internet kann der Kandidat die Entwicklungsumgebung und Codebasis des Teams verwenden, ohne etwas herunterzuladen. 
 
 Außerdem ist die reale Entwicklung mehr als das einfache Schreiben von Code. Da Live Share auch das gemeinsame Debuggen, Tasks und Terminals unterstützt, ermöglicht es den Interviewern, Kandidaten während der Diagnose eines Problems zu beobachten und Ihnen die entsprechenden Tools zur Verfügung zu stellen (z. b. schrittweise Debuggen, Tests ausführen). Da der gesamte Kontext vom Computer des Hosts entfernt ist, können Kandidaten schnell in die "Interview Umgebung" springen, ohne Ihren Computer einrichten zu müssen (neben der Installation Live Share). Die Teams können dann ein Repository mit freigegebenen Interview-apps verwalten (oder ihre tatsächliche Produkt-Codebasis verwenden), die geklont und für Kandidaten freigegeben werden können, indem Sie Ihnen einfach vor jedem Gespräch die Sitzungs-URL senden.
+
+## <a name="working-remotely"></a>Remote arbeiten
+
+Arbeiten Sie von Hause aus, ohne dass Sie die Toolkette ihrer Heim Entwicklungsmaschine synchron mit ihren Arbeiten behalten müssen. Beenden Sie diese Codezeile schnell von der Startseite, ohne die Arbeit per Push durchführen zu müssen, Klonen Sie das Repository zu Hause, und suchen Sie die genaue Zeile, an der Sie gearbeitet haben. Stellen Sie eine Verbindung von einem Lightweight-Laptop zum Computer mit schwer Arbeit her.
 
 ## <a name="see-also"></a>Weitere Informationen
 
