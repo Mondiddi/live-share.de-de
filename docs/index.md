@@ -1,5 +1,5 @@
 ---
-title: Übersicht – Visual Studio Live Share | Microsoft-Dokumentation
+title: Übersicht | Microsoft-Dokumentation
 description: Eine Übersicht über Visual Studio Live Share und dessen Funktionen.
 ms.custom: ''
 ms.date: 10/30/2019
@@ -11,12 +11,12 @@ ms.author: fubaduba
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: e74268abd215fd17ec67028d94de69f18685f808
-ms.sourcegitcommit: 6bf13781dc42a2bf51a19312ede37dff98ab33ea
+ms.openlocfilehash: 3ae7ba22225ce537c28daca0a9036872f227a8ce
+ms.sourcegitcommit: 9deed590c0876b732c8eb150a9a23498a8243efc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "79508558"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98870590"
 ---
 <!--
 Copyright &copy; Microsoft Corporation
@@ -39,7 +39,7 @@ Sind Sie bereit? In diesem Artikel führen wir Sie durch einige Konzepte und die
 
 Bevor Sie beginnen, müssen Sie eine Version von Visual Studio oder Visual Studio Code installiert haben, die grundlegende Anforderungen von Live Share erfüllt.
 
-- **Visual Studio Code 1.22.0 oder höher** – Windows 7, 8.1 oder 10, macOS *(nur High Sierra 10.13 und höher)* , 64-Bit-Linux *(64-Bit-Ubuntu Desktop 16.04+, Fedora 27+ wird empfohlen – [siehe die Details](use/vscode.md#installation))* .
+- **Visual Studio Code 1.22.0 oder höher** – Windows 7, 8.1 oder 10, macOS *(nur High Sierra 10.13 und höher)*, 64-Bit-Linux *(64-Bit-Ubuntu Desktop 16.04+, Fedora 27+ wird empfohlen – [siehe die Details](use/vscode.md#installation))*.
 - **Visual Studio 2019** (beliebige Edition) – Windows 7, 8.1 oder 10.
 - **Visual Studio 2017 15.6 oder höher** (beliebige Edition) – Windows 7, 8.1 oder 10.
 
@@ -83,24 +83,24 @@ Durch das Herunterladen und die Nutzung von Visual Studio Live Share stimmen Sie
 Das ist schon alles! Jetzt sollten Sie in VS Code in der Statusleiste unten links ein Zeichen sehen und in Visual Studio oben rechts eine Freigabeschaltfläche. Schauen Sie in der restlichen Dokumentation nach, was als Nächstes zu tun ist!
 
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 Schnellstarts
 
 - [Freigeben Ihres ersten Projekts](quickstart/share.md)
 - [Beitreten zu Ihrer ersten Sitzung](quickstart/join.md)
 
-Gewusst wie
+Vorgehensweisen
 
 - [Zusammenarbeiten mithilfe von Visual Studio Code](use/vscode.md)
 - [Zusammenarbeiten mithilfe von Visual Studio](use/vs.md)
 
-Verweis
+Referenz
 
 - [Anforderungen an die Konnektivität für Live Share](reference/connectivity.md)
 - [Sicherheitsfeatures von Live Share](reference/security.md)
 - [Sprach- und Plattformunterstützung](reference/platform-support.md)
 - [Unterstützung für Erweiterung](reference/extensions.md)
-- [Anmerkungen zu dieser Version](https://aka.ms/vsls-releases)
+- [Versionsanmerkungen](https://aka.ms/vsls-releases)
 
 Gibt es Probleme? Lesen Sie [Troubleshooting](troubleshooting.md) oder [Feedback geben](support.md).
