@@ -1,5 +1,5 @@
 ---
-title: Zusammenarbeiten in Visual Studio – Visual Studio Live Share | Microsoft-Dokumentation
+title: Zusammenarbeiten mithilfe von Visual Studio | Microsoft-Dokumentation
 description: Vorgehensweisen zur Zusammenarbeit in Visual Studio und Live Share
 ms.custom: ''
 ms.date: 04/25/2018
@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 2f7be9b3c81aeca63eb9965085b42b777cc4a6d7
-ms.sourcegitcommit: a48488302bc56abdedf7130ec22b4e21ac16a4ef
+ms.openlocfilehash: 190721006ea0d5a29c7b325c1dd26ef4293eb988
+ms.sourcegitcommit: 9deed590c0876b732c8eb150a9a23498a8243efc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84337267"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98870999"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -47,7 +47,7 @@ Für Visual Studio 2019:
 3. Visual Studio Live Share wird mit diesen Workloads standardmäßig installiert.
 
 Für Visual Studio 2017:
-1. Installieren Sie [Visual Studio 2017 15.6 oder höher](https://visualstudio.microsoft.com/vs/older-downloads/).
+1. Installieren Sie eine beliebige Edition von [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/), Version 15.6 und höher.
 2. Installieren Sie eine [unterstützte Workload](../reference/platform-support.md). (z.B. ASP.NET, .NET Core, C++ und/oder Node.js)
 3. [Laden Sie die Visual Studio Live Share-Erweiterung aus dem Marketplace herunter](https://aka.ms/vsls-dl/vs), und installieren Sie sie.
 
@@ -411,7 +411,7 @@ Nun können Sie aus dem Menü ein Terminal mit Leseberechtigungen oder mit Lese-
 > [!NOTE]
 > Wenn sich die Zusammenarbeitssitzung im schreibgeschützten Modus befindet, können nur Terminals, für die Leseberechtigungen vorliegen, vom Gastgeber freigegeben werden.
 
-Nachdem Sie die Art des freigegebenes Terminals ausgewählt haben, das gestartet werden soll, wird ein neues freigegebenes Terminal für alle Teilnehmer mit den richtigen Berechtigungen angezeigt. Visual Studio Code unterstützt standardmäßig Terminals, Visual Studio hingegen nicht. Aus diesem Grund wird in der Standardeinstellung ein neues Fenster mit dem Terminal angezeigt. Wenn allerdings die [Whack Whack Terminal-Erweiterung](https://marketplace.visualstudio.com/items?itemName=DanielGriffen.WhackWhackTerminal) installiert ist, wird von Live Share ein integriertes Terminal erstellt. In Visual Studio wird ein Installationslink angezeigt, wenn Sie ein freigegebenes Terminal zum ersten Mal starten oder diesem beitreten.
+Nachdem Sie die Art des freigegebenes Terminals ausgewählt haben, das gestartet werden soll, wird ein neues freigegebenes Terminal für alle Teilnehmer mit den richtigen Berechtigungen angezeigt.
 
 ![Popupbenachrichtigung zur Terminalinstallation](../media/vs-terminal-install.png)
 

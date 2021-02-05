@@ -1,5 +1,5 @@
 ---
-title: Schnellstart zu „Freigeben“ – Visual Studio Live Share | Microsoft-Dokumentation
+title: Schnellstart zu „Freigeben“ | Microsoft-Dokumentation
 description: Eine verkürzte Vorgehensweise zum Freigeben Ihres ersten Projekts in einer Visual Studio Live Share-Zusammenarbeitssitzung.
 ms.custom: ''
 ms.date: 03/22/2018
@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 9bee74ed4d494e948f2255321faab3fb5093d694
-ms.sourcegitcommit: 211b17e49e7343786bd6859b65444cedd5e24958
+ms.openlocfilehash: 6422168bcb3d73a660ac90a415388ef1f29459d4
+ms.sourcegitcommit: 9deed590c0876b732c8eb150a9a23498a8243efc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85796075"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98870819"
 ---
 <!--
 Copyright © Microsoft Corporation

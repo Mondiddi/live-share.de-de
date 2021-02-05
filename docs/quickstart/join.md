@@ -1,5 +1,5 @@
 ---
-title: Schnellstart zu „Beitreten“ – Visual Studio Live Share | Microsoft-Dokumentation
+title: Schnellstart zu „Beitreten“ | Microsoft-Dokumentation
 description: Eine verkürzte Vorgehensweise zum Beitreten zu Ihrer ersten Visual Studio Live Share-Zusammenarbeitssitzung.
 ms.custom: ''
 ms.date: 03/22/2018
@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 7b8b3d9b566231f4b4205b559232ef1752fd9441
-ms.sourcegitcommit: 6bf13781dc42a2bf51a19312ede37dff98ab33ea
+ms.openlocfilehash: f7d2aae8e763e4597ccf7c3b5c94c8ea82aa7532
+ms.sourcegitcommit: 9deed590c0876b732c8eb150a9a23498a8243efc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "79508571"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98870642"
 ---
 <!--
 Copyright &copy; Microsoft Corporation
@@ -44,7 +44,7 @@ Die Installation der Erweiterung ist einfach. Führen Sie folgende Schritte aus:
 <tr>
     <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="../media/vs-code.svg" width="128px" alt="Visual Studio Code logo"/></td>
     <td style="border:none;">
-        <strong>Visual Studio Code (1.22.0+)</strong><br />
+        <strong>Visual Studio Code (1.40.0 und höher)</strong><br />
         1. Installieren Sie <a href="https://code.visualstudio.com/">Visual Studio Code</a> für Windows (7, 8.1 oder 10), macOS <b>(Sierra+)</b>, 64-Bit-Linux <b> (<a href="../use/vscode.md#installation">Details</a>)</b><br />
         2. Laden Sie die Visual Studio Live Share-Erweiterung aus dem Marketplace herunter, und installieren Sie sie. <br />
         3. Laden Sie sie erneut, und warten Sie, dass die Abhängigkeiten heruntergeladen und installiert werden (siehe die Statusleiste).<br />
@@ -64,7 +64,7 @@ Die Installation der Erweiterung ist einfach. Führen Sie folgende Schritte aus:
 <tr style="border:none;">
     <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="../media/vs-ide-2017.svg" width="128px" alt="Visual Studio 2017 logo" /></td>
     <td  style="border:none;">
-        <strong>Visual Studio 2017 15.6 oder höher</strong><br />
+        <strong>Visual Studio 2017 15.9 oder höher</strong><br />
         1. Installieren Sie die neueste Version von <a href="https://visualstudio.microsoft.com/vs/older-downloads/">Visual Studio 2017</a> (15.6+) unter Windows (7, 8.1 oder 10).<br/>
         2. Installieren Sie eine <a href="../reference/platform-support.md">unterstützte Workload</a>. (z.B. ASP.NET, .NET Core, C++ und/oder Node.js)<br />
         3. Laden Sie die Visual Studio Live Share-Erweiterung aus dem Marketplace herunter, und installieren Sie sie. <br />
